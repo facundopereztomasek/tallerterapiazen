@@ -10,30 +10,33 @@
 	{{ HTML::style('styles/fonts.css'); }}
 	{{ HTML::style('styles/styles.css'); }}
 </head>
-<body>
+<body class="home">
 	<header class="header">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="title-container">
-					<div class="wrapper">
-						<h1 class="title">Taller Psicolog&iacute;a Zen</h1>
-						<div class="subtitle-container">
-							<strong class="subtitle">Tu mente: Conocela, Aquietala, Liberala.</strong>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="title-container">
+						<div class="wrapper">
+							<h1 class="title">Taller Psicolog&iacute;a Zen</h1>
+							<div class="subtitle-container">
+								<strong class="subtitle">Tu mente: Conocela, Aquietala, Liberala.</strong>
+							</div>
+							<div class="site-logo"><img src="#" alt="logo taller psicolog&iacute;a zen" width="140"></div>
 						</div>
-						<div class="site-logo"><img src="#" alt="logo taller psicolog&iacute;a zen" width="140"></div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="row">
-			<nav class="nav-bar clearfix">
-				<div class="col-md-2 divisor"><a class="link" href="#"></a></div>
-				<div class="col-md-2 divisor"><a class="link selected" href="#">home</a></div>
-				<div class="col-md-2 divisor"><a class="link" href="#">ense&ntilde;anzas</a></div>
-				<div class="col-md-2 divisor"><a class="link" href="#">talleres</a></div>
-				<div class="col-md-2 divisor"><a class="link" href="#">psicoterapia</a></div>
-				<div class="col-md-2 divisor"><a class="link" href="#">contacto</a></div>
-			</nav>
+			<div class="row">
+				<nav class="nav-bar clearfix">
+					<!-- <a class="link selected" href="#">home</a> -->
+					<div class="col-md-2 divisor"><a class="link" href="#"></a></div>
+					<div class="col-md-2 divisor">{{link_to_route('home', 'home',null,array('class' => 'link selected'))}}</div>
+					<div class="col-md-2 divisor">{{link_to_route('ensenanzas', 'ense&ntilde;anzas',null,array('class' => 'link'))}}</div>
+					<div class="col-md-2 divisor">{{link_to_route('talleres', 'talleres',null,array('class' => 'link'))}}</div>
+					<div class="col-md-2 divisor">{{link_to_route('psicoterapia', 'psicoterapia',null,array('class' => 'link'))}}</div>
+					<div class="col-md-2 divisor">{{link_to_route('contacto', 'contacto',null,array('class' => 'link'))}}</div>
+				</nav>
+			</div>
 		</div>
 	</header>
 	<main class="main">
@@ -72,7 +75,7 @@
 				<div class="col-md-4">
 					<article class="box bg-box-1">
 						<div class="title-container">
-							<h2 class="title">¿Qu&eacute; es la mente?</h2>
+							<h2 class="title">Aquietar la mente</h2>
 						</div>
 						<div class="description-container">
 							<p class="description">
@@ -86,7 +89,7 @@
 				<div class="col-md-4">
 					<article class="box bg-box-1">
 						<div class="title-container">
-							<h2 class="title">¿Qu&eacute; es la mente?</h2>
+							<h2 class="title">Cese del sufrimiento</h2>
 						</div>
 						<div class="description-container">
 							<p class="description">

@@ -11,7 +11,27 @@
 |
 */
 
-Route::get('/', function()
+Route::get('/', array( 'as' => 'home' , function()
 {
-	return View::make('index');
-});
+	return View::make('home');
+}));
+
+Route::get('ensenanzas', array( 'as' => 'ensenanzas' , function()
+{
+	return View::make('home');
+}));
+
+Route::get('talleres', array( 'as' => 'talleres' , function()
+{
+	return View::make('talleres');
+}));
+
+Route::get('psicoterapia', array( 'as' => 'psicoterapia' , function()
+{
+	return View::make('psicoterapia');
+}));
+
+Route::get('contacto', array( 'as' => 'contacto' , function()
+{
+	return View::make('home');
+}));

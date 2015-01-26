@@ -4,6 +4,11 @@
      text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
+.no-gutter {
+	padding-left:0;
+    padding-right:0;
+}
+
 h1,
 h2{
     margin:0;
@@ -42,15 +47,40 @@ body{
 /* Estilos de banner*/
 .banner{
     position:relative;
-    padding:10px;
+    padding:20px 10px 10px;
     margin-bottom:40px;
     border-radius:3px;
     overflow:hidden;
+    min-height: 234px;
 }
 
 .banner.bg-taller-1{
     background:url('../images/bg-taller-1.jpg') no-repeat right;
 }
+
+.banner .separator{
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom:20px;
+    margin:0 12px;
+    min-height:100px;
+}
+
+.tip{
+    padding:25px 0 0 12px;
+    font: 14px "Helvetica Neue" , Helvetica, Arial, "sans-serif";
+    color:#f0f0f0;
+    position:relative;
+    top:-2px;
+}
+
+.talleres .banner .paragraph{
+    margin-left:20px;
+}
+
+.psicoterapia .banner .paragraph{
+    margin-left:3px;
+}
+
 /*********************************************/
 
 /* Estilos de banner*/
@@ -108,6 +138,10 @@ body{
     font-family: simonettablackitalic;
 }
 
+.banner .title{
+    margin-bottom:20px;
+}
+
 .box .title{
     font-size:24px;
 }
@@ -156,6 +190,8 @@ body{
     font-family: simonettablackitalic;
     margin-left:15px;
 }
+
+
 /*********************************************/
 
 
@@ -191,7 +227,7 @@ body{
 .header .wrapper{
     position:relative;
     max-width:1120px;
-    margin:10px auto;
+    margin:30px auto 10px;
 }
 
 /*********************************************/
@@ -210,6 +246,40 @@ body{
 .divisor + .divisor{
     border-left:1px solid #392a1f;
 }
+
+/*********************************************/
+
+
+/* Estilos de barra de lista de datos*/
+
+.banner .data{
+    margin:4px 0 0 3px;
+    padding:0;
+    list-style:none;
+    font: 14px "Helvetica Neue" , Helvetica, Arial, "sans-serif";
+    color:#f0f0f0;
+    max-width:160px;
+}
+
+.banner .data li{
+    margin-bottom:5px;
+}
+.banner .data li:before,
+.banner .data li::before{
+    content:'';
+    display:inline-block;
+    width: 0;
+	height: 0;
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: 6px solid #f0f0f0;
+    margin-right:6px;
+    position:relative;
+    top:1px;
+    left:1px;
+}
+
+
 
 /*********************************************/
 

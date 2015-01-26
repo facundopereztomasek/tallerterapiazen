@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Laravel PHP Framework</title>
+	{{ HTML::script('jquery/jquery-1.11.2.min.js'); }}
+	{{ HTML::script('bootstrap/js/bootstrap.min.js'); }}
+	{{ HTML::style('bootstrap/css/bootstrap.min.css'); }}
+	{{ HTML::style('bootstrap/css/bootstrap-theme.min.css'); }}
+	{{ HTML::style('styles/fonts.css'); }}
+	{{ HTML::style('styles/styles.css'); }}
+</head>
+<body class="psicoterapia">
+	<header class="header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="title-container">
+						<div class="wrapper">
+							<h1 class="title">Taller Psicolog&iacute;a Zen</h1>
+							<div class="subtitle-container">
+								<strong class="subtitle">Tu mente: Conocela, Aquietala, Liberala.</strong>
+							</div>
+							<div class="site-logo"><img src="#" alt="logo taller psicolog&iacute;a zen" width="140"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<nav class="nav-bar clearfix">
+					<!-- <a class="link selected" href="#">home</a> -->
+					<div class="col-md-2 divisor"><a class="link" href="#"></a></div>
+					<div class="col-md-2 divisor">{{link_to_route('home', 'home',null,array('class' => 'link'))}}</div>
+					<div class="col-md-2 divisor">{{link_to_route('ensenanzas', 'ense&ntilde;anzas',null,array('class' => 'link'))}}</div>
+					<div class="col-md-2 divisor">{{link_to_route('talleres', 'talleres',null,array('class' => 'link'))}}</div>
+					<div class="col-md-2 divisor">{{link_to_route('psicoterapia', 'psicoterapia',null,array('class' => 'link selected'))}}</div>
+					<div class="col-md-2 divisor">{{link_to_route('contacto', 'contacto',null,array('class' => 'link'))}}</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<article class="banner bg-taller-1 clearfix">
+						<h2 class="title">Psicoterapia v&iacute;a Skype</h2>
+						<div class="row separator">
+							<div class="col-md-8 no-gutter">
+								<p class="paragraph">
+									Siddharta, despu&eacute;s de casi morir de hambre a causa de un estricto ascetismo, se dio cuenta de que la moderaci&oacute;n entre los extremos de la experiencia sensorial.
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8">
+								<p class="tip">
+									Lic. Gustavo Dominguez
+								</p>
+							</div>
+						</div>
+						<a href="#" class="btn btn-primary">Contactar</a>
+					</article>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<article class="banner bg-taller-1 clearfix">
+						<h2 class="title">Psicoterapia v&iacute;a Skype</h2>
+						<div class="row separator">
+							<div class="col-md-8 no-gutter">
+								<p class="paragraph">
+									Siddharta, despu&eacute;s de casi morir de hambre a causa de un estricto ascetismo, se dio cuenta de que la moderaci&oacute;n entre los extremos de la experiencia sensorial.
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8">
+								<p class="tip">
+									Lic. Gustavo Dominguez
+								</p>
+							</div>
+						</div>
+						<a href="#" class="btn btn-primary">Contactar</a>
+					</article>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<article class="banner bg-taller-1 clearfix">
+						<h2 class="title">Psicoterapia v&iacute;a Skype</h2>
+						<div class="row separator">
+							<div class="col-md-8 no-gutter">
+								<p class="paragraph">
+									Siddharta, despu&eacute;s de casi morir de hambre a causa de un estricto ascetismo, se dio cuenta de que la moderaci&oacute;n entre los extremos de la experiencia sensorial.
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8">
+								<p class="tip">
+									Lic. Gustavo Dominguez
+								</p>
+							</div>
+						</div>
+						<a href="#" class="btn btn-primary">Contactar</a>
+					</article>
+				</div>
+			</div>
+
+
+		</div>
+	</main>
+</body>
+</html>
