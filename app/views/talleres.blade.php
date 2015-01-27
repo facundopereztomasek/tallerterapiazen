@@ -66,7 +66,7 @@
 								</p>
 							</div>
 						</div>
-						<a href="#" class="btn btn-primary">Ver m&aacute;s</a>
+						<a href="taller" class="btn btn-primary">Ver m&aacute;s</a>
 					</article>
 				</div>
 			</div>
@@ -96,7 +96,7 @@
 								</p>
 							</div>
 						</div>
-						<a href="#" class="btn btn-primary">Ver m&aacute;s</a>
+						<a href="taller" class="btn btn-primary">Ver m&aacute;s</a>
 					</article>
 				</div>
 			</div>
@@ -126,7 +126,7 @@
 								</p>
 							</div>
 						</div>
-						<a href="#" class="btn btn-primary">Ver m&aacute;s</a>
+						<a href="taller" class="btn btn-primary">Ver m&aacute;s</a>
 					</article>
 				</div>
 			</div>

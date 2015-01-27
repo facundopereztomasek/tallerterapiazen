@@ -26,6 +26,18 @@ Route::get('talleres', array( 'as' => 'talleres' , function()
 	return View::make('talleres');
 }));
 
+/************************************************/
+/*
+	Ruta temporal a cada taller (Fija)
+*/
+
+Route::get('taller', array( 'as' => 'taller' , function()
+{
+	return View::make('taller');
+}));
+
+/************************************************/
+
 Route::get('psicoterapia', array( 'as' => 'psicoterapia' , function()
 {
 	return View::make('psicoterapia');
