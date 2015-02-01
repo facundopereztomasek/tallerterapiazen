@@ -18,7 +18,7 @@ Route::get('/', array( 'as' => 'home' , function()
 
 Route::get('ensenanzas', array( 'as' => 'ensenanzas' , function()
 {
-	return View::make('home');
+	return View::make('ensenanzas');
 }));
 
 Route::get('talleres', array( 'as' => 'talleres' , function()

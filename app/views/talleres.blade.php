@@ -6,11 +6,14 @@
 	{{ HTML::script('jquery/jquery-1.11.2.min.js'); }}
 	{{ HTML::script('bootstrap/js/bootstrap.min.js'); }}
 	{{ HTML::style('bootstrap/css/bootstrap.min.css'); }}
-	{{ HTML::style('bootstrap/css/bootstrap-theme.min.css'); }}
+	{{ HTML::style('bootstrap/css/bootstrap-theme.min.css');}}
+	{{ HTML::script('perfect-scrollbar/perfect-scrollbar.js'); }}
+	{{ HTML::style('perfect-scrollbar/perfect-scrollbar.css'); }}
 	{{ HTML::style('styles/fonts.css'); }}
 	{{ HTML::style('styles/styles.css'); }}
+	{{ HTML::script('scripts/app.js'); }}
 </head>
-<body class="talleres">
+<body class="talleres" data-section="talleres">
 	<header class="header">
 		<div class="container-fluid">
 			<div class="row">

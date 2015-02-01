@@ -6,11 +6,14 @@
 	{{ HTML::script('jquery/jquery-1.11.2.min.js'); }}
 	{{ HTML::script('bootstrap/js/bootstrap.min.js'); }}
 	{{ HTML::style('bootstrap/css/bootstrap.min.css'); }}
-	{{ HTML::style('bootstrap/css/bootstrap-theme.min.css'); }}
+	{{ HTML::style('bootstrap/css/bootstrap-theme.min.css');}}
+	{{ HTML::script('perfect-scrollbar/perfect-scrollbar.js'); }}
+	{{ HTML::style('perfect-scrollbar/perfect-scrollbar.css'); }}
 	{{ HTML::style('styles/fonts.css'); }}
 	{{ HTML::style('styles/styles.css'); }}
+	{{ HTML::script('scripts/app.js'); }}
 </head>
-<body class="home">
+<body class="home" data-section="home">
 	<header class="header">
 		<div class="container-fluid">
 			<div class="row">
@@ -53,7 +56,7 @@
 								Lograba incrementar sus energ&iacute;as, su lucidez, y su meditaci&oacute;n, que llam&oacute; Camino medio, comi&oacute; algo y se sent&oacute; bajo una higuera Bodhi.
 							</p>
 						</div>
-						<a href="#" class="btn btn-primary">Ver m&aacute;s</a>
+						<a href="taller" class="btn btn-primary">Ver m&aacute;s</a>
 					</article>
 				</div>
 			</div>
@@ -68,7 +71,7 @@
 								Conoce qu&eacute; es y c&oacute;mo funciona la mente, y ten las herramientas que te permitir&aacute;n mejorar tu d&iacute;a a d&iacute;a.
 							</p>
 						</div>
-						<a href="#" class="box-link"></a>
+						<a href="ensenanzas" class="box-link"></a>
 					</article>
 				</div>
 
@@ -82,7 +85,7 @@
 								Conoce qu&eacute; es y c&oacute;mo funciona la mente, y ten las herramientas que te permitir&aacute;n mejorar tu d&iacute;a a d&iacute;a.
 							</p>
 						</div>
-						<a href="#" class="box-link"></a>
+						<a href="talleres" class="box-link"></a>
 					</article>
 				</div>
 
@@ -96,7 +99,7 @@
 								Conoce qu&eacute; es y c&oacute;mo funciona la mente, y ten las herramientas que te permitir&aacute;n mejorar tu d&iacute;a a d&iacute;a.
 							</p>
 						</div>
-						<a href="#" class="box-link"></a>
+						<a href="psicoterapia" class="box-link"></a>
 					</article>
 				</div>
 

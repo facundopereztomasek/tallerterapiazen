@@ -6,11 +6,22 @@
 	{{ HTML::script('jquery/jquery-1.11.2.min.js'); }}
 	{{ HTML::script('bootstrap/js/bootstrap.min.js'); }}
 	{{ HTML::style('bootstrap/css/bootstrap.min.css'); }}
-	{{ HTML::style('bootstrap/css/bootstrap-theme.min.css'); }}
+	{{ HTML::style('bootstrap/css/bootstrap-theme.min.css');}}
+	{{ HTML::script('perfect-scrollbar/perfect-scrollbar.js'); }}
+	{{ HTML::style('perfect-scrollbar/perfect-scrollbar.css'); }}
+	{{ HTML::script('jquery-placeholder/jquery.placeholder.min.js'); }}
 	{{ HTML::style('styles/fonts.css'); }}
 	{{ HTML::style('styles/styles.css'); }}
+	{{ HTML::script('scripts/app.js'); }}
 </head>
-<body class="taller">
+<!--[if IE]>
+	<body class="taller ie">
+<![endif]-->
+
+<!--[if !IE]><!-->
+<body class="taller" data-section="taller">
+<!--<![endif]-->
+
 	<header class="header">
 		<div class="container-fluid">
 			<div class="row">
@@ -47,7 +58,7 @@
 					<article class="workshop-view">
 						<header class="workshop-header">
 							<h1 class="title">Taller Psicolog&iacute;a Zen</h1>
-							<button class="btn btn-primary">Inscribirse</button>
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Inscribirse</button>
 						</header>
 						<div class="row">
 							<div class="col-md-8">
@@ -116,5 +127,30 @@
 	<footer class="footer">
 
 	</footer>
+
+	<!-- MODALES -->
+	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<div class="title-container">
+					<p class="title">Taller: Introducci&oacute;n a la meditaci&oacute;n</p>
+				</div>
+			<form class="modal-form clearfix" action="">
+				<p class="subtitle">Formulario de inscripci&oacute;n</p>
+				<div><input type="hidden" value="taller1"></div>
+				<div><input name="firstname" type="text" placeholder="nombre"></div>
+				<div><input name="lastname" type="text" placeholder="apellido"></div>
+				<div><input name="email" type="text" placeholder="e-mail"></div>
+				<div><textarea name="message" id="" cols="30" rows="10" placeholder="mensaje"></textarea></div>
+				<div><button type="submit" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Confirmar</button></div>
+				<a href="#" class="cancel" data-dismiss="modal" aria-label="Close">Cancelar</a>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- <script> $(document).ready(function(){ $('button.btn[type=button]').click(); }) </script> -->
 </body>
 </html>

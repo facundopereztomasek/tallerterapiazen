@@ -6,11 +6,14 @@
 	{{ HTML::script('jquery/jquery-1.11.2.min.js'); }}
 	{{ HTML::script('bootstrap/js/bootstrap.min.js'); }}
 	{{ HTML::style('bootstrap/css/bootstrap.min.css'); }}
-	{{ HTML::style('bootstrap/css/bootstrap-theme.min.css'); }}
+	{{ HTML::style('bootstrap/css/bootstrap-theme.min.css');}}
+	{{ HTML::script('perfect-scrollbar/perfect-scrollbar.js'); }}
+	{{ HTML::style('perfect-scrollbar/perfect-scrollbar.css'); }}
 	{{ HTML::style('styles/fonts.css'); }}
 	{{ HTML::style('styles/styles.css'); }}
+	{{ HTML::script('scripts/app.js'); }}
 </head>
-<body class="psicoterapia">
+<body class="psicoterapia" data-section="psicoterapia">
 	<header class="header">
 		<div class="container-fluid">
 			<div class="row">
@@ -59,7 +62,7 @@
 								</p>
 							</div>
 						</div>
-						<a href="#" class="btn btn-primary">Contactar</a>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Contactar</button>
 					</article>
 				</div>
 			</div>
@@ -82,7 +85,7 @@
 								</p>
 							</div>
 						</div>
-						<a href="#" class="btn btn-primary">Contactar</a>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Contactar</button>
 					</article>
 				</div>
 			</div>
@@ -105,7 +108,7 @@
 								</p>
 							</div>
 						</div>
-						<a href="#" class="btn btn-primary">Contactar</a>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Contactar</button>
 					</article>
 				</div>
 			</div>
@@ -113,5 +116,27 @@
 
 		</div>
 	</main>
+
+	<!-- MODALES -->
+	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<div class="title-container">
+					<p class="title">Psicoterapia v&iacute;a Skype</p>
+				</div>
+			<form class="modal-form clearfix" action="">
+				<p class="subtitle">Formulario de contacto</p>
+				<div><input type="hidden" value="taller1"></div>
+				<div><input name="firstname" type="text" placeholder="nombre"></div>
+				<div><input name="lastname" type="text" placeholder="apellido"></div>
+				<div><input name="email" type="text" placeholder="e-mail"></div>
+				<div><textarea name="message" id="" cols="30" rows="10" placeholder="mensaje"></textarea></div>
+				<div><button type="submit" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Enviar</button></div>
+				<a href="#" class="cancel" data-dismiss="modal" aria-label="Close">Cancelar</a>
+			</form>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
