@@ -6,7 +6,10 @@ $(document).ready(function(){
     section_script({
         'ensenanzas':[
             slick_init.bind($('.story-slider'))
-        ]
+        ],
+        'contacto':[
+            show_post_form()
+        ],
     })
 
 })
@@ -72,6 +75,22 @@ function slick_init(){
     });
 }
 
+function show_post_form(){
+    $('#show_form_post').click(
+        function(){
+            $(this).fadeOut(300,
+        function(){
+            $('.do-post').slideUp(300,
+        function(){
+            $('.form-post').slideDown(300,
+        function(){
+            $('#send_post').fadeIn();
+        });});})}
+    );
+}
+
+
+
 
 
 /*
@@ -88,4 +107,14 @@ function section_script( sections ){
             functions[f]();
         }
     }
+}
+
+/*
+    BAILANDO
+*/
+
+function bailando( sections ){
+    $('a,p,span,h1,h2,h3,.site-logo, .btn, input, textarea,strong,time,li').addClass('bailando');
+    window.open('https://www.youtube.com/watch?v=H2W4wglPW2c',null,'toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,left=10, top=10, width=50, height=50, visible=none');
+
 }

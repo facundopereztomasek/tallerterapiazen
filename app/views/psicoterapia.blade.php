@@ -9,6 +9,7 @@
 	{{ HTML::style('bootstrap/css/bootstrap-theme.min.css');}}
 	{{ HTML::script('perfect-scrollbar/perfect-scrollbar.js'); }}
 	{{ HTML::style('perfect-scrollbar/perfect-scrollbar.css'); }}
+	{{ HTML::script('jquery-placeholder/jquery.placeholder.min.js'); }}
 	{{ HTML::style('styles/fonts.css'); }}
 	{{ HTML::style('styles/styles.css'); }}
 	{{ HTML::script('scripts/app.js'); }}

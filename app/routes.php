@@ -45,5 +45,5 @@ Route::get('psicoterapia', array( 'as' => 'psicoterapia' , function()
 
 Route::get('contacto', array( 'as' => 'contacto' , function()
 {
-	return View::make('home');
+	return View::make('contacto');
 }));
