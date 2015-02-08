@@ -2,7 +2,7 @@ $(document).ready(function(){
     ie_detect();
     modal_init();
     placeholder_init();
-
+    fixed_menu();
     section_script({
         'ensenanzas':[
             slick_init.bind($('.story-slider')),
@@ -110,6 +110,10 @@ function section_script( sections ){
     }
 }
 
+/*
+    MODALES DE VIDEOS
+*/
+
 function modal_video(){
     $('.video-button').click( function(){
         $('.youtube-player').attr('src',this.dataset.src);
@@ -119,6 +123,22 @@ function modal_video(){
         $('.youtube-player').attr('src','');
     });
 }
+
+
+/*
+    MENU FIXED
+*/
+function fixed_menu(){
+    $(window).scroll(function(){
+        if($(document.body).scrollTop()>100){
+            $('.nav-bar').addClass('sticky');
+        }else{
+            $('.nav-bar').removeClass('sticky');
+        }
+    })
+
+}
+
 
 /*
     BAILANDO
