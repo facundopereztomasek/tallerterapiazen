@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'tallerterapiazen',
+			'database'  => 'freelance_zen',
 			'username'  => 'root',
 			'password'  => '',
 			'charset'   => 'utf8',

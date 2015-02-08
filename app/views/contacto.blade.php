@@ -60,56 +60,26 @@
 								<div><button type="submit" id="send_post" class="btn btn-primary send-post" data-toggle="modal" data-target=".bs-example-modal-lg">Enviar</button></div>
 							</form>
 						</div>
-						<dl class="post">
-							<dt class="question">
-								<strong class="post-author">Facundo Perez</strong>
-								<time class="post-time">(27 - 01 - 2015)</time>
-								<p class="post-content">
-									Hola, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias! Hola, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias!
-								</p>
-							</dt>
-							<dd class="answer">
-								<strong class="post-author">Facundo Perez</strong>
-								<time class="post-time">(27 - 01 - 2015)</time>
-								<p class="post-content">
-									Hola, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias! Hola, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias!
-								</p>
-							</dd>
-						</dl>
+						@foreach( $respuestas as $respuesta )
+							<dl class="post">
+								<dt class="question">
+									<strong class="post-author">{{{ $respuesta->mensaje->nombre }}}</strong>
+									<time class="post-time">( {{{ $respuesta->mensaje->created_at }}} )</time>
+									<p class="post-content">
+										{{{ $respuesta->mensaje->texto }}}
+									</p>
+								</dt>
+								<dd class="answer">
+									<strong class="post-author">Gustavo</strong>
+									<time class="post-time">{{{ $respuesta->created_at }}}</time>
+									<p class="post-content">
+										{{{ $respuesta->texto }}}
+									</p>
+								</dd>
+							</dl>
+						@endforeach
 
-						<dl class="post">
-							<dt class="question">
-								<strong class="post-author">Facundo Perez</strong>
-								<time class="post-time">(27 - 01 - 2015)</time>
-								<p class="post-content">
-									Hola, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias! Hola, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias!
-								</p>
-							</dt>
-							<dd class="answer">
-								<strong class="post-author">Facundo Perez</strong>
-								<time class="post-time">(27 - 01 - 2015)</time>
-								<p class="post-content">
-									Hola, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias! Hola, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias!
-								</p>
-							</dd>
-						</dl>
-
-						<dl class="post">
-							<dt class="question">
-								<strong class="post-author">Facundo Perez</strong>
-								<time class="post-time">(27 - 01 - 2015)</time>
-								<p class="post-content">
-									Hola, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias! Hola, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias!
-								</p>
-							</dt>
-							<dd class="answer">
-								<strong class="post-author">Facundo Perez</strong>
-								<time class="post-time">(27 - 01 - 2015)</time>
-								<p class="post-content">
-									Hola, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias! Hola, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias!
-								</p>
-							</dd>
-						</dl>
+						
 					</div>
 
 				</div>

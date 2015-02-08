@@ -43,7 +43,5 @@ Route::get('psicoterapia', array( 'as' => 'psicoterapia' , function()
 	return View::make('psicoterapia');
 }));
 
-Route::get('contacto', array( 'as' => 'contacto' , function()
-{
-	return View::make('contacto');
-}));
+Route::get('contacto',array('as' => 'contacto', 'uses' => 'MensajeController@getMensajes'));
+
