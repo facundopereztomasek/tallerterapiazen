@@ -67,6 +67,8 @@ class InscripcionController extends BaseController {
 
 		$save = $contacto->save();
 
+		$datos = $contacto->toArray();
+
 		if( $save ){
 			$feedback = ['mensaje' => 'Te has inscripto.' , 'tipo' => 'success'];
 			Mail::queue('emails.eblast', $datos, function($message) use($contacto){
