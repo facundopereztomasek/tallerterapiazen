@@ -260,7 +260,36 @@
 		</div>
 	</main>
 	<footer class="footer">
-
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="col-md-5">
+						<div class="rights">
+							<span><a href="http://www.tallerterapiazen.com.ar">Taller Terapia Zen</a></span>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="designer">
+							<p>Dise&ntilde;o y desarrollo: 	<a target="_blank" href="http://www.facundotomasek.com.ar">Facundo P&eacute;rez Tomasek</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="social">
+						<div class="col-md-6">
+							<span class="follow">
+								Seguinos en
+							</span>
+						</div>
+						<div class="col-md-6">
+							<a target="_blank" href="http://www.facebook.com" class="facebook"><span class="icon icon-facebook"></span></a>
+							<a target="_blank" href="http://www.twitter.com" class="twitter"><span class="icon icon-twitter"></span></a>
+							<a target="_blank" href="http://www.youtube.com" class="youtube"><span class="icon icon-youtube"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</footer>
 	<!-- MODALES -->
 	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
