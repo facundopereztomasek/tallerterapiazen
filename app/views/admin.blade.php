@@ -85,7 +85,7 @@
 											<div><textarea name="texto" class="input-message" id="" cols="30" rows="10" placeholder="Escrib&iacute; la respuesta ac&aacute;"></textarea></div>
 											<div class="btn-group">
 												<button type="submit" id="send_post" class="btn btn-primary btn-right send-post" data-toggle="modal" data-target=".bs-example-modal-lg">Responder</button>
-												<button href="{{ route('pregunta_borrar', $pregunta['id']) }}" type="button" id="send_post" class="btn btn-danger btn-left send-post" data-toggle="modal" data-target=".bs-example-modal-lg">Eliminar Pregunta</button>
+												<a href="{{ route('pregunta_borrar', $pregunta['id']) }}" class="btn btn-danger btn-left send-post">Eliminar Pregunta</a>
 											</div>
 										{{ Form::close() }}
 									</dd>

@@ -33,7 +33,7 @@ class MensajeController extends BaseController {
 	// View contacto con contenido
 	private function viewContacto( $FEEDBACK = null ){
 
-		$respuestas = Respuesta::with('mensaje')->get();
+		$respuestas = Respuesta::with('mensaje')->orderBy('created_at','desc')->get();
 
 		return View::make('contacto')
 			->with('respuestas',$respuestas)
