@@ -257,6 +257,28 @@ body{
 
 /* Estilos de videos*/
 
+.youtube-player{
+
+    width:900px;
+    height:548px;
+    margin:0 auto;
+    display:block;
+    background:#222222;
+}
+
+.modal-video{
+    position:relative;
+}
+
+.ensenanzas .modal-backdrop{
+    opacity:0.9;
+}
+
+.modal-video .close{
+    position:absolute !important;
+    top:-15px;
+    right:-50px;
+}
 
 .loto-container{
     position:relative;
@@ -290,22 +312,22 @@ body{
     box-shadow: 0 2px 4px -2px rgba(0,0,0,0.9);
 }
 
-.video-preview-container:before{
-    content:'';
-    position:absolute;
-    z-index:1;
-    left:0;
-    top:0;
-    right:0;
-    bottom:0;
-    background-color:rgba(0,0,0,0.5);
-}
-
 .title-video .link{
     color:#222222;
     padding:0;
     text-align:left;
     display:inline;
+}
+
+.video-button{
+    position:absolute;
+    z-index:1;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+    border:none;
 }
 
 

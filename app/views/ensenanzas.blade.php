@@ -151,46 +151,56 @@
 					</div>
 					<div class="row">
 						<div class="col-md-5 col-md-push-1">
-							<div class="video-preview-container"><img src="http://i.ytimg.com/vi/QlD-HWpvW40/0.jpg" width="100%"></div>
+							<div class="video-preview-container"><img src="http://i.ytimg.com/vi/QlD-HWpvW40/0.jpg" width="100%">
+								<button type="button" class="video-button" data-toggle="modal" data-target=".bs-example-modal-lg" data-src="http://www.youtube.com/embed/QlD-HWpvW40"></button>
+							</div>
 							<div class="title-video">
 								<p>
-									<a class="link" href="#">Una taza de Zen</a>
+									<a class="link" target="_blank" href="https://www.youtube.com/watch?v=QlD-HWpvW40">Una taza de Zen</a>
 								</p>
 							</div>
 						</div>
 						<div class="col-md-5 col-md-push-1">
-							<div class="video-preview-container"><img src="http://i.ytimg.com/vi/XVhhCu024B0/0.jpg" width="100%"></div>
-							<div class="title-video">
-								<p>
-									<a class="link" href="#">Una taza de Zen</a>
-								</p>
+							<div class="video-preview-container"><img src="http://i.ytimg.com/vi/XVhhCu024B0/0.jpg" width="100%">
+								<button type="button" class="video-button" data-toggle="modal" data-target=".bs-example-modal-lg" data-src="http://www.youtube.com/embed/XVhhCu024B0"></button>
 							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-5 col-md-push-1">
-							<div class="video-preview-container"><img src="http://i.ytimg.com/vi/PKjDHiMY17Y/0.jpg" width="100%"></div>
 							<div class="title-video">
 								<p>
-									<a class="link" href="#">Una taza de Zen</a>
-								</p>
-							</div>
-						</div>
-						<div class="col-md-5 col-md-push-1">
-							<div class="video-preview-container"><img src="http://i.ytimg.com/vi/mQaY1Py4B70/0.jpg" width="100%"></div>
-							<div class="title-video">
-								<p>
-									<a class="link" href="#">Una taza de Zen</a>
+									<a class="link" target="_blank" href="https://www.youtube.com/watch?v=XVhhCu024B0">¿Qu&eacute; es el Zen?</a>
 								</p>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-5 col-md-push-1">
-							<div class="video-preview-container"><img src="http://i.ytimg.com/vi/t3HMmmjtKFI/0.jpg" width="100%"></div>
+							<div class="video-preview-container"><img src="http://i.ytimg.com/vi/PKjDHiMY17Y/0.jpg" width="100%">
+								<button type="button" class="video-button" data-toggle="modal" data-target=".bs-example-modal-lg" data-src="http://www.youtube.com/embed/PKjDHiMY17Y"></button>
+							</div>
 							<div class="title-video">
 								<p>
-									<a class="link" href="#">Una taza de Zen</a>
+									<a class="link" target="_blank" href="https://www.youtube.com/watch?v=PKjDHiMY17Y">Aprovecha el momento</a>
+								</p>
+							</div>
+						</div>
+						<div class="col-md-5 col-md-push-1">
+							<div class="video-preview-container"><img src="http://i.ytimg.com/vi/mQaY1Py4B70/0.jpg" width="100%">
+								<button type="button" class="video-button" data-toggle="modal" data-target=".bs-example-modal-lg" data-src="http://www.youtube.com/embed/mQaY1Py4B70"></button>
+							</div>
+							<div class="title-video">
+								<p>
+									<a class="link" target="_blank" href="https://www.youtube.com/watch?v=mQaY1Py4B70">Las puertas del cielo</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5 col-md-push-1">
+							<div class="video-preview-container"><img src="http://i.ytimg.com/vi/t3HMmmjtKFI/0.jpg" width="100%">
+								<button type="button" class="video-button" data-toggle="modal" data-target=".bs-example-modal-lg" data-src="http://www.youtube.com/embed/t3HMmmjtKFI"></button>
+							</div>
+							<div class="title-video">
+								<p>
+									<a class="link" target="_blank" href="https://www.youtube.com/watch?v=t3HMmmjtKFI">Meditar en un minuto</a>
 								</p>
 							</div>
 						</div>
@@ -252,5 +262,16 @@
 	<footer class="footer">
 
 	</footer>
+	<!-- MODALES -->
+	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-video">
+					<iframe class="youtube-player" type="text/html" width="100%" height="100%" src="" frameborder="0"></iframe>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

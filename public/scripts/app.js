@@ -5,7 +5,8 @@ $(document).ready(function(){
 
     section_script({
         'ensenanzas':[
-            slick_init.bind($('.story-slider'))
+            slick_init.bind($('.story-slider')),
+            modal_video
         ],
         'contacto':[
             show_post_form()
@@ -107,6 +108,16 @@ function section_script( sections ){
             functions[f]();
         }
     }
+}
+
+function modal_video(){
+    $('.video-button').click( function(){
+        $('.youtube-player').attr('src',this.dataset.src);
+    });
+
+    $('.modal .close').click( function(){
+        $('.youtube-player').attr('src','');
+    });
 }
 
 /*
