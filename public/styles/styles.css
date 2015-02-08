@@ -16,6 +16,21 @@
 75% {transform:perspective(1px) rotateZ(-3deg);}
 100% {transform:perspective(1px) rotateZ(0deg);}
 }
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes link-animation {
+    from {background-position: 0 10px;}
+    to {background-position:0 -313px;}
+}
+
+/* Standard syntax */
+@keyframes link-animation
+from {background-position:0 10px;}
+to {background-position:0 -313px;}
+}
+
+
 p,span,a,h1,h2,h3{
      -webkit-font-smoothing: antialiased !important;
      font-smoothing: antialiased !important;
@@ -539,6 +554,28 @@ body{
 .admin .landing-page{
     display:none;
 }
+
+.hover-link{
+    position:absolute;
+    left:0;
+    bottom:-2px;
+    right:0;
+    height:3px;
+    background:url('../images/link-background.png') no-repeat #0dc8e0;
+
+    opacity:0;
+    -webkit-animation: link-animation 5s linear infinite;
+    animation: link-animation 5s linear infinite;
+    -webkit-transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -ms-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+}
+
+.link:hover + .hover-link{
+    opacity:1;
+}
 /*********************************************/
 
 
@@ -575,6 +612,18 @@ body{
     top:-40px;
     -webkit-transition: top 0.6s ease-out;
     transition: top 0.6s ease-out;
+}
+
+.nav-bar div{
+    -webkit-transition: background-color 1s linear;
+    -moz-transition: background-color 1s linear;
+    -ms-transition: background-color 1s linear;
+    -o-transition: background-color 1s linear;
+}
+
+.nav-bar div:hover{
+    transition: background-color 1s linear;
+    background-color:#111111;
 }
 
 .nav-bar.sticky{
