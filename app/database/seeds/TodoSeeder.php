@@ -14,9 +14,14 @@ class TodoSeeder extends Seeder {
     		'texto' => 'Hola, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias! Hola, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias!',
         ));
         Mensaje::create(array(
-    		'email' => 'facu@perez.com',
+    		'email' => 'facundopereztomasek@gmail.com',
     		'nombre' => 'facu',
     		'texto' => 'Hola soy facu perez, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias! Hola, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias!',
+        ));
+        Mensaje::create(array(
+            'email' => 'lucianoperezt@gmail.com',
+            'nombre' => 'luco',
+            'texto' => 'Hola quería saber que pasa si te metes en un agujero de gusano.',
         ));
 
 

@@ -12,15 +12,17 @@ class CrearTablaRespuestas extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('respuestas', function($table){
-		    $table->increments('id');
+		if (!Schema::hasTable('respuestas')){
+			Schema::create('respuestas', function($table){
+			    $table->increments('id');
 
-		    $table->string('mensaje_id');
-		    $table->foreign('mensaje_id')->references('id')->on('mensajes');
+			    $table->string('mensaje_id');
+			    $table->foreign('mensaje_id')->references('id')->on('mensajes');
 
-		    $table->text('texto');
-		    $table->timestamps();
-		});
+			    $table->text('texto');
+			    $table->timestamps();
+			});
+		}
 	}
 
 	/**
@@ -30,7 +32,7 @@ class CrearTablaRespuestas extends Migration {
 	 */
 	public function down()
 	{
-		//
+		Schema::dropIfExists('respuestas');
 	}
 
 }

@@ -52,44 +52,46 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="posts">
-						<dl class="post">
-							<dt class="question">
-								<strong class="post-author">Facundo Perez</strong>
-								<time class="post-time">(27 - 01 - 2015)</time>
-								<p class="post-content">
-									Hola, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias! Hola, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias!
-								</p>
-							</dt>
-							<dd class="do-answer">
-								<form action="#" class="form-reply">
-									<div><textarea name="" class="input-message" id="" cols="30" rows="10" placeholder="Escrib&iacute; la respuesta ac&aacute;"></textarea></div>
-									<div class="btn-group">
-										<button type="submit" id="send_post" class="btn btn-primary btn-right send-post" data-toggle="modal" data-target=".bs-example-modal-lg">Responder</button>
-										<button type="submit" id="send_post" class="btn btn-danger btn-left send-post" data-toggle="modal" data-target=".bs-example-modal-lg">Eliminar Pregunta</button>
-									</div>
-								</form>
-							</dd>
-						</dl>
 
-						<dl class="post">
-							<dt class="question">
-								<strong class="post-author">Facundo Perez</strong>
-								<time class="post-time">(27 - 01 - 2015)</time>
-								<p class="post-content">
-									Hola, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias! Hola, quería saber cuánto estaba el kilo de fruta fresca en el chino de acá a la vuelta. Gracias!
-								</p>
-							</dt>
-							<dd class="do-answer">
-								<form action="#" class="form-reply">
-									<div><textarea name="" class="input-message" id="" cols="30" rows="10" placeholder="Escrib&iacute; la respuesta ac&aacute;"></textarea></div>
-									<div class="btn-group">
-										<button type="submit" id="send_post" class="btn btn-primary btn-right send-post" data-toggle="modal" data-target=".bs-example-modal-lg">Responder</button>
-										<button type="submit" id="send_post" class="btn btn-danger btn-left send-post" data-toggle="modal" data-target=".bs-example-modal-lg">Eliminar Pregunta</button>
-									</div>
-								</form>
-							</dd>
-						</dl>
+						@foreach( $preguntas as $pregunta )
 
+							<dl class="post">
+								<dt class="question">
+									<strong class="post-author">{{{ $pregunta['nombre'] }}}</strong>
+									<time class="post-time">({{{ $pregunta['created_at'] }}})</time>
+									<p class="post-content">
+										{{{ $pregunta['texto'] }}}
+									</p>
+								</dt>
+
+								@if( ISSET($pregunta['respuesta']) && count($pregunta['respuesta']) > 0 )
+
+									<dd class="answer">
+										<strong class="post-author">Gustavo</strong>
+										<time class="post-time">{{{ $pregunta['respuesta']['created_at'] }}}</time>
+										<p class="post-content">
+											{{{ $pregunta['respuesta']['texto'] }}}
+										</p>
+									</dd>
+
+								@else
+
+									<dd class="do-answer">
+										{{ Form::open( array('class'=>'form-reply') ) }}
+											<input type="hidden" name="mensaje_id" value="{{{ $pregunta['id'] }}}" />
+											<div><textarea name="texto" class="input-message" id="" cols="30" rows="10" placeholder="Escrib&iacute; la respuesta ac&aacute;"></textarea></div>
+											<div class="btn-group">
+												<button type="submit" id="send_post" class="btn btn-primary btn-right send-post" data-toggle="modal" data-target=".bs-example-modal-lg">Responder</button>
+												<button href="{{ route('pregunta_borrar', $pregunta['id']) }}" type="button" id="send_post" class="btn btn-danger btn-left send-post" data-toggle="modal" data-target=".bs-example-modal-lg">Eliminar Pregunta</button>
+											</div>
+										{{ Form::close() }}
+									</dd>
+
+								@endif
+
+							</dl>
+
+						@endforeach
 
 					</div>
 

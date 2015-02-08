@@ -45,3 +45,13 @@ Route::get('psicoterapia', array( 'as' => 'psicoterapia' , function()
 
 Route::get('contacto',array('as' => 'contacto', 'uses' => 'MensajeController@getMensajes'));
 
+
+
+/************************************************/
+// ADMIN
+/************************************************/
+Route::get('admin/cms_admin_zen',array('as' => 'admin', 'uses' => 'AdminController@showAdmin'));
+Route::post('admin/cms_admin_zen',array('uses' => 'AdminController@doResponder'));
+
+// Acciones Admin
+Route::get('admin/cms_admin_zen/pregunta/borrar/{id}',array('as' => 'pregunta_borrar', 'uses' => 'AdminController@doBorrarPregunta'));
