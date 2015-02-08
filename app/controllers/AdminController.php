@@ -3,16 +3,8 @@
 class AdminController extends BaseController {
 
 	public function showAdmin(){
-		// Traer preguntas contestadas/no contestadas
-		$preguntas_contestadas_id = Respuesta::with('mensaje')->lists('mensaje_id');
-		$preguntas_sin_contestar = Mensaje::whereNotIn( 'id' , $preguntas_contestadas_id )->orderBy('created_at','asc')->get();
-		$preguntas_contestadas = Mensaje::whereIn( 'id' , $preguntas_contestadas_id )->with('respuesta')->orderBy('created_at','asc')->get();
-		//return $preguntas_contestadas;
-		// Preguntas sin contestar primero, preguntas contestadas despues
-		$preguntas = array_merge($preguntas_sin_contestar->toArray(), $preguntas_contestadas->toArray());
 
-		return View::make('admin')
-			->with('preguntas',$preguntas);
+		return $this->viewAdmin();
 
 	}
 
@@ -24,14 +16,18 @@ class AdminController extends BaseController {
 				$respuesta = new Respuesta();
 				$respuesta->mensaje_id = Input::get('mensaje_id');
 				$respuesta->texto = Input::get('texto');
-				$respuesta->save();
-			}
+				$save = $respuesta->save();
 
-			// Actualiza Pregunta
-			//$pregunta = Pregunta::find(Input::get('mensaje_id'));
-			//$pregunta->touch();
+			}
 		}
-		return $this->showAdmin();
+
+		if( ISSET($save) && $save ){
+			$feedback = ['mensaje' => 'Has respondido la pregunta.' , 'tipo' => 'success'];
+		}else{
+			$feedback = ['mensaje' => 'Error, no se pudo responder la pregunta, intentalo más tarde.' , 'tipo' => 'error'];
+		}
+
+		return $this->viewAdmin( $feedback );
 
 	}
 
@@ -39,11 +35,31 @@ class AdminController extends BaseController {
 
 		$pregunta = Mensaje::find( $PREGUNTA_ID );
 		if( $pregunta ){
-			$pregunta->delete();
+			$delete = $pregunta->delete();
+		}
+		if( ISSET($delete) && $delete ){
+			$feedback = ['mensaje' => 'Has borrado la pregunta.' , 'tipo' => 'success'];
+		}else{
+			$feedback = ['mensaje' => 'Error, no se pudo borrar la pregunta, intentalo más tarde.' , 'tipo' => 'error'];
 		}
 
-		return $this->showAdmin();
+		return $this->viewAdmin( $feedback );
 
+	}
+
+	private function viewAdmin( $FEEDBACK = null ){
+
+		// Traer preguntas contestadas/no contestadas
+		$preguntas_contestadas_id = Respuesta::with('mensaje')->lists('mensaje_id');
+		$preguntas_sin_contestar = Mensaje::whereNotIn( 'id' , $preguntas_contestadas_id )->orderBy('created_at','desc')->get();
+		$preguntas_contestadas = Mensaje::whereIn( 'id' , $preguntas_contestadas_id )->with('respuesta')->orderBy('created_at','desc')->get();
+
+		// Preguntas sin contestar primero, preguntas contestadas despues
+		$preguntas = array_merge($preguntas_sin_contestar->toArray(), $preguntas_contestadas->toArray());
+
+		return View::make('admin')
+			->with('preguntas',$preguntas)
+			->with('feedback',$FEEDBACK);
 	}
 
 }

@@ -45,7 +45,10 @@
 	</header>
 	<main class="main">
 		<div class="container">
-
+			<!-- Feedback acciones -->
+			@if( ISSET($feedback) )
+				<p>{{{ $feedback['mensaje'] }}}</p>
+			@endif
 			<div class="row">
 				<div class="col-md-9">
 					<div class="posts">
@@ -54,11 +57,11 @@
 								<span class="invitation">Escribe tu pregunta o deja un mensaje</span>
 								<button type="button" id="show_form_post" class="btn btn-primary btn-dynamic" data-toggle="modal" data-target=".bs-example-modal-lg">Escribir Mensaje</button>
 							</div>
-							<form action="#" class="form-post">
-								<div><input type="text" class="input-name" placeholder="Nombre"></div>
-								<div><textarea name="" class="input-message" id="" cols="30" rows="10" placeholder="Mensaje"></textarea></div>
+							{{ Form::open( array('class'=>'form-post')) }}
+								<div><input type="text" class="input-name" placeholder="Nombre" name="nombre"></div>
+								<div><textarea name="texto" class="input-message" id="" cols="30" rows="10" placeholder="Mensaje"></textarea></div>
 								<div><button type="submit" id="send_post" class="btn btn-primary send-post" data-toggle="modal" data-target=".bs-example-modal-lg">Enviar</button></div>
-							</form>
+							{{ Form::close() }}
 						</div>
 						@foreach( $respuestas as $respuesta )
 							<dl class="post">

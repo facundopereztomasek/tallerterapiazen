@@ -45,6 +45,10 @@
 	</header>
 	<main class="main">
 		<div class="container">
+			<!-- Feedback acciones -->
+			@if( ISSET($feedback) )
+				<p>{{{ $feedback['mensaje'] }}}</p>
+			@endif
 			<div class="row">
 				<div class="col-md-12">
 					<article class="banner bg-taller-1 clearfix">
@@ -126,17 +130,17 @@
 				<div class="title-container">
 					<p class="title">Psicoterapia v&iacute;a Skype</p>
 				</div>
-			<form class="modal-form clearfix" action="">
+			{{ Form::open( array('class'=>'modal-form clearfix')) }}
 				<p class="subtitle">Formulario de contacto</p>
 				<div class="input-container"><input type="hidden" value="taller1"></div>
-				<div class="input-container required"><input name="firstname" type="text" placeholder="nombre"></div>
-				<div class="input-container required"><input name="lastname" type="text" placeholder="apellido"></div>
+				<div class="input-container required"><input name="nombre" type="text" placeholder="nombre"></div>
+				<div class="input-container required"><input name="apellido" type="text" placeholder="apellido"></div>
 				<div class="input-container required"><input name="email" type="text" placeholder="e-mail"></div>
-				<div class="input-container half-input clearfix"><input name="phone" type="text" placeholder="tel&eacute;fono"><input name="skype" type="text" placeholder="skype"></div>
-				<div class="input-container"><textarea name="message" id="" cols="30" rows="10" placeholder="mensaje"></textarea></div>
+				<div class="input-container half-input clearfix"><input name="telefono" type="text" placeholder="tel&eacute;fono"><input name="skype" type="text" placeholder="skype"></div>
+				<div class="input-container"><textarea name="mensaje" id="" cols="30" rows="10" placeholder="mensaje"></textarea></div>
 				<div><button type="submit" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Enviar</button></div>
 				<a href="#" class="cancel" data-dismiss="modal" aria-label="Close">Cancelar</a>
-			</form>
+			{{ Form::close() }}
 			</div>
 		</div>
 	</div>

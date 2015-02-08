@@ -6,5 +6,6 @@ class Contacto extends Eloquent {
 		en los talleres, psicoterapia, etc.	*/
 
 	protected $table = 'contactos';
+	protected $fillable = array('nombre','apellido','email','telefono','skype','mensaje');
 
 }

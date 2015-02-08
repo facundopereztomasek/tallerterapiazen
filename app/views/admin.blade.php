@@ -48,7 +48,10 @@
 	</header>
 	<main class="main">
 		<div class="container">
-
+			<!-- Feedback acciones -->
+			@if( ISSET($feedback) )
+				<p>{{{ $feedback['mensaje'] }}}</p>
+			@endif
 			<div class="row">
 				<div class="col-md-12">
 					<div class="posts">

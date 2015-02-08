@@ -1,49 +1,21 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
 
-Route::get('/', array( 'as' => 'home' , function()
-{
-	return View::make('home');
-}));
+// Paginas estaticas sin funcionalidad (EstaticoController)
+Route::get('/',array('as' => 'home', 'uses' => 'EstaticoController@getHome'));
+Route::get('ensenanzas',array('as' => 'ensenanzas', 'uses' => 'EstaticoController@getEnsenanzas'));
+Route::get('talleres',array('as' => 'talleres', 'uses' => 'EstaticoController@getListadoTalleres'));
 
-Route::get('ensenanzas', array( 'as' => 'ensenanzas' , function()
-{
-	return View::make('ensenanzas');
-}));
+// Inscripciones
+Route::get('taller',array('as' => 'taller', 'uses' => 'InscripcionController@getTaller'));
+Route::post('taller',array('uses' => 'InscripcionController@postTaller'));
 
-Route::get('talleres', array( 'as' => 'talleres' , function()
-{
-	return View::make('talleres');
-}));
+Route::get('psicoterapia',array('as' => 'psicoterapia', 'uses' => 'InscripcionController@getPsicoterapia'));
+Route::post('psicoterapia',array('uses' => 'InscripcionController@postPsicoterapia'));
 
-/************************************************/
-/*
-	Ruta temporal a cada taller (Fija)
-*/
-
-Route::get('taller', array( 'as' => 'taller' , function()
-{
-	return View::make('taller');
-}));
-
-/************************************************/
-
-Route::get('psicoterapia', array( 'as' => 'psicoterapia' , function()
-{
-	return View::make('psicoterapia');
-}));
-
+// Contacto
 Route::get('contacto',array('as' => 'contacto', 'uses' => 'MensajeController@getMensajes'));
+Route::post('contacto',array('uses' => 'MensajeController@postMensaje'));
 
 
 

@@ -111,7 +111,7 @@
 		</div>
 		<div><img class="screen-only" src="images/banner-eblast.png" alt=""></div>
 		<span class="print-title print-only">TALLER PSICOLOG&Iacute;A ZEN</span>
-		<h1 class="title">Gabriel, gracias por inscribirte a <span class="workshop-name">Taller: Entendiendo la meditaci&oacute;n!</span></h1>
+		<h1 class="title">{{{ $nombre }}}, gracias por inscribirte a <span class="workshop-name">Taller: Entendiendo la meditaci&oacute;n!</span></h1>
 		<p class="paragraph">El taller sera el d&iacute;a <strong>Jueves 26</strong> de Noviembre de 2015, a las <strong>08:00 hs</strong>.</p>
 		<p class="paragraph">Te esperamos!</p>
 		<div class="footer">
