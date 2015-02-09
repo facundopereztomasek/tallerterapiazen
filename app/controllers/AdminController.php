@@ -51,6 +51,9 @@ class AdminController extends BaseController {
 
 		// Traer preguntas contestadas/no contestadas
 		$preguntas_contestadas_id = Respuesta::with('mensaje')->lists('mensaje_id');
+		if( !$preguntas_contestadas_id ){
+			$preguntas_contestadas_id = array('id',0);
+		}
 		$preguntas_sin_contestar = Mensaje::whereNotIn( 'id' , $preguntas_contestadas_id )->orderBy('created_at','desc')->get();
 		$preguntas_contestadas = Mensaje::whereIn( 'id' , $preguntas_contestadas_id )->with('respuesta')->orderBy('created_at','desc')->get();
 
