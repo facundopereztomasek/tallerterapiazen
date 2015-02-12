@@ -22,8 +22,16 @@ Route::post('contacto',array('uses' => 'MensajeController@postMensaje'));
 /************************************************/
 // ADMIN
 /************************************************/
-Route::get('admin/cms_admin_zen',array('as' => 'admin', 'uses' => 'AdminController@showAdmin'));
-Route::post('admin/cms_admin_zen',array('uses' => 'AdminController@doResponder'));
+Route::get('admin/login_admin_zen',array('as' => 'login', 'uses' => 'LoginController@getLogin'));
+Route::post('admin/login_admin_zen',array('uses' => 'LoginController@doLogin'));
 
-// Acciones Admin
-Route::get('admin/cms_admin_zen/pregunta/borrar/{id}',array('as' => 'pregunta_borrar', 'uses' => 'AdminController@doBorrarPregunta'));
+Route::get('admin/logout',array('as' => 'logout', 'uses' => 'LoginController@doLogout'));
+
+Route::group(["before" => "auth"], function(){
+	// Admin
+	Route::get('admin/cms_admin_zen',array('as' => 'admin', 'uses' => 'AdminController@showAdmin'));
+	Route::post('admin/cms_admin_zen',array('uses' => 'AdminController@doResponder'));
+
+	// Acciones Admin
+	Route::get('admin/cms_admin_zen/pregunta/borrar/{id}',array('as' => 'pregunta_borrar', 'uses' => 'AdminController@doBorrarPregunta'));
+});

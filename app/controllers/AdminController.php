@@ -48,7 +48,6 @@ class AdminController extends BaseController {
 	}
 
 	private function viewAdmin( $FEEDBACK = null ){
-
 		// Traer preguntas contestadas/no contestadas
 		$preguntas_contestadas_id = Respuesta::with('mensaje')->lists('mensaje_id');
 		if( !$preguntas_contestadas_id ){
