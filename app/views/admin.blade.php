@@ -7,8 +7,8 @@
 	{{ HTML::script('bootstrap/js/bootstrap.min.js'); }}
 	{{ HTML::style('bootstrap/css/bootstrap.min.css'); }}
 	{{ HTML::style('bootstrap/css/bootstrap-theme.min.css');}}
-	{{ HTML::script('perfect-scrollbar/perfect-scrollbar.js'); }}
-	{{ HTML::style('perfect-scrollbar/perfect-scrollbar.css'); }}
+	<!-- {{ HTML::script('perfect-scrollbar/perfect-scrollbar.js'); }}
+	{{ HTML::style('perfect-scrollbar/perfect-scrollbar.css'); }} -->
 	{{ HTML::script('jquery-placeholder/jquery.placeholder.min.js'); }}
 	{{ HTML::style('styles/fonts.css'); }}
 	{{ HTML::style('styles/styles.css'); }}
@@ -61,7 +61,7 @@
 							<dl class="post">
 								<dt class="question">
 									<strong class="post-author">{{{ $pregunta['nombre'] }}}</strong>
-									<time class="post-time">({{{ $pregunta['created_at'] }}})</time>
+									<time class="post-time">({{{ date("d-m-Y",strtotime($pregunta['created_at'])) }}})</time>
 									<p class="post-content">
 										{{{ $pregunta['texto'] }}}
 									</p>
@@ -71,7 +71,7 @@
 
 									<dd class="answer">
 										<strong class="post-author">Gustavo</strong>
-										<time class="post-time">{{{ $pregunta['respuesta']['created_at'] }}}</time>
+										<time class="post-time">({{{ date("d-m-Y",strtotime($pregunta['respuesta']['created_at'])) }}})</time>
 										<p class="post-content">
 											{{{ $pregunta['respuesta']['texto'] }}}
 										</p>
@@ -106,5 +106,37 @@
 
 		</div>
 	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="col-md-5">
+						<div class="rights">
+							<span><a href="http://www.tallerterapiazen.com.ar">Taller Terapia Zen</a></span>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="designer">
+							<p>Dise&ntilde;o y desarrollo: 	<a target="_blank" href="http://www.facundotomasek.com.ar">Facundo P&eacute;rez Tomasek</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="social">
+						<div class="col-md-6">
+							<span class="follow">
+								Seguinos en
+							</span>
+						</div>
+						<div class="col-md-6">
+							<a target="_blank" href="http://www.facebook.com" class="facebook"><span class="icon icon-facebook"></span></a>
+							<a target="_blank" href="http://www.twitter.com" class="twitter"><span class="icon icon-twitter"></span></a>
+							<a target="_blank" href="http://www.youtube.com" class="youtube"><span class="icon icon-youtube"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>

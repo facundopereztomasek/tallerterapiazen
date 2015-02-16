@@ -9,8 +9,15 @@ $(document).ready(function(){
             modal_video
         ],
         'contacto':[
-            show_post_form()
+            show_post_form
         ],
+        'taller':[
+            form_validation
+        ],
+        'psicoterapia':[
+            form_validation
+        ],
+
     })
 
 })
@@ -28,37 +35,37 @@ function ie_detect(){
 
 
 function modal_init(){
-    if($(document.body).hasClass('ie') == false){
-        $(document.body).perfectScrollbar({
-            wheelSpeed:1,
-            wheelPropagation: true,
-            minScrollbarLength: 1
-        });
-
-        if($(".modal")[0]){
-
-            $(document)
-            .on( 'hidden.bs.modal', '.modal', function() {
-                $(document.body).perfectScrollbar('destroy');
-                $(document.body).perfectScrollbar({
-                    wheelSpeed: 1,
-                    wheelPropagation: true,
-                    minScrollbarLength: 1
-                });
-
-            })
-            .on( 'show.bs.modal', '.modal', function() {
-                $(document.body).perfectScrollbar('destroy');
-                $(document.body).perfectScrollbar({
-                    wheelSpeed: 	0,
-                    wheelPropagation: true,
-                    minScrollbarLength: 1
-                });
-
-            });
-
-        }
-    }
+    // if($(document.body).hasClass('ie') == false){
+    //     $(document.body).perfectScrollbar({
+    //         wheelSpeed:1,
+    //         wheelPropagation: true,
+    //         minScrollbarLength: 1
+    //     });
+    //
+    //     if($(".modal")[0]){
+    //
+    //         $(document)
+    //         .on( 'hidden.bs.modal', '.modal', function() {
+    //             $(document.body).perfectScrollbar('destroy');
+    //             $(document.body).perfectScrollbar({
+    //                 wheelSpeed: 1,
+    //                 wheelPropagation: true,
+    //                 minScrollbarLength: 1
+    //             });
+    //
+    //         })
+    //         .on( 'show.bs.modal', '.modal', function() {
+    //             $(document.body).perfectScrollbar('destroy');
+    //             $(document.body).perfectScrollbar({
+    //                 wheelSpeed: 	0,
+    //                 wheelPropagation: true,
+    //                 minScrollbarLength: 1
+    //             });
+    //
+    //         });
+    //
+    //     }
+    // }
 }
 
 function placeholder_init(){
@@ -77,6 +84,7 @@ function slick_init(){
 }
 
 function show_post_form(){
+    console.log('se')
     $('#show_form_post').click(
         function(){
             $(this).fadeOut(300,
@@ -130,13 +138,47 @@ function modal_video(){
 */
 function fixed_menu(){
     $(window).scroll(function(){
-        if($(document.body).scrollTop()>100){
+        if($(document.body).scrollTop()>170){
             $('.nav-bar').addClass('sticky');
+            $('body').css({'padding-top':'49px'});
         }else{
             $('.nav-bar').removeClass('sticky');
+            $('body').css({'padding-top':'0'});
         }
     })
 
+}
+
+/*
+    VALIDACION FORMULARIOS
+*/
+function form_validation(){
+
+    $('form').bind('submit',function(ev){
+        var valid = true;
+        var rule_email = /^[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+\.[a-zA-Z]{2,4}$/
+
+        var email = $('[name=email]');
+        var first = $('[name=nombre]');
+        var last = $('[name=apellido]');
+        var message = $('[name=mensaje]');
+
+
+        valid = rule_email.test( email.val() ) && (first.val() != '') && (last.val() != '') && (message.val() != '')
+
+        rule_email.test( email.val() ) ? email.removeClass('error') : email.addClass('error');
+        (first.val() != '') ? first.removeClass('error') : first.addClass('error');
+        (last.val() != '') ? last.removeClass('error') : last.addClass('error');
+        (message.val() != '') ? message.removeClass('error') : message.addClass('error');
+
+
+        if(!valid){
+            ev.preventDefault();
+            return;
+        }
+        $('.modal').modal('toggle');
+
+    })
 }
 
 

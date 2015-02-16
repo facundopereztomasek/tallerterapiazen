@@ -7,8 +7,8 @@
 	{{ HTML::script('bootstrap/js/bootstrap.min.js'); }}
 	{{ HTML::style('bootstrap/css/bootstrap.min.css'); }}
 	{{ HTML::style('bootstrap/css/bootstrap-theme.min.css');}}
-	{{ HTML::script('perfect-scrollbar/perfect-scrollbar.js'); }}
-	{{ HTML::style('perfect-scrollbar/perfect-scrollbar.css'); }}
+	<!-- {{ HTML::script('perfect-scrollbar/perfect-scrollbar.js'); }}
+	{{ HTML::style('perfect-scrollbar/perfect-scrollbar.css'); }} -->
 	{{ HTML::script('slick/slick.min.js'); }}
 	{{ HTML::style('slick/slick.css'); }}
 	{{ HTML::style('slick/slick-theme.css'); }}

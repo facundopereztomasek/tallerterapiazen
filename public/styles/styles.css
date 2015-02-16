@@ -76,6 +76,10 @@ body{
     background-size: cover;
 }
 
+.main{
+    min-height:600px;
+}
+
 /* Estilos de boton*/
 .btn-primary,
 .btn-danger{
@@ -300,7 +304,6 @@ body{
     background-color: rgba(255,255,255,0.15);
     border-radius:5px;
     box-shadow: 0 2px 4px -2px rgba(0,0,0,0.2);
-    margin-bottom:20px;
 }
 .loto-icon{
     position:absolute;
@@ -787,6 +790,7 @@ body.taller .contents{
     background-color:rgba(20,20,20,0.9);
     color:#aaaaaa;
     padding-top:10px;
+    margin-top:50px;
 }
 
 .follow{
@@ -845,7 +849,6 @@ html{
 body{
     position: relative;
     height: 100%;
-    overflow: hidden;
 }
 
 
@@ -912,6 +915,11 @@ body.ie{
     font: 20px/20px simonetta;
     color:#222;
     resize:none;
+}
+
+.modal-form input.error,
+.modal-form textarea.error{
+    background-color:rgba(255,0,0,0.2);
 }
 
 .modal-form .half-input input{
@@ -990,6 +998,18 @@ body.ie{
 /*********************************************/
 
 
+/* Estilos de formulario*/
+
+.modal-success{
+    font: 20px/22px della;
+    padding:40px 20px;
+    text-align:center;
+}
+
+/*********************************************/
+
+
+
 /* Estilos de scroll bar*/
 .ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y{
     background-color:#222;
@@ -1025,7 +1045,7 @@ body.ie{
     min-height:71px;
     padding-bottom:10px;
     margin-bottom:10px;
-    /*border-bottom: 10px solid rgba(217, 166, 73, 0.2);*/
+    min-height: 80px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1)
 }
 
