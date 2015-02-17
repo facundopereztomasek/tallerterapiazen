@@ -184,7 +184,7 @@
 				<div class="title-container">
 					<p class="title">Psicoterapia v&iacute;a Skype</p>
 				</div>
-			{{ Form::open( array('class'=>'modal-form clearfix')) }}
+			{{ Form::open( array('route'=>'inscribirse_taller','class'=>'modal-form clearfix')) }}
 				<p class="subtitle">Formulario de contacto</p>
 				<div class="input-container"><input type="hidden" value="taller1"></div>
 				<div class="input-container required"><input name="nombre" type="text" placeholder="nombre"></div>

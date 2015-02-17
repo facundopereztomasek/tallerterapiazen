@@ -8,10 +8,14 @@ Route::get('talleres',array('as' => 'talleres', 'uses' => 'EstaticoController@ge
 
 // Inscripciones
 Route::get('taller',array('as' => 'taller', 'uses' => 'InscripcionController@getTaller'));
-Route::post('taller',array('uses' => 'InscripcionController@postTaller'));
+Route::group(array('before'=>'csrf'), function(){
+	Route::post('inscribirse/taller',array('as' => 'inscribirse_taller', 'uses' => 'InscripcionController@postTaller'));
+});
 
 Route::get('psicoterapia',array('as' => 'psicoterapia', 'uses' => 'InscripcionController@getPsicoterapia'));
-Route::post('psicoterapia',array('uses' => 'InscripcionController@postPsicoterapia'));
+Route::group(array('before'=>'csrf'), function(){
+	Route::post('inscribirse/psicoterapia',array('as' => 'inscribirse_psicoterapia', 'uses' => 'InscripcionController@postPsicoterapia'));
+});
 
 // Contacto
 Route::get('contacto',array('as' => 'contacto', 'uses' => 'MensajeController@getMensajes'));

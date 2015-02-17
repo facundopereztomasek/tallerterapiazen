@@ -14,7 +14,14 @@
 	{{ HTML::style('styles/styles.css'); }}
 	{{ HTML::script('scripts/app.js'); }}
 </head>
-<body class="psicoterapia" data-section="psicoterapia">
+<!--[if IE]>
+	<body class="taller ie">
+<![endif]-->
+
+<!--[if !IE]><!-->
+<body class="taller" data-section="taller">
+<!--<![endif]-->
+
 	<header class="header">
 		<div class="container-fluid">
 			<div class="row">
@@ -34,11 +41,11 @@
 				<nav class="nav-bar clearfix">
 					<!-- <a class="link selected" href="#">home</a> -->
 					<div class="col-md-2 divisor"><a class="link" href="#"></a></div>
-					<div class="col-md-2 divisor">{{link_to_route('home', 'home',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('ensenanzas', 'ense&ntilde;anzas',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('talleres', 'talleres',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('psicoterapia', 'psicoterapia',null,array('class' => 'link selected'))}}<div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('contacto', 'contacto',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
+					<div class="col-md-2 divisor">{{link_to_route('home', 'home',null,array('class' => 'link'))}}</a><div class="hover-link"></div></div>
+					<div class="col-md-2 divisor">{{link_to_route('ensenanzas', 'ense&ntilde;anzas',null,array('class' => 'link'))}}</a><div class="hover-link"></div></div>
+					<div class="col-md-2 divisor">{{link_to_route('talleres', 'talleres',null,array('class' => 'link selected'))}}</a><div class="hover-link"></div></div>
+					<div class="col-md-2 divisor">{{link_to_route('psicoterapia', 'psicoterapia',null,array('class' => 'link'))}}</a><div class="hover-link"></div></div>
+					<div class="col-md-2 divisor">{{link_to_route('contacto', 'contacto',null,array('class' => 'link'))}}</a><div class="hover-link"></div></div>
 				</nav>
 			</div>
 		</div>
@@ -47,72 +54,72 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<article class="banner bg-taller-1 clearfix">
-						<h2 class="title">Psicoterapia v&iacute;a Skype</h2>
-						<div class="row separator">
-							<div class="col-md-8 no-gutter">
-								<p class="paragraph">
-									Siddharta, despu&eacute;s de casi morir de hambre a causa de un estricto ascetismo, se dio cuenta de que la moderaci&oacute;n entre los extremos de la experiencia sensorial.
-								</p>
+
+					<article class="workshop-view">
+						<header class="workshop-header">
+							<h1 class="title">Taller Psicolog&iacute;a Zen</h1>
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Inscribirse</button>
+						</header>
+						<div class="row">
+							<div class="col-md-8">
+								<div class="contents">
+									<p class="paragraph">Siddhartha es una novela alegórica escrita por Hermann Hesse en 1922 tras la primera guerra mundial. La misma relata la vida de un hombre hindú llamado Siddhartha. La obra ha sido considerada por el autor como un "poema hindú" y también, como la expresión esencial de su forma de vida. Muy leída en Oriente como tal, y menos en el mundo occidental.</p>
+									<p class="paragraph">La novela presenta un registro muy original en el que se unifican elementos líricos y épicos, incluyendo narración y meditación, elevación de la más alta espiritualidad, y, al mismo tiempo, descarnada sensualidad.</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<ul class="data">
+									<li><strong class="data-type">Fecha</strong><span class="data-info">19 de Mayo 2015</span></li>
+									<li><strong class="data-type">Hora</strong><span class="data-info">08.45 hs.</span></li>
+									<li><strong class="data-type">Lugar</strong><span class="data-info">Hip&oacute;lito Yrigoyen 2079</span></li>
+									<li><strong class="data-type">Costo</strong><span class="data-info">$ 250</span></li>
+								</ul>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-8">
-								<p class="tip">
-									Lic. Gustavo Dominguez
-								</p>
+								<span class="title-section">Primer parte</span>
+								<ul class="activity-list">
+									<li class="activity">
+										<span class="hours">08</span><span class="colon">:</span><span class="minutes">45</span>
+										<span class="activity-name">Bienvenida</span>
+									</li>
+									<li class="activity">
+										<span class="hours">22</span><span class="colon">:</span><span class="minutes">11</span>
+										<span class="activity-name">Bienvenida</span>
+									</li>
+									<li class="activity">
+										<span class="hours">08</span><span class="colon">:</span><span class="minutes">45</span>
+										<span class="activity-name">Bienvenida</span>
+									</li>
+
+								</ul>
 							</div>
 						</div>
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Contactar</button>
+						<div class="row">
+							<div class="col-md-8">
+								<span class="title-section">Primer parte</span>
+								<ul class="activity-list">
+									<li class="activity">
+										<span class="hours">08</span><span class="colon">:</span><span class="minutes">45</span>
+										<span class="activity-name">Bienvenida</span>
+									</li>
+									<li class="activity">
+										<span class="hours">08</span><span class="colon">:</span><span class="minutes">45</span>
+										<span class="activity-name">Bienvenida</span>
+									</li>
+									<li class="activity">
+										<span class="hours">08</span><span class="colon">:</span><span class="minutes">45</span>
+										<span class="activity-name">Bienvenida</span>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</article>
+
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-md-12">
-					<article class="banner bg-taller-1 clearfix">
-						<h2 class="title">Psicoterapia v&iacute;a Skype</h2>
-						<div class="row separator">
-							<div class="col-md-8 no-gutter">
-								<p class="paragraph">
-									Siddharta, despu&eacute;s de casi morir de hambre a causa de un estricto ascetismo, se dio cuenta de que la moderaci&oacute;n entre los extremos de la experiencia sensorial.
-								</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-8">
-								<p class="tip">
-									Lic. Gustavo Dominguez
-								</p>
-							</div>
-						</div>
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Contactar</button>
-					</article>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-12">
-					<article class="banner bg-taller-1 clearfix">
-						<h2 class="title">Psicoterapia v&iacute;a Skype</h2>
-						<div class="row separator">
-							<div class="col-md-8 no-gutter">
-								<p class="paragraph">
-									Siddharta, despu&eacute;s de casi morir de hambre a causa de un estricto ascetismo, se dio cuenta de que la moderaci&oacute;n entre los extremos de la experiencia sensorial.
-								</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-8">
-								<p class="tip">
-									Lic. Gustavo Dominguez
-								</p>
-							</div>
-						</div>
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Contactar</button>
-					</article>
-				</div>
-			</div>
 
 
 		</div>
@@ -177,20 +184,21 @@
 				<div class="title-container">
 					<p class="title">Psicoterapia v&iacute;a Skype</p>
 				</div>
-			{{ Form::open( array('route'=>'inscribirse_psicoterapia','class'=>'modal-form clearfix')) }}
+			{{ Form::open( array('class'=>'modal-form clearfix')) }}
 				<p class="subtitle">Formulario de contacto</p>
 				<div class="input-container"><input type="hidden" value="taller1"></div>
 				<div class="input-container required"><input name="nombre" type="text" placeholder="nombre"></div>
 				<div class="input-container required"><input name="apellido" type="text" placeholder="apellido"></div>
 				<div class="input-container required"><input name="email" type="text" placeholder="e-mail"></div>
-				<div class="input-container half-input clearfix"><input name="telefono" type="text" placeholder="tel&eacute;fono"><input name="skype" type="text" placeholder="skype"></div>
 				<div class="input-container"><textarea name="mensaje" id="" cols="30" rows="10" placeholder="mensaje"></textarea></div>
-				<div><button type="submit" class="btn btn-primary">Enviar</button></div>
+				<div><button type="submit" class="btn btn-primary" >Enviar</button></div>
 				<a href="#" class="cancel" data-dismiss="modal" aria-label="Close">Cancelar</a>
 			{{ Form::close() }}
 			</div>
 		</div>
 	</div>
 
+
+	<!-- <script> $(document).ready(function(){ $('button.btn[type=button]').click(); }) </script> -->
 </body>
 </html>

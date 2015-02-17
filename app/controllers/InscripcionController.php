@@ -27,8 +27,13 @@ class InscripcionController extends BaseController {
 
 		if( $save ){
 			$feedback = ['mensaje' => 'Te has inscripto.' , 'tipo' => 'success'];
+			// Usuario
 			Mail::queue('emails.eblast', $datos, function($message) use($contacto){
 			    $message->to($contacto['email'], $contacto['nombre'].' '.$contacto['apellido'])->subject('Gracias!');
+			});
+			// Admin
+			Mail::queue('emails.eblast', $datos, function($message) use($contacto){
+			    $message->to('lucianoperezt@gmail.com', $contacto['nombre'].' '.$contacto['apellido'])->subject('Usuario inscripto!');
 			});
 		}else{
 			$feedback = ['mensaje' => 'Error, no se pudo enviar el formulario, intentalo más tarde.' , 'tipo' => 'error'];
@@ -40,7 +45,7 @@ class InscripcionController extends BaseController {
 
 	private function viewPiscoterapia( $FEEDBACK = null ){
 		
-		return View::make('psicoterapia')
+		return Redirect::route('psicoterapia')
 			->with('feedback',$FEEDBACK);
 
 	}
@@ -71,8 +76,13 @@ class InscripcionController extends BaseController {
 
 		if( $save ){
 			$feedback = ['mensaje' => 'Te has inscripto.' , 'tipo' => 'success'];
+			// Usuario
 			Mail::queue('emails.eblast', $datos, function($message) use($contacto){
 			    $message->to($contacto['email'], $contacto['nombre'].' '.$contacto['apellido'])->subject('Gracias!');
+			});
+			// Admin
+			Mail::queue('emails.eblast', $datos, function($message) use($contacto){
+			    $message->to('lucianoperezt@gmail.com', $contacto['nombre'].' '.$contacto['apellido'])->subject('Usuario inscripto!');
 			});
 		}else{
 			$feedback = ['mensaje' => 'Error, no se pudo enviar el formulario, intentalo más tarde.' , 'tipo' => 'error'];
@@ -84,7 +94,7 @@ class InscripcionController extends BaseController {
 
 	private function viewTaller( $FEEDBACK = null ){
 
-		return View::make('taller')
+		return Redirect::route('taller')
 			->with('feedback',$FEEDBACK);
 
 	}
