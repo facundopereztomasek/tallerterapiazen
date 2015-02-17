@@ -12,6 +12,24 @@ class InscripcionController extends BaseController {
 	}
 
 	public function postPsicoterapia(){
+
+		// Validacion
+		$rules = array(
+				'nombre' => 'required',
+				'apellido' => 'required',
+				'email' => 'required',
+				'telefono' => 'required',
+				'skype' => 'required',
+				'mensaje' => 'required'
+			);
+
+	    $validator = Validator::make(Input::all(), $rules);
+
+	    if ($validator->fails()){
+	    	$feedback = ['mensaje' => 'Error, Debe rellenar todos los campos.' , 'tipo' => 'error'];
+	    	return $this->viewPiscoterapia( $feedback );
+	    }
+
 		// Tomo existente, sino Creo nuevo.
 		$contacto = Contacto::firstOrCreate(array('email' => Input::get('email')));
 		
@@ -60,6 +78,22 @@ class InscripcionController extends BaseController {
 	}
 
 	public function postTaller(){
+
+		// Validacion
+		
+		$rules = array(
+				'nombre' => 'required',
+				'apellido' => 'required',
+				'email' => 'required',
+				'mensaje' => 'required'
+			);
+		
+	    $validator = Validator::make(Input::all(), $rules);
+
+	    if ($validator->fails()){
+	    	$feedback = ['mensaje' => 'Error, Debe rellenar todos los campos.' , 'tipo' => 'error'];
+	    	return $this->viewTaller( $feedback );
+	    }
 
 		// Tomo existente, sino Creo nuevo.
 		$contacto = Contacto::firstOrCreate(array('email' => Input::get('email')));

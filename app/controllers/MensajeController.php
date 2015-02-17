@@ -15,6 +15,20 @@ class MensajeController extends BaseController {
 
 	public function postMensaje(){
 
+		// Validacion
+		$rules = array(
+				'nombre' => 'required',
+				'texto' => 'required',
+			);
+
+	    $validator = Validator::make(Input::all(), $rules);
+
+	    if ($validator->fails()){
+	    	$feedback = ['mensaje' => 'Error, Debe rellenar todos los campos.' , 'tipo' => 'error'];
+	    	return $this->viewContacto( $feedback );
+	    }
+
+	    // Guardar mensaje
 		$mensaje = new Mensaje();
 		$mensaje->nombre = Input::get('nombre');
 		$mensaje->texto = Input::get('texto');
