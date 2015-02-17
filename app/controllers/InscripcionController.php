@@ -3,11 +3,11 @@
 class InscripcionController extends BaseController {
 	
 	//-----------------------------------------
-	// Piscoterapia
+	// Psicoterapia
 	//-----------------------------------------
 	public function getPsicoterapia(){
 
-		return $this->viewPiscoterapia();		
+		return $this->viewPsicoterapia();		
 
 	}
 
@@ -27,7 +27,7 @@ class InscripcionController extends BaseController {
 
 	    if ($validator->fails()){
 	    	$feedback = ['mensaje' => 'Error, Debe rellenar todos los campos.' , 'tipo' => 'error'];
-	    	return $this->viewPiscoterapia( $feedback );
+	    	return $this->viewPsicoterapia( $feedback );
 	    }
 
 		// Tomo existente, sino Creo nuevo.
@@ -57,14 +57,18 @@ class InscripcionController extends BaseController {
 			$feedback = ['mensaje' => 'Error, no se pudo enviar el formulario, intentalo más tarde.' , 'tipo' => 'error'];
 		}
 
-		return $this->viewPiscoterapia( $feedback );
+		return $this->viewPsicoterapia( $feedback );
 
 	}
 
-	private function viewPiscoterapia( $FEEDBACK = null ){
+	private function viewPsicoterapia( $FEEDBACK = null ){
 		
-		return Redirect::route('psicoterapia')
-			->with('feedback',$FEEDBACK);
+		if( $FEEDBACK ){
+			return Redirect::route('psicoterapia')
+				->with('feedback',$FEEDBACK);
+		}else{
+			return View::make('psicoterapia');
+		}
 
 	}
 
@@ -73,7 +77,7 @@ class InscripcionController extends BaseController {
 	//-----------------------------------------
 	public function getTaller(){
 
-		return View::make('taller');
+		return $this->viewTaller();
 
 	}
 
@@ -128,8 +132,12 @@ class InscripcionController extends BaseController {
 
 	private function viewTaller( $FEEDBACK = null ){
 
-		return Redirect::route('taller')
-			->with('feedback',$FEEDBACK);
+		if( $FEEDBACK ){
+			return Redirect::route('taller')
+				->with('feedback',$FEEDBACK);
+		}else{
+			return View::make('taller');
+		}
 
 	}
 
