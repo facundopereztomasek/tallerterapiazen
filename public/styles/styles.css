@@ -558,6 +558,9 @@ body{
 .admin .landing-page{
     display:none;
 }
+.admin .post-content{
+    margin:0 0 27px;
+}
 
 .hover-link{
     position:absolute;

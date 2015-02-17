@@ -75,6 +75,11 @@
 										<p class="post-content">
 											{{{ $pregunta['respuesta']['texto'] }}}
 										</p>
+										<dd class="do-answer">
+											<div class="btn-group">
+												<a href="{{ route('pregunta_borrar', $pregunta['id']) }}" class="btn btn-danger btn-left send-post">Eliminar Pregunta</a>
+											</div>
+										</dd>
 									</dd>
 
 								@else
