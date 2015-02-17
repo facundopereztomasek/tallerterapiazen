@@ -28,11 +28,11 @@
 				<div class="col-md-12">
 					<div class="title-container">
 						<div class="wrapper">
-							<h1 class="title">Taller Psicolog&iacute;a Zen</h1>
+							<a href="{{route('home')}}"><h1 class="title">Taller Psicolog&iacute;a Zen</h1></a>
 							<div class="subtitle-container">
 								<strong class="subtitle">Tu mente: Conocela, Aquietala, Liberala.</strong>
 							</div>
-							<div class="site-logo"><img src="images/logo-taller-chico.png" alt="logo taller psicolog&iacute;a zen" width="140"></div>
+							<div class="site-logo"><a href="{{route('home')}}"><img src="images/logo-taller-chico.png" alt="logo taller psicolog&iacute;a zen" width="140"></a></div>
 						</div>
 					</div>
 				</div>
