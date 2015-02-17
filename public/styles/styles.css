@@ -607,6 +607,22 @@ body{
     box-shadow: 0 2px 4px  rgba(0,0,0,0.3);
 }
 
+.header .logo-circle{
+    position:absolute;
+    left:40%;
+    top:-25px;
+    border-radius: 100px;
+    width:60px;
+    height:60px;
+    padding:0;
+}
+
+.header .logo-circle img{
+    position:relative;
+    top:15px;
+    left:0px;
+}
+
 /*********************************************/
 
 

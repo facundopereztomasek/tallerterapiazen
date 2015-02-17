@@ -27,7 +27,7 @@
 							<div class="subtitle-container">
 								<strong class="subtitle">Tu mente: Conocela, Aquietala, Liberala.</strong>
 							</div>
-							<div class="site-logo"><img src="#" alt="logo taller psicolog&iacute;a zen" width="140"></div>
+							<div class="site-logo"><img src="images/logo-taller-chico.png" alt="logo taller psicolog&iacute;a zen" width="140"></div>
 						</div>
 					</div>
 				</div>
@@ -35,7 +35,7 @@
 			<div class="row">
 				<nav class="nav-bar clearfix">
 					<!-- <a class="link selected" href="#">home</a> -->
-					<div class="col-md-2 divisor"><a class="link" href="#"></a></div>
+					<div class="col-md-2 divisor"><a class="link logo-circle" href="{{route('home')}}"><img src="images/logo-mini.png" alt="logo taller psicolog&iacute;a zen" width="70"></a></div>
 					<div class="col-md-2 divisor">{{link_to_route('home', 'home',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
 					<div class="col-md-2 divisor">{{link_to_route('ensenanzas', 'ense&ntilde;anzas',null,array('class' => 'link selected'))}}<div class="hover-link"></div></div>
 					<div class="col-md-2 divisor">{{link_to_route('talleres', 'talleres',null,array('class' => 'link'))}}<div class="hover-link"></div></div>

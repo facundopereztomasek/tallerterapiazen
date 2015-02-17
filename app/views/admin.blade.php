@@ -25,7 +25,7 @@
 							<div class="subtitle-container">
 								<strong class="subtitle">Tu mente: Conocela, Aquietala, Liberala.</strong>
 							</div>
-							<div class="site-logo"><img src="#" alt="logo taller psicolog&iacute;a zen" width="140"></div>
+							<div class="site-logo"><img src="images/logo-taller-chico.png" alt="logo taller psicolog&iacute;a zen" width="140"></div>
 						</div>
 					</div>
 				</div>
