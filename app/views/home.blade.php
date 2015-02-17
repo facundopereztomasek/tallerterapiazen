@@ -17,7 +17,7 @@
 	<header class="header">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-xs-12 col-md-12">
 					<div class="title-container">
 						<div class="wrapper">
 							<a href="{{route('home')}}"><h1 class="title">Taller Psicolog&iacute;a Zen</h1></a>
@@ -32,12 +32,12 @@
 			<div class="row">
 				<nav class="nav-bar clearfix">
 					<!-- <a class="link selected" href="#">home</a> -->
-					<div class="col-md-2 divisor"><a class="link logo-circle" href="{{route('home')}}"><img src="images/logo-mini.png" alt="logo taller psicolog&iacute;a zen" width="70"></a></div>
-					<div class="col-md-2 divisor">{{link_to_route('home', 'home',null,array('class' => 'link selected'))}}<div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('ensenanzas', 'ense&ntilde;anzas',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('talleres', 'talleres',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('psicoterapia', 'psicoterapia',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('contacto', 'contacto',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor"><a class="link logo-circle" href="{{route('home')}}"><img src="images/logo-mini.png" alt="logo taller psicolog&iacute;a zen" width="70"></a></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('home', 'home',null,array('class' => 'link selected'))}}<div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('ensenanzas', 'ense&ntilde;anzas',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('talleres', 'talleres',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('psicoterapia', 'psicoterapia',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('contacto', 'contacto',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
 				</nav>
 			</div>
 		</div>
@@ -45,10 +45,10 @@
 	<main class="main">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-xs-12 col-md-12">
 					<article class="banner bg-taller-1 clearfix">
 						<h2 class="title">Taller: Introducci&oacute;n a la meditaci&oacute;n</h2>
-						<div class="col-md-6">
+						<div class="col-xs-6 col-md-6">
 							<p class="paragraph">
 								Siddharta, despu&eacute;s de casi morir de hambre a causa de un estricto ascetismo, se dio cuenta de que la moderaci&oacute;n entre los extremos de la experiencia sensorial.
 							</p>
@@ -61,7 +61,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-xs-4 col-md-4">
 					<article class="box bg-box-1">
 						<div class="title-container">
 							<h2 class="title">¿Qu&eacute; es la mente?</h2>
@@ -75,7 +75,7 @@
 					</article>
 				</div>
 
-				<div class="col-md-4">
+				<div class="col-xs-4 col-md-4">
 					<article class="box bg-box-1">
 						<div class="title-container">
 							<h2 class="title">Aquietar la mente</h2>
@@ -89,7 +89,7 @@
 					</article>
 				</div>
 
-				<div class="col-md-4">
+				<div class="col-xs-4 col-md-4">
 					<article class="box bg-box-1">
 						<div class="title-container">
 							<h2 class="title">Cese del sufrimiento</h2>
@@ -110,26 +110,26 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
-					<div class="col-md-5">
+				<div class="col-xs-8 col-md-8">
+					<div class="col-xs-5 col-md-5">
 						<div class="rights">
 							<span><a href="{{route('home')}}">Taller Psicolog&iacute;a Zen</a></span>
 						</div>
 					</div>
-					<div class="col-md-7">
+					<div class="col-xs-7 col-md-7">
 						<div class="designer">
 							<p>Dise&ntilde;o y desarrollo: 	<a target="_blank" href="http://www.facundotomasek.com.ar">Facundo P&eacute;rez Tomasek</a></p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-xs-4 col-md-4">
 					<div class="social">
-						<div class="col-md-6">
+						<div class="col-xs-6 col-md-6">
 							<span class="follow">
 								Seguinos en
 							</span>
 						</div>
-						<div class="col-md-6">
+						<div class="col-xs-6 col-md-6">
 							<a target="_blank" href="http://www.facebook.com" class="facebook"><span class="icon icon-facebook"></span></a>
 							<a target="_blank" href="http://www.twitter.com" class="twitter"><span class="icon icon-twitter"></span></a>
 							<a target="_blank" href="http://www.youtube.com" class="youtube"><span class="icon icon-youtube"></span></a>

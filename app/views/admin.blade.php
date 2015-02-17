@@ -18,7 +18,7 @@
 	<header class="header">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-xs-12 col-md-12">
 					<div class="title-container">
 						<div class="wrapper">
 							<a href="{{route('home')}}"><h1 class="title">Taller Psicolog&iacute;a Zen</h1></a>
@@ -33,15 +33,15 @@
 			<div class="row">
 				<nav class="nav-bar clearfix">
 					<!-- <a class="link selected" href="#">home</a> -->
-					<div class="col-md-2 divisor">
+					<div class="col-xs-2 col-md-2 divisor">
 						<a class="link landing-page" href="#"></a>
 						{{link_to_route('admin', 'Administrar',null,array('class' => 'link'))}}
 					</div>
-					<div class="col-md-2 divisor">{{link_to_route('home', 'home',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('ensenanzas', 'ense&ntilde;anzas',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('talleres', 'talleres',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('psicoterapia', 'psicoterapia',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('contacto', 'contacto',null,array('class' => 'link selected'))}}<div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('home', 'home',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('ensenanzas', 'ense&ntilde;anzas',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('talleres', 'talleres',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('psicoterapia', 'psicoterapia',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('contacto', 'contacto',null,array('class' => 'link selected'))}}<div class="hover-link"></div></div>
 				</nav>
 			</div>
 		</div>
@@ -53,7 +53,7 @@
 				<p>{{{ $feedback['mensaje'] }}}</p>
 			@endif
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-xs-12 col-md-12">
 					<div class="posts">
 
 						@foreach( $preguntas as $pregunta )
@@ -114,26 +114,26 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
-					<div class="col-md-5">
+				<div class="col-xs-8 col-md-8">
+					<div class="col-xs-5 col-md-5">
 						<div class="rights">
 							<span><a href="{{route('home')}}">Taller Psicolog&iacute;a Zen</a></span>
 						</div>
 					</div>
-					<div class="col-md-7">
+					<div class="col-xs-7 col-md-7">
 						<div class="designer">
 							<p>Dise&ntilde;o y desarrollo: 	<a target="_blank" href="http://www.facundotomasek.com.ar">Facundo P&eacute;rez Tomasek</a></p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-xs-4 col-md-4">
 					<div class="social">
-						<div class="col-md-6">
+						<div class="col-xs-6 col-md-6">
 							<span class="follow">
 								Seguinos en
 							</span>
 						</div>
-						<div class="col-md-6">
+						<div class="col-xs-6 col-md-6">
 							<a target="_blank" href="http://www.facebook.com" class="facebook"><span class="icon icon-facebook"></span></a>
 							<a target="_blank" href="http://www.twitter.com" class="twitter"><span class="icon icon-twitter"></span></a>
 							<a target="_blank" href="http://www.youtube.com" class="youtube"><span class="icon icon-youtube"></span></a>

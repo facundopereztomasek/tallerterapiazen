@@ -20,7 +20,7 @@
 	<header class="header">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-xs-12 col-md-12">
 					<div class="title-container">
 						<div class="wrapper">
 							<a href="{{route('home')}}"><h1 class="title">Taller Psicolog&iacute;a Zen</h1></a>
@@ -35,12 +35,12 @@
 			<div class="row">
 				<nav class="nav-bar clearfix">
 					<!-- <a class="link selected" href="#">home</a> -->
-					<div class="col-md-2 divisor"><a class="link logo-circle" href="{{route('home')}}"><img src="images/logo-mini.png" alt="logo taller psicolog&iacute;a zen" width="70"></a></div>
-					<div class="col-md-2 divisor">{{link_to_route('home', 'home',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('ensenanzas', 'ense&ntilde;anzas',null,array('class' => 'link selected'))}}<div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('talleres', 'talleres',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('psicoterapia', 'psicoterapia',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('contacto', 'contacto',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor"><a class="link logo-circle" href="{{route('home')}}"><img src="images/logo-mini.png" alt="logo taller psicolog&iacute;a zen" width="70"></a></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('home', 'home',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('ensenanzas', 'ense&ntilde;anzas',null,array('class' => 'link selected'))}}<div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('talleres', 'talleres',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('psicoterapia', 'psicoterapia',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('contacto', 'contacto',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
 				</nav>
 			</div>
 		</div>
@@ -48,14 +48,14 @@
 	<main class="main">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 story-container">
+				<div class="col-xs-12 col-md-12 story-container">
 					<div class="row">
-						<div class="col-md-10 col-md-push-1">
+						<div class="col-xs-10 col-md-10 col-sm-push-1">
 							<h1 class="title-story">Mini historias</h1>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-10 col-md-push-1">
+						<div class="col-xs-10 col-md-10 col-sm-push-1">
 							<div class="story-slider">
 								<article class="box box-story bg-box-1">
 									<div class="title-container">
@@ -143,14 +143,14 @@
 
 
 			<div class="row loto-container">
-				<div class="col-md-6 video-container">
+				<div class="col-xs-6 col-md-6 video-container">
 					<div class="row no-margin-bottom">
-						<div class="col-md-10 col-md-push-1">
+						<div class="col-xs-10 col-md-10 col-sm-push-1">
 							<h1 class="title-story">Videos</h1>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-5 col-md-push-1">
+						<div class="col-xs-5 col-md-5 col-sm-push-1">
 							<div class="video-preview-container"><img src="http://i.ytimg.com/vi/QlD-HWpvW40/0.jpg" width="100%">
 								<button type="button" class="video-button" data-toggle="modal" data-target=".bs-example-modal-lg" data-src="http://www.youtube.com/embed/QlD-HWpvW40"></button>
 							</div>
@@ -160,7 +160,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-md-5 col-md-push-1">
+						<div class="col-xs-5 col-md-5 col-sm-push-1">
 							<div class="video-preview-container"><img src="http://i.ytimg.com/vi/XVhhCu024B0/0.jpg" width="100%">
 								<button type="button" class="video-button" data-toggle="modal" data-target=".bs-example-modal-lg" data-src="http://www.youtube.com/embed/XVhhCu024B0"></button>
 							</div>
@@ -172,7 +172,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-5 col-md-push-1">
+						<div class="col-xs-5 col-md-5 col-sm-push-1">
 							<div class="video-preview-container"><img src="http://i.ytimg.com/vi/PKjDHiMY17Y/0.jpg" width="100%">
 								<button type="button" class="video-button" data-toggle="modal" data-target=".bs-example-modal-lg" data-src="http://www.youtube.com/embed/PKjDHiMY17Y"></button>
 							</div>
@@ -182,7 +182,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-md-5 col-md-push-1">
+						<div class="col-xs-5 col-md-5 col-sm-push-1">
 							<div class="video-preview-container"><img src="http://i.ytimg.com/vi/mQaY1Py4B70/0.jpg" width="100%">
 								<button type="button" class="video-button" data-toggle="modal" data-target=".bs-example-modal-lg" data-src="http://www.youtube.com/embed/mQaY1Py4B70"></button>
 							</div>
@@ -194,7 +194,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-5 col-md-push-1">
+						<div class="col-xs-5 col-md-5 col-sm-push-1">
 							<div class="video-preview-container"><img src="http://i.ytimg.com/vi/t3HMmmjtKFI/0.jpg" width="100%">
 								<button type="button" class="video-button" data-toggle="modal" data-target=".bs-example-modal-lg" data-src="http://www.youtube.com/embed/t3HMmmjtKFI"></button>
 							</div>
@@ -204,7 +204,7 @@
 								</p>
 							</div>
 						</div>
-						<!-- <div class="col-md-5 col-md-push-1">
+						<!-- <div class="col-xs-5 col-md-5 col-sm-push-1">
 							<div class="video-preview-container"><img src="http://i.ytimg.com/vi/QlD-HWpvW40/0.jpg" width="100%"></div>	#
 			<d class="link"iv class="title-video">
 								<p>
@@ -215,14 +215,14 @@
 					</div>
 				</div>
 				{{ HTML::image('images/loto_icon.png' , 'Loto' , array('class'=>'loto-icon')) }}
-				<div class="col-md-6 text-container">
+				<div class="col-xs-6 col-md-6 text-container">
 					<div class="row">
-						<div class="col-md-10 col-md-push-1">
+						<div class="col-xs-10 col-md-10 col-sm-push-1">
 							<h1 class="title-story">Textos</h1>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-10 col-md-push-1">
+						<div class="col-xs-10 col-md-10 col-sm-push-1">
 							<ul class="texts-list">
 								<li><a class="link" href="">Las ense&ntilde;anzas de Buda</a>
 									<p class="abstract">Abstract del texto para que se sepa de que trata.</p>
@@ -262,26 +262,26 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
-					<div class="col-md-5">
+				<div class="col-xs-8 col-md-8">
+					<div class="col-xs-5 col-md-5">
 						<div class="rights">
 							<span><a href="{{route('home')}}">Taller Psicolog&iacute;a Zen</a></span>
 						</div>
 					</div>
-					<div class="col-md-7">
+					<div class="col-xs-7 col-md-7">
 						<div class="designer">
 							<p>Dise&ntilde;o y desarrollo: 	<a target="_blank" href="http://www.facundotomasek.com.ar">Facundo P&eacute;rez Tomasek</a></p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-xs-4 col-md-4">
 					<div class="social">
-						<div class="col-md-6">
+						<div class="col-xs-6 col-md-6">
 							<span class="follow">
 								Seguinos en
 							</span>
 						</div>
-						<div class="col-md-6">
+						<div class="col-xs-6 col-md-6">
 							<a target="_blank" href="http://www.facebook.com" class="facebook"><span class="icon icon-facebook"></span></a>
 							<a target="_blank" href="http://www.twitter.com" class="twitter"><span class="icon icon-twitter"></span></a>
 							<a target="_blank" href="http://www.youtube.com" class="youtube"><span class="icon icon-youtube"></span></a>

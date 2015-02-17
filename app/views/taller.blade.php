@@ -25,7 +25,7 @@
 	<header class="header">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-xs-12 col-md-12">
 					<div class="title-container">
 						<div class="wrapper">
 							<a href="{{route('home')}}"><h1 class="title">Taller Psicolog&iacute;a Zen</h1></a>
@@ -40,12 +40,12 @@
 			<div class="row">
 				<nav class="nav-bar clearfix">
 					<!-- <a class="link selected" href="#">home</a> -->
-					<div class="col-md-2 divisor"><a class="link logo-circle" href="{{route('home')}}"><img src="images/logo-mini.png" alt="logo taller psicolog&iacute;a zen" width="70"></a></div>
-					<div class="col-md-2 divisor">{{link_to_route('home', 'home',null,array('class' => 'link'))}}</a><div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('ensenanzas', 'ense&ntilde;anzas',null,array('class' => 'link'))}}</a><div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('talleres', 'talleres',null,array('class' => 'link selected'))}}</a><div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('psicoterapia', 'psicoterapia',null,array('class' => 'link'))}}</a><div class="hover-link"></div></div>
-					<div class="col-md-2 divisor">{{link_to_route('contacto', 'contacto',null,array('class' => 'link'))}}</a><div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor"><a class="link logo-circle" href="{{route('home')}}"><img src="images/logo-mini.png" alt="logo taller psicolog&iacute;a zen" width="70"></a></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('home', 'home',null,array('class' => 'link'))}}</a><div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('ensenanzas', 'ense&ntilde;anzas',null,array('class' => 'link'))}}</a><div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('talleres', 'talleres',null,array('class' => 'link selected'))}}</a><div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('psicoterapia', 'psicoterapia',null,array('class' => 'link'))}}</a><div class="hover-link"></div></div>
+					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('contacto', 'contacto',null,array('class' => 'link'))}}</a><div class="hover-link"></div></div>
 				</nav>
 			</div>
 		</div>
@@ -53,7 +53,7 @@
 	<main class="main">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-xs-12 col-md-12">
 
 					<article class="workshop-view">
 						<header class="workshop-header">
@@ -61,13 +61,13 @@
 							<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Inscribirse</button>
 						</header>
 						<div class="row">
-							<div class="col-md-8">
+							<div class="col-xs-8 col-md-8">
 								<div class="contents">
 									<p class="paragraph">Siddhartha es una novela alegórica escrita por Hermann Hesse en 1922 tras la primera guerra mundial. La misma relata la vida de un hombre hindú llamado Siddhartha. La obra ha sido considerada por el autor como un "poema hindú" y también, como la expresión esencial de su forma de vida. Muy leída en Oriente como tal, y menos en el mundo occidental.</p>
 									<p class="paragraph">La novela presenta un registro muy original en el que se unifican elementos líricos y épicos, incluyendo narración y meditación, elevación de la más alta espiritualidad, y, al mismo tiempo, descarnada sensualidad.</p>
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-xs-4 col-md-4">
 								<ul class="data">
 									<li><strong class="data-type">Fecha</strong><span class="data-info">19 de Mayo 2015</span></li>
 									<li><strong class="data-type">Hora</strong><span class="data-info">08.45 hs.</span></li>
@@ -77,7 +77,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-8">
+							<div class="col-xs-8 col-md-8">
 								<span class="title-section">Primer parte</span>
 								<ul class="activity-list">
 									<li class="activity">
@@ -97,7 +97,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-8">
+							<div class="col-xs-8 col-md-8">
 								<span class="title-section">Primer parte</span>
 								<ul class="activity-list">
 									<li class="activity">
@@ -127,26 +127,26 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
-					<div class="col-md-5">
+				<div class="col-xs-8 col-md-8">
+					<div class="col-xs-5 col-md-5">
 						<div class="rights">
 							<span><a href="{{route('home')}}">Taller Psicolog&iacute;a Zen</a></span>
 						</div>
 					</div>
-					<div class="col-md-7">
+					<div class="col-xs-7 col-md-7">
 						<div class="designer">
 							<p>Dise&ntilde;o y desarrollo: 	<a target="_blank" href="http://www.facundotomasek.com.ar">Facundo P&eacute;rez Tomasek</a></p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-xs-4 col-md-4">
 					<div class="social">
-						<div class="col-md-6">
+						<div class="col-xs-6 col-md-6">
 							<span class="follow">
 								Seguinos en
 							</span>
 						</div>
-						<div class="col-md-6">
+						<div class="col-xs-6 col-md-6">
 							<a target="_blank" href="http://www.facebook.com" class="facebook"><span class="icon icon-facebook"></span></a>
 							<a target="_blank" href="http://www.twitter.com" class="twitter"><span class="icon icon-twitter"></span></a>
 							<a target="_blank" href="http://www.youtube.com" class="youtube"><span class="icon icon-youtube"></span></a>
