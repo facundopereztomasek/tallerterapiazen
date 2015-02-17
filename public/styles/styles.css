@@ -540,11 +540,15 @@ body{
 
 /* Estilos de links*/
 
+.nav-bar .link,
+.nav-bar .link:visited{
+    color: #97826c;
+    display:inline-block;
+}
+
 .link,
 .link:visited{
     font: 20px simonettaitalic;
-    color: #97826c;
-    display:inline-block;
     width:100%;
     text-align:center;
     padding:10px;
@@ -830,7 +834,6 @@ body.taller .contents{
 .rights{
     font:40px/35px simonettablack;
     padding-top:8px;
-    padding-right:50px;
 }
 
 .designer{

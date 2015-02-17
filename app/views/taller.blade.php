@@ -130,7 +130,7 @@
 				<div class="col-md-8">
 					<div class="col-md-5">
 						<div class="rights">
-							<span><a href="http://www.tallerterapiazen.com.ar">Taller Terapia Zen</a></span>
+							<span><a href="{{route('home')}}">Taller Psicolog&iacute;a Zen</a></span>
 						</div>
 					</div>
 					<div class="col-md-7">
