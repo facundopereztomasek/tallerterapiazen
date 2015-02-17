@@ -16,8 +16,10 @@ class CrearTablaRespuestas extends Migration {
 			Schema::create('respuestas', function($table){
 			    $table->increments('id');
 
-			    $table->string('mensaje_id');
-			    $table->foreign('mensaje_id')->references('id')->on('mensajes');
+			    $table->integer('mensaje_id')->unsigned();
+			    $table->foreign('mensaje_id')->references('id')->on('mensajes')
+			    	->onUpdate('cascade')
+			    	->onDelete('cascade');
 
 			    $table->text('texto');
 			    $table->timestamps();

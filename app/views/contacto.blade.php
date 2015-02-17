@@ -60,22 +60,24 @@
 							{{ Form::close() }}
 						</div>
 						@foreach( $respuestas as $respuesta )
-							<dl class="post">
-								<dt class="question">
-									<strong class="post-author">{{{ $respuesta->mensaje->nombre }}}</strong>
-									<time class="post-time">({{{ date("d-m-Y",strtotime($respuesta->mensaje->created_at)) }}})</time>
-									<p class="post-content">
-										{{{ $respuesta->mensaje->texto }}}
-									</p>
-								</dt>
-								<dd class="answer">
-									<strong class="post-author">Gustavo</strong>
-									<time class="post-time">({{{ date("d-m-Y",strtotime($respuesta->created_at)) }}})</time>
-									<p class="post-content">
-										{{{ $respuesta->texto }}}
-									</p>
-								</dd>
-							</dl>
+							@if( ISSET($respuesta->mensaje) )
+								<dl class="post">
+									<dt class="question">
+										<strong class="post-author">{{{ $respuesta->mensaje->nombre }}}</strong>
+										<time class="post-time">({{{ date("d-m-Y",strtotime($respuesta->mensaje->created_at)) }}})</time>
+										<p class="post-content">
+											{{{ $respuesta->mensaje->texto }}}
+										</p>
+									</dt>
+									<dd class="answer">
+										<strong class="post-author">Gustavo</strong>
+										<time class="post-time">({{{ date("d-m-Y",strtotime($respuesta->created_at)) }}})</time>
+										<p class="post-content">
+											{{{ $respuesta->texto }}}
+										</p>
+									</dd>
+								</dl>
+							@endif
 						@endforeach
 
 
