@@ -41,5 +41,10 @@ class TodoSeeder extends Seeder {
 	    		'texto' => 'Ni idea.',
 	        ));
     	}
+        DB::table('users')->delete();
+        User::create(array(
+            'user' => 'gustavo',
+            'password' => '$2y$10$BWw7s/DIj5w5MhhYVg6YwetYfg7ns1G7bnZXcjBJnWo.OZhxEz1jy'
+        ));
     }
 }

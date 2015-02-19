@@ -31,6 +31,10 @@ Route::post('admin/login_admin_zen',array('uses' => 'LoginController@doLogin'));
 
 Route::get('admin/logout',array('as' => 'logout', 'uses' => 'LoginController@doLogout'));
 
+
+Route::get('admin/generar_password',array('as' => 'generar_password', 'uses' => 'LoginController@doGenerarPassword'));
+Route::get('admin/nuevo_password/{codigo}',array('as' => 'nuevo_password', 'uses' => 'LoginController@doNuevoPassword'));
+
 Route::group(["before" => "auth"], function(){
 	// Admin
 	Route::get('admin/cms_admin_zen',array('as' => 'admin', 'uses' => 'AdminController@showAdmin'));

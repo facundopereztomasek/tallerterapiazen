@@ -48,14 +48,7 @@
 	</header>
 	<main class="main">
 		<div class="container">
-			{{ Form::open() }}
-				<input type="text" name="usuario" />
-				<input type="password" name="password" />
-				<input type="submit" value="Enviar" />
-				{{$errors->first('usuario')}}
-				{{$errors->first('password')}}
-				{{link_to_route('generar_password', 'Olvide mi contraseña',null,array())}}
-			{{ Form::close() }}
+			<p>Se generó un nueva contraseña, verificá tu email para poder loguearte.</p>
 		</div>
 	</main>
 </body>
