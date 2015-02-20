@@ -138,7 +138,7 @@
 		</div>
 	</footer>
 	<!-- Feedback acciones -->
-	@if( ISSET($feedback) )
+	@if( $feedback || Session::get('feedback') )
 
 		<!-- MODALES -->
 		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -148,7 +148,11 @@
 					<div class="title-container">
 						<p class="title">Contacto</p>
 					</div>
-					<p class="modal-success">{{{ $feedback['mensaje'] }}}</p>
+					@if( $feedback )
+						<p class="modal-success">{{{ $feedback['mensaje'] }}}</p>
+					@elseif( Session::get('feedback') )
+						<p class="modal-success">{{ Session::get('feedback')['mensaje'] }}</p>
+					@endif
 				</div>
 			</div>
 		</div>

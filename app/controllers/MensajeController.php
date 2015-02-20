@@ -42,7 +42,7 @@ class MensajeController extends BaseController {
 		}
 
 		$respuestas = Respuesta::with('mensaje')->orderBy('created_at','desc')->get();
-		return Redirect::make('contacto')
+		return Redirect::route('contacto')
 			->with('respuestas',$respuestas)
 			->with('feedback',$feedback);
 
