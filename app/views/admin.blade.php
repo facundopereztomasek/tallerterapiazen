@@ -35,7 +35,9 @@
 					<!-- <a class="link selected" href="#">home</a> -->
 					<div class="col-xs-2 col-md-2 divisor">
 						<a class="link landing-page" href="#"></a>
-						{{link_to_route('admin', 'Administrar',null,array('class' => 'link'))}}
+						{{link_to_route('admin', 'Administrar',null,array('class' => 'link inline'))}}
+						<span>/</span>
+						{{link_to_route('logout', 'Logout',null,array('class' => 'link inline'))}}
 					</div>
 					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('home', 'home',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
 					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('ensenanzas', 'ense&ntilde;anzas',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
@@ -48,10 +50,6 @@
 	</header>
 	<main class="main">
 		<div class="container">
-			<!-- Feedback acciones -->
-			@if( ISSET($feedback) )
-				<p>{{{ $feedback['mensaje'] }}}</p>
-			@endif
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
 					<div class="posts">
@@ -143,5 +141,47 @@
 			</div>
 		</div>
 	</footer>
+	
+	<!-- Feedback acciones -->
+	@if( ISSET($feedback) )
+
+		<!-- MODALES -->
+		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<div class="title-container">
+						<p class="title">Contacto</p>
+					</div>
+					<p class="modal-success">{{{ $feedback['mensaje'] }}}</p>
+				</div>
+			</div>
+		</div>
+		<script>
+			$('.modal').modal('toggle');
+		</script>
+	@endif
+
+	<!-- MODALES -->
+	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<div class="title-container">
+					<p class="title">Psicoterapia v&iacute;a Skype</p>
+				</div>
+			{{ Form::open( array('route'=>'inscribirse_taller','class'=>'modal-form clearfix')) }}
+				<p class="subtitle">Formulario de contacto</p>
+				<div class="input-container"><input type="hidden" value="taller1"></div>
+				<div class="input-container required"><input name="nombre" type="text" placeholder="nombre"></div>
+				<div class="input-container required"><input name="apellido" type="text" placeholder="apellido"></div>
+				<div class="input-container required"><input name="email" type="text" placeholder="e-mail"></div>
+				<div class="input-container"><textarea name="mensaje" id="" cols="30" rows="10" placeholder="mensaje"></textarea></div>
+				<div><button type="submit" class="btn btn-primary" >Enviar</button></div>
+				<a href="#" class="cancel" data-dismiss="modal" aria-label="Close">Cancelar</a>
+			{{ Form::close() }}
+			</div>
+		</div>
+	</div>
 </body>
 </html>

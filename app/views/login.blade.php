@@ -50,29 +50,29 @@
 		<div class="container">
 			{{ Form::open() }}
 				<div class="row">
-					<div class="col-md-4">
-						<h1>Login</h1><br/>
-						<div class="form-group">
-						    <label for="exampleInputEmail1">Password</label>
-						    <input type="text" name="usuario" class="form-control" placeholder="Usuario">
+					<div class="col-xs-4 col-md-4 col-md-offset-4 form-login">
+						<div class="col-xs-12 col-md-12">
+							<h1 class="title">Login</h1>
+							<div class="form-group">
+							    <input type="text" name="usuario" class="form-control" placeholder="Usuario">
+							</div>
+							<div class="form-group">
+							    <input type="password" name="password" class="form-control" placeholder="Contraseña">
+							</div>
+							<br/>
+
+							{{$errors->first('usuario')}}
+							{{$errors->first('password')}}
 						</div>
-						<div class="form-group">
-						    <label for="exampleInputEmail1">Contraseña</label>
-						    <input type="password" name="password" class="form-control" placeholder="Contraseña">
+
+						<div class="col-xd-7 col-md-7">
+							{{link_to_route('generar_password', 'Olvide mi contraseña',null,array('class'=>'btn btn-default'))}}
 						</div>
-						<br/>
-						
-						{{$errors->first('usuario')}}
-						{{$errors->first('password')}}
+						<div class="col-xd-5 col-md-5">
+							<input type="submit" value="Enviar" class="btn btn-primary"/>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-2">
-						<input type="submit" value="Enviar" class="btn btn-success"/>
-					</div>
-					<div class="col-md-2">
-						{{link_to_route('generar_password', 'Olvide mi contraseña',null,array('class'=>'btn btn-default'))}}
-					</div>
+
 				</div>
 			{{ Form::close() }}
 		</div>
