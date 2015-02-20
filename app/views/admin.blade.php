@@ -25,7 +25,7 @@
 							<div class="subtitle-container">
 								<strong class="subtitle">Tu mente: Conocela, Aquietala, Liberala.</strong>
 							</div>
-							<div class="site-logo"><a href="{{route('home')}}"><img src="images/logo-taller-chico.png" alt="logo taller psicolog&iacute;a zen" width="140"></a></div>
+							<div class="site-logo"><a href="{{route('home')}}"><img src="../images/logo-taller-chico.png" alt="logo taller psicolog&iacute;a zen" width="140"></a></div>
 						</div>
 					</div>
 				</div>
@@ -141,9 +141,9 @@
 			</div>
 		</div>
 	</footer>
-	
+
 	<!-- Feedback acciones -->
-	@if( $feedback || Session::get('feedback') )
+	@if( ISSET($feedback) )
 
 		<!-- MODALES -->
 		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -153,11 +153,7 @@
 					<div class="title-container">
 						<p class="title">Contacto</p>
 					</div>
-					@if( $feedback )
-						<p class="modal-success">{{{ $feedback['mensaje'] }}}</p>
-					@elseif( Session::get('feedback') )
-						<p class="modal-success">{{ Session::get('feedback')['mensaje'] }}</p>
-					@endif
+					<p class="modal-success">{{{ $feedback['mensaje'] }}}</p>
 				</div>
 			</div>
 		</div>
@@ -166,26 +162,5 @@
 		</script>
 	@endif
 
-	<!-- MODALES -->
-	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<div class="title-container">
-					<p class="title">Psicoterapia v&iacute;a Skype</p>
-				</div>
-			{{ Form::open( array('route'=>'inscribirse_taller','class'=>'modal-form clearfix')) }}
-				<p class="subtitle">Formulario de contacto</p>
-				<div class="input-container"><input type="hidden" value="taller1"></div>
-				<div class="input-container required"><input name="nombre" type="text" placeholder="nombre"></div>
-				<div class="input-container required"><input name="apellido" type="text" placeholder="apellido"></div>
-				<div class="input-container required"><input name="email" type="text" placeholder="e-mail"></div>
-				<div class="input-container"><textarea name="mensaje" id="" cols="30" rows="10" placeholder="mensaje"></textarea></div>
-				<div><button type="submit" class="btn btn-primary" >Enviar</button></div>
-				<a href="#" class="cancel" data-dismiss="modal" aria-label="Close">Cancelar</a>
-			{{ Form::close() }}
-			</div>
-		</div>
-	</div>
 </body>
 </html>
