@@ -61,9 +61,11 @@
 						    <input type="password" name="password" class="form-control" placeholder="Contraseña">
 						</div>
 						<br/>
-						
-						{{$errors->first('usuario')}}
-						{{$errors->first('password')}}
+						@if( isset($fail) )
+							<div class="form-group">
+								<p class="bg-danger">Usuario y/o contraseña incorrectos!</p>
+							</div>
+						@endif
 					</div>
 				</div>
 				<div class="row">
