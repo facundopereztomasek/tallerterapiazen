@@ -18,8 +18,6 @@ class InscripcionController extends BaseController {
 				'nombre' => 'required',
 				'apellido' => 'required',
 				'email' => 'required',
-				'telefono' => 'required',
-				'skype' => 'required',
 				'mensaje' => 'required'
 			);
 
