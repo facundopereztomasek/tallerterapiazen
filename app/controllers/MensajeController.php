@@ -15,6 +15,7 @@ class MensajeController extends BaseController {
 
 	public function postMensaje(){
 
+		$feedback = null;
 		// Validacion
 		$rules = array(
 				'nombre' => 'required',
@@ -40,7 +41,10 @@ class MensajeController extends BaseController {
 			$feedback = ['mensaje' => 'Error, no se pudo enviar tu pregunta, intentalo más tarde.' , 'tipo' => 'error'];
 		}
 
-		return $this->viewContacto( $feedback );
+		$respuestas = Respuesta::with('mensaje')->orderBy('created_at','desc')->get();
+		return Redirect::make('contacto')
+			->with('respuestas',$respuestas)
+			->with('feedback',$feedback);
 
 	}
 

@@ -27,7 +27,7 @@ class AdminController extends BaseController {
 			$feedback = ['mensaje' => 'Error, no se pudo responder la pregunta, intentalo más tarde.' , 'tipo' => 'error'];
 		}
 
-		return $this->viewAdmin( $feedback );
+		return Redirect::back()->with('feedback',$feedback);
 
 	}
 
@@ -43,7 +43,7 @@ class AdminController extends BaseController {
 			$feedback = ['mensaje' => 'Error, no se pudo borrar la pregunta, intentalo más tarde.' , 'tipo' => 'error'];
 		}
 
-		return $this->viewAdmin( $feedback );
+		return Redirect::back()->with('feedback',$feedback);
 
 	}
 
