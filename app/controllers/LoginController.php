@@ -18,7 +18,8 @@ class LoginController extends BaseController {
     	if($attempt){
 			return Redirect::route('admin');
 		}else{
-			return Redirect::route('login')->withErrors($attempt);
+			//return 'ahh!';
+			return View::make('login')->with('fail',true);
 		}
 
 	}

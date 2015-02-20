@@ -71,9 +71,26 @@
 						<div class="col-xd-5 col-md-5">
 							<input type="submit" value="Enviar" class="btn btn-primary"/>
 						</div>
+<!-- <<<<<<< HEAD
+=======
+						<br/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<input type="submit" value="Enviar" class="btn btn-success"/>
+					</div>
+					<div class="col-md-2">
+						{{link_to_route('generar_password', 'Olvide mi contraseña',null,array('class'=>'btn btn-default'))}}
+>>>>>>> 1d7dbd370b7beecb25d82bab01038dadfa839c5c -->
 					</div>
 
 				</div>
+						@if( isset($fail) )
+							<div class="form-group">
+								<p class="bg-danger">Usuario y/o contraseña incorrectos!</p>
+							</div>
+						@endif
 			{{ Form::close() }}
 		</div>
 	</main>
