@@ -25,7 +25,7 @@
 							<div class="subtitle-container">
 								<strong class="subtitle">Tu mente: Conocela, Aquietala, Liberala.</strong>
 							</div>
-							<div class="site-logo"><a href="{{route('home')}}"><img src="images/logo-taller-chico.png" alt="logo taller psicolog&iacute;a zen" width="140"></a></div>
+							<div class="site-logo"><a href="{{route('home')}}"><img src="../images/logo-taller-chico.png" alt="logo taller psicolog&iacute;a zen" width="140"></a></div>
 						</div>
 					</div>
 				</div>
@@ -71,27 +71,30 @@
 						<div class="col-xd-5 col-md-5">
 							<input type="submit" value="Enviar" class="btn btn-primary"/>
 						</div>
-<!-- <<<<<<< HEAD
-=======
-						<br/>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-2">
-						<input type="submit" value="Enviar" class="btn btn-success"/>
-					</div>
-					<div class="col-md-2">
-						{{link_to_route('generar_password', 'Olvide mi contraseña',null,array('class'=>'btn btn-default'))}}
->>>>>>> 1d7dbd370b7beecb25d82bab01038dadfa839c5c -->
 					</div>
 
 				</div>
-						@if( isset($fail) )
-							<div class="form-group">
-								<p class="bg-danger">Usuario y/o contraseña incorrectos!</p>
-							</div>
-						@endif
+
 			{{ Form::close() }}
+			<!-- Feedback acciones -->
+			@if( isset($fail) )
+
+				<!-- MODALES -->
+				<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<div class="title-container">
+								<p class="title">Contacto</p>
+							</div>
+							<p class="modal-success">Usuario y/o contrase&ntilde;a incorrectos</p>
+						</div>
+					</div>
+				</div>
+				<script>
+					$('.modal').modal('toggle');
+				</script>
+			@endif
 		</div>
 	</main>
 </body>
