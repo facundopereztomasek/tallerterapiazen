@@ -73,11 +73,32 @@ class InscripcionController extends BaseController {
 	//-----------------------------------------
 	// Talleres
 	//-----------------------------------------
-	public function getTaller(){
+	public function getTaller1(){
 
-		return $this->viewTaller();
+		return $this->viewTaller1();
 
 	}
+	public function getTaller2(){
+
+		return $this->viewTaller2();
+
+	}
+	public function getTaller3(){
+
+		return $this->viewTaller3();
+
+	}
+	public function getTaller4(){
+
+		return $this->viewTaller4();
+
+	}
+
+
+
+	//--------------------------------------
+	// POST TALLER
+	//--------------------------------------
 
 	public function postTaller(){
 
@@ -96,6 +117,8 @@ class InscripcionController extends BaseController {
 	    	$feedback = ['mensaje' => 'Error, Debe rellenar todos los campos.' , 'tipo' => 'error'];
 	    	return $this->viewTaller( $feedback );
 	    }
+
+	    $taller = Input::get('taller');
 
 		// Tomo existente, sino Creo nuevo.
 		$contacto = Contacto::firstOrCreate(array('email' => Input::get('email')));
@@ -124,17 +147,75 @@ class InscripcionController extends BaseController {
 			$feedback = ['mensaje' => 'Error, no se pudo enviar el formulario, intentalo más tarde.' , 'tipo' => 'error'];
 		}
 
-		return $this->viewTaller( $feedback );
+
+		// Dependiendo del taller al que se inscribio, devuelve su vista.
+		switch( $taller ){
+			case 1:
+				return $this->viewTaller1( $feedback );
+				break;
+			case 2:
+				return $this->viewTaller2( $feedback );
+				break;
+			case 3:
+				return $this->viewTaller3( $feedback );
+				break;
+			case 4:
+				return $this->viewTaller4( $feedback );
+				break;
+
+		}
+		
 
 	}
 
-	private function viewTaller( $FEEDBACK = null ){
+
+
+
+
+	//--------------------------------------
+	// VIEW TALLER
+	//--------------------------------------
+
+	private function viewTaller1( $FEEDBACK = null ){
 
 		if( $FEEDBACK ){
-			return Redirect::route('taller')
+			return Redirect::route('taller1')
 				->with('feedback',$FEEDBACK);
 		}else{
-			return View::make('taller');
+			return View::make('taller1');
+		}
+
+	}
+
+	private function viewTaller2( $FEEDBACK = null ){
+
+		if( $FEEDBACK ){
+			return Redirect::route('taller2')
+				->with('feedback',$FEEDBACK);
+		}else{
+			return View::make('taller2');
+		}
+
+	}
+
+	private function viewTaller3( $FEEDBACK = null ){
+
+		if( $FEEDBACK ){
+			return Redirect::route('taller3')
+				->with('feedback',$FEEDBACK);
+		}else{
+			return View::make('taller3');
+		}
+
+	}
+
+	private function viewTaller4( $FEEDBACK = null ){
+
+		if( $FEEDBACK ){
+			return Redirect::route('taller4')
+				->with('feedback',$FEEDBACK);
+		}else{
+			return View::make('taller4');
 		}
 
 	}
