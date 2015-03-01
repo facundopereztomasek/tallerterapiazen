@@ -51,12 +51,12 @@
 						<div class="post new-post">
 							<div class="do-post">
 								<span class="invitation">Escribe tu pregunta o deja un mensaje</span>
-								<button type="button" id="show_form_post" class="btn btn-primary btn-dynamic" data-toggle="modal" data-target=".bs-example-modal-lg">Escribir Mensaje</button>
+								<button type="button" id="show_form_post" class="btn btn-primary btn-dynamic" >Escribir Mensaje</button>
 							</div>
 							{{ Form::open( array('class'=>'form-post')) }}
 								<div><input type="text" class="input-name" placeholder="Nombre" name="nombre"></div>
 								<div><textarea name="texto" class="input-message" id="" cols="30" rows="10" placeholder="Mensaje"></textarea></div>
-								<div><button type="submit" id="send_post" class="btn btn-primary send-post" data-toggle="modal" data-target=".bs-example-modal-lg">Enviar</button></div>
+								<div><button type="submit" id="send_post" class="btn btn-primary send-post">Enviar</button></div>
 							{{ Form::close() }}
 						</div>
 						@foreach( $respuestas as $respuesta )

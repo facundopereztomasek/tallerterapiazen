@@ -48,11 +48,11 @@
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
 					<article class="banner bg-taller-1 clearfix">
-						<h2 class="title">Psicoterapia v&iacute;a Skype</h2>
+						<h2 class="title">Atención psicoterapeutica en consultorio.</h2>
 						<div class="row separator">
 							<div class="col-xs-8 col-md-8 no-gutter">
 								<p class="paragraph">
-									Siddharta, despu&eacute;s de casi morir de hambre a causa de un estricto ascetismo, se dio cuenta de que la moderaci&oacute;n entre los extremos de la experiencia sensorial.
+									Podés ponerte en contacto para realizar tratamiento en nuestro consultorio.
 								</p>
 							</div>
 						</div>
@@ -71,11 +71,11 @@
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
 					<article class="banner bg-taller-1 clearfix">
-						<h2 class="title">Psicoterapia v&iacute;a Skype</h2>
+						<h2 class="title">Atención psicoterapeutica vía Skype.</h2>
 						<div class="row separator">
 							<div class="col-xs-8 col-md-8 no-gutter">
 								<p class="paragraph">
-									Siddharta, despu&eacute;s de casi morir de hambre a causa de un estricto ascetismo, se dio cuenta de que la moderaci&oacute;n entre los extremos de la experiencia sensorial.
+									Podés ponerte en contacto para realizar tratamiento a través de Internet utilizando una cuenta de Skype.
 								</p>
 							</div>
 						</div>
@@ -90,30 +90,6 @@
 					</article>
 				</div>
 			</div>
-
-			<div class="row">
-				<div class="col-xs-12 col-md-12">
-					<article class="banner bg-taller-1 clearfix">
-						<h2 class="title">Psicoterapia v&iacute;a Skype</h2>
-						<div class="row separator">
-							<div class="col-xs-8 col-md-8 no-gutter">
-								<p class="paragraph">
-									Siddharta, despu&eacute;s de casi morir de hambre a causa de un estricto ascetismo, se dio cuenta de que la moderaci&oacute;n entre los extremos de la experiencia sensorial.
-								</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-xs-8 col-md-8">
-								<p class="tip">
-									Lic. Gustavo Dominguez
-								</p>
-							</div>
-						</div>
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Contactar</button>
-					</article>
-				</div>
-			</div>
-
 
 		</div>
 	</main>

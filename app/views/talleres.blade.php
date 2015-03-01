@@ -47,18 +47,18 @@
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
 					<article class="banner bg-taller-1 clearfix">
-						<h2 class="title">Taller: Introducci&oacute;n a la meditaci&oacute;n</h2>
+						<h2 class="title">Taller: Psicología Zen y Práctica de Meditación 1<sup>er</sup> encuentro: <br> ¿Qué es la mente? Condicionamientos y sufrimiento.</h2>
 						<div class="row separator">
-							<div class="col-xs-3 col-md-3 no-gutter">
+							<div class="col-xs-4 col-md-4 no-gutter">
 								<ul class="data">
-									<li>19 de Mayo 2015</li>
-									<li>08.45 hs.</li>
-									<li>Hip&oacute;lito Yrigoyen 2079</li>
+									<li>Sábado 28 de Marzo 2015</li>
+									<li>09.30 hs.</li>
+									<li>Hipolito Irigoyen 4579 dpto. G,  Lanus Oeste</li>
 								</ul>
 							</div>
 							<div class="col-xs-6 col-md-6 col-sm-pull-1">
 								<p class="paragraph">
-									Siddharta, despu&eacute;s de casi morir de hambre a causa de un estricto ascetismo, se dio cuenta de que la moderaci&oacute;n entre los extremos de la experiencia sensorial.
+									 ¿Por qué sufrimos, por qué nuestra mente no nos deja disfrutar de los momentos  que vivimos y de las cosas que tenemos? ¿Tenemos una mente “programada” para sufrir? ¿Qué son los condicionamientos?
 								</p>
 							</div>
 						</div>
@@ -77,18 +77,18 @@
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
 					<article class="banner bg-taller-1 clearfix">
-						<h2 class="title">Taller: Introducci&oacute;n a la meditaci&oacute;n</h2>
+						<h2 class="title">Taller: Psicología Zen y Práctica de Meditación 2<sup>do</sup> encuentro: <br> ¿Qué es la psicología basada en el Zen? Prácticas de meditación.</h2>
 						<div class="row separator">
-							<div class="col-xs-3 col-md-3">
+							<div class="col-xs-4 col-md-4 no-gutter">
 								<ul class="data">
-									<li>19 de Mayo 2015</li>
-									<li>08.45 hs.</li>
-									<li>Hip&oacute;lito Yrigoyen 2079</li>
+									<li>Sábado 25 de Abril 2015</li>
+									<li>09.30 hs.</li>
+									<li>Hipolito Irigoyen 4579 dpto. G,  Lanus Oeste</li>
 								</ul>
 							</div>
 							<div class="col-xs-6 col-md-6 col-sm-pull-1">
 								<p class="paragraph">
-									Siddharta, despu&eacute;s de casi morir de hambre a causa de un estricto ascetismo, se dio cuenta de que la moderaci&oacute;n entre los extremos de la experiencia sensorial.
+									 Qué es el zen? ¿Qué es la psicología basada en la enseñanza zen? ¿Qué es el budismo? ¿Qué no es el budismo? ¿ Qué es la meditación? ¿Cómo se medita?
 								</p>
 							</div>
 						</div>
@@ -107,18 +107,18 @@
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
 					<article class="banner bg-taller-1 clearfix">
-						<h2 class="title">Taller: Introducci&oacute;n a la meditaci&oacute;n</h2>
+						<h2 class="title">Taller: Psicología Zen y Práctica de Meditación 3<sup>er</sup> encuentro: <br> Diferentes prácticas de meditación.</h2>
 						<div class="row separator">
-							<div class="col-xs-3 col-md-3">
+							<div class="col-xs-4 col-md-4 no-gutter">
 								<ul class="data">
-									<li>19 de Mayo 2015</li>
-									<li>08.45 hs.</li>
-									<li>Hip&oacute;lito Yrigoyen 2079</li>
+									<li>Sábado 30 de Mayo 2015</li>
+									<li>09.30 hs.</li>
+									<li>Hipolito Irigoyen 4579 dpto. G,  Lanus Oeste</li>
 								</ul>
 							</div>
 							<div class="col-xs-6 col-md-6 col-sm-pull-1">
 								<p class="paragraph">
-									Siddharta, despu&eacute;s de casi morir de hambre a causa de un estricto ascetismo, se dio cuenta de que la moderaci&oacute;n entre los extremos de la experiencia sensorial.
+									¿Qué beneficios trae la meditación? ¿Meditar es relajarse y respirar? Tipos de meditación: Mindfullness, Vipassana, Samattha, guiada, meditación con mantras, meditación con intención virtuosa, Zazen (sin intención).
 								</p>
 							</div>
 						</div>
@@ -133,6 +133,37 @@
 					</article>
 				</div>
 			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-md-12">
+					<article class="banner bg-taller-1 clearfix">
+						<h2 class="title">Taller: Psicología Zen y Práctica de Meditación 4<sup>to</sup> encuentro: <br> Miedo, ira, ansiedad, insactisfacción, estrés ¿Me sirve la meditación?</h2>
+						<div class="row separator">
+							<div class="col-xs-4 col-md-4 no-gutter">
+								<ul class="data">
+									<li>Sábado 27 de Junio 2015</li>
+									<li>09.30 hs.</li>
+									<li>Hipolito Irigoyen 4579 dpto. G,  Lanus Oeste</li>
+								</ul>
+							</div>
+							<div class="col-xs-6 col-md-6 col-sm-pull-1">
+								<p class="paragraph">
+									¿Qué son las emociones? ¿Por qué nos cuesta controlarlas? ¿Cómo hacer para reducir su impacto negativo en nuestra mente? La práctica de la meditación y el desarrollo de la atención plena para alcanzar el bienestar y el cese del sufrimiento.
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-8 col-md-8">
+								<p class="tip">
+									Traer ropa c&oacute;moda
+								</p>
+							</div>
+						</div>
+						<a href="taller" class="btn btn-primary">Ver m&aacute;s</a>
+					</article>
+				</div>
+			</div>
+
 
 		</div>
 	</main>

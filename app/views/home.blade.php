@@ -47,13 +47,17 @@
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
 					<article class="banner bg-taller-1 clearfix">
-						<h2 class="title">Taller: Introducci&oacute;n a la meditaci&oacute;n</h2>
-						<div class="col-xs-6 col-md-6">
+						<h2 class="title">Taller: Psicolog&iacute;a Zen y pr&aacute;cticas de meditaci&oacute;n</h2>
+						<div class="col-xs-8 col-md-8">
 							<p class="paragraph">
-								Siddharta, despu&eacute;s de casi morir de hambre a causa de un estricto ascetismo, se dio cuenta de que la moderaci&oacute;n entre los extremos de la experiencia sensorial.
+								¿Te interesa conocer como funciona tu mente desde la Psicoterapia basada en la enseñanza zen?
+
+								¿Querés experimentar diferentes prácticas de meditación que te ayuden a comenzar tu búsqueda de bienestar interior?
+
+								¿Querés aprender de qué modo contibuye la meditación para ayudarte con el miedo, la ansiedad, la insatisfacción, la ira y el estrés?
 							</p>
 							<p class="paragraph">
-								Lograba incrementar sus energ&iacute;as, su lucidez, y su meditaci&oacute;n, que llam&oacute; Camino medio, comi&oacute; algo y se sent&oacute; bajo una higuera Bodhi.
+								Vení a participar del Taller Grupal  de 4 encuentros
 							</p>
 						</div>
 						<a href="taller" class="btn btn-primary">Ver m&aacute;s</a>
@@ -68,7 +72,7 @@
 						</div>
 						<div class="description-container">
 							<p class="description">
-								Conoce qu&eacute; es y c&oacute;mo funciona la mente, y ten las herramientas que te permitir&aacute;n mejorar tu d&iacute;a a d&iacute;a.
+								Proponete conocer cómo es y cómo funciona tu mente para trabajar sobre vos mismo y asi lograr paz y bienestar interior.
 							</p>
 						</div>
 						<a href="ensenanzas" class="box-link"></a>
@@ -82,7 +86,7 @@
 						</div>
 						<div class="description-container">
 							<p class="description">
-								Conoce qu&eacute; es y c&oacute;mo funciona la mente, y ten las herramientas que te permitir&aacute;n mejorar tu d&iacute;a a d&iacute;a.
+								Ponerte a realizar las enseñanzas a través de la meditación y la atención plena para vivir dia a dia con mayor plenitud.
 							</p>
 						</div>
 						<a href="talleres" class="box-link"></a>
@@ -96,7 +100,7 @@
 						</div>
 						<div class="description-container">
 							<p class="description">
-								Conoce qu&eacute; es y c&oacute;mo funciona la mente, y ten las herramientas que te permitir&aacute;n mejorar tu d&iacute;a a d&iacute;a.
+								Intentar profundizar el conocimiento de tu mente y la práctica de aquietarla para liberarla del sufrimiento.
 							</p>
 						</div>
 						<a href="psicoterapia" class="box-link"></a>

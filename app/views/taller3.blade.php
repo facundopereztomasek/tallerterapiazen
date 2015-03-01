@@ -57,22 +57,23 @@
 
 					<article class="workshop-view">
 						<header class="workshop-header">
-							<h1 class="title">Taller Psicolog&iacute;a Zen</h1>
+							<h1 class="title">Taller Psicología Zen y Práctica de Meditación 3<sup>er</sup> encuentro: <br>
+							Diferentes prácticas de meditación.</h1>
 							<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Inscribirse</button>
 						</header>
 						<div class="row">
 							<div class="col-xs-8 col-md-8">
 								<div class="contents">
-									<p class="paragraph">Siddhartha es una novela alegórica escrita por Hermann Hesse en 1922 tras la primera guerra mundial. La misma relata la vida de un hombre hindú llamado Siddhartha. La obra ha sido considerada por el autor como un "poema hindú" y también, como la expresión esencial de su forma de vida. Muy leída en Oriente como tal, y menos en el mundo occidental.</p>
-									<p class="paragraph">La novela presenta un registro muy original en el que se unifican elementos líricos y épicos, incluyendo narración y meditación, elevación de la más alta espiritualidad, y, al mismo tiempo, descarnada sensualidad.</p>
+									<p class="paragraph">"El zen es la liberación del tiempo. Para que cuando abramos los ojos y veamos claramente, se vuelva obvio que no hay otro tiempo que este instante, y que el pasado y el futuro son abstracciones sin una realidad concreta."</p>
+									<p class="paragraph">Agradecemos tu interés por esta actividad y esperamos tu activa participación para que sea un encuentro grupal enriquecedor en el que te puedas conectar con una mirada novedosa acerca de enseñanzas muy antiguas, orientadas a la comprensión de la mente, el cese del sufrimiento y la práctica de la meditación como medio para manejar nuestros niveles de estrés, promover un nivel de bienestar y llegar a una conexión saludable con vos mismo en el aquí y ahora.</p>
 								</div>
 							</div>
 							<div class="col-xs-4 col-md-4">
 								<ul class="data">
-									<li><strong class="data-type">Fecha</strong><span class="data-info">19 de Mayo 2015</span></li>
-									<li><strong class="data-type">Hora</strong><span class="data-info">08.45 hs.</span></li>
-									<li><strong class="data-type">Lugar</strong><span class="data-info">Hip&oacute;lito Yrigoyen 2079</span></li>
-									<li><strong class="data-type">Costo</strong><span class="data-info">$ 250</span></li>
+									<li><strong class="data-type">Fecha</strong><span class="data-info">Sábado 30 de Mayo de 2015</span></li>
+									<li><strong class="data-type">Hora</strong><span class="data-info">09.30 hs.</span></li>
+									<li><strong class="data-type">Lugar</strong><span class="data-info">Hipolito Irigoyen 4579 dpto. G, Lanus Oeste</span></li>
+									<li><strong class="data-type">Costo</strong><span class="data-info">$350 por encuentro (*)</span></li>
 								</ul>
 							</div>
 						</div>
@@ -81,16 +82,16 @@
 								<span class="title-section">Primer parte</span>
 								<ul class="activity-list">
 									<li class="activity">
-										<span class="hours">08</span><span class="colon">:</span><span class="minutes">45</span>
-										<span class="activity-name">Bienvenida</span>
+										<span class="hours">09</span><span class="colon">:</span><span class="minutes">30</span>
+										<span class="activity-name">Presentación.</span>
 									</li>
 									<li class="activity">
-										<span class="hours">22</span><span class="colon">:</span><span class="minutes">11</span>
-										<span class="activity-name">Bienvenida</span>
+										<span class="hours">09</span><span class="colon">:</span><span class="minutes">45</span>
+										<span class="activity-name">¿Qué es la meditación? ¿Cómo se medita? ¿Qué beneficios trae la meditación? ¿Meditar es relajarse y respirar?</span>
 									</li>
 									<li class="activity">
-										<span class="hours">08</span><span class="colon">:</span><span class="minutes">45</span>
-										<span class="activity-name">Bienvenida</span>
+										<span class="hours">10</span><span class="colon">:</span><span class="minutes">45</span>
+										<span class="activity-name">Break, café.</span>
 									</li>
 
 								</ul>
@@ -98,21 +99,46 @@
 						</div>
 						<div class="row">
 							<div class="col-xs-8 col-md-8">
-								<span class="title-section">Primer parte</span>
+								<span class="title-section">Segunda parte</span>
 								<ul class="activity-list">
 									<li class="activity">
-										<span class="hours">08</span><span class="colon">:</span><span class="minutes">45</span>
-										<span class="activity-name">Bienvenida</span>
+										<span class="hours">11</span><span class="colon">:</span><span class="minutes">00</span>
+										<span class="activity-name">Tipos de meditación:</span>
+										<ul>
+											<li><span class="activity-name">Mindfullness.</span></li>
+											<li><span class="activity-name">Meditación vipassana.</span></li>
+											<li><span class="activity-name">Meditación samattha.</span></li>
+											<li><span class="activity-name">Meditación guiada.</span></li>
+											<li><span class="activity-name">Meditación con mantras.</span></li>
+											<li><span class="activity-name">Meditación con intención virtuosa.</span></li>
+											<li><span class="activity-name">Meditación Zazen (sin intención).</span></li>
+										</ul>
 									</li>
 									<li class="activity">
-										<span class="hours">08</span><span class="colon">:</span><span class="minutes">45</span>
-										<span class="activity-name">Bienvenida</span>
+										<span class="hours">12</span><span class="colon">:</span><span class="minutes">15</span>
+										<span class="activity-name">Práctica de meditación.</span>
 									</li>
 									<li class="activity">
-										<span class="hours">08</span><span class="colon">:</span><span class="minutes">45</span>
-										<span class="activity-name">Bienvenida</span>
+										<span class="hours">12</span><span class="colon">:</span><span class="minutes">45</span>
+										<span class="activity-name">Final del 3<sup>er</sup> encuentro.</span>
 									</li>
 								</ul>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-8 col-md-8">
+								<div class="contents">
+									<p class="paragraph">Recordá: <br>
+										El dia 30 te esperamos en lo posible a partir de 09.15, 
+										para poder comenzar a las 09.30 puntualmente.
+										No es necesario experiencia previa ni ropa especial.
+										No es una actividad orientada en sentido religioso.
+									</p>
+									<p class="paragraph">
+										(*) si te anotás para realizar todos los encuentros podés pagar hasta el 29 de Mayo por adelantado el total del Taller con el 14% de descuento: $1200 por los 4 encuentros.</p>
+
+								</div>
 							</div>
 						</div>
 					</article>

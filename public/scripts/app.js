@@ -76,10 +76,12 @@ function placeholder_init(){
 
 function slick_init(){
     $(this).slick({
-      slidesToShow: 3,
+      slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 5000
+      centerMode: true,
+      centerPadding: '60px',
+      autoplaySpeed: 20000
     });
 }
 

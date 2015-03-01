@@ -59,77 +59,77 @@
 							<div class="story-slider">
 								<article class="box box-story bg-box-1">
 									<div class="title-container">
-										<h2 class="title">Hombre con capucha</h2>
+										<h2 class="title">Tu mente y la del Buda son id&eacute;nticas.</h2>
 									</div>
 									<div class="box-image">
 										{{ HTML::image('images/stories/01.jpg' , 'Hombre con capucha' , array('class'=>'story-image')) }}
 									</div>
 									<div class="description-container">
 										<p class="description">
-											Tu mente y la del Buda son id&eacute;nticas.
+											¿Por qué seguir buscando en el afuera lo que desde siempre existe en tu interior?
 										</p>
 									</div>
-									<a href="ensenanzas" class="box-link"></a>
+									<!-- <a href="ensenanzas" class="box-link"></a> -->
 								</article>
 
 								<article class="box box-story bg-box-1">
 									<div class="title-container">
-										<h2 class="title">Budita meditando</h2>
+										<h2 class="title">El mundo esta inclu&iacute;do en nosotros mismos.</h2>
 									</div>
 									<div class="box-image">
 										{{ HTML::image('images/stories/02.jpg' , 'Budita meditando' , array('class'=>'story-image')) }}
 									</div>
 									<div class="description-container">
 										<p class="description">
-											El mundo esta inclu&iacute;do en nosotros mismos.
+											Nosotros somos el tiempo y cada instante que vivimos el universo entero está a nuestra disposición.
 										</p>
 									</div>
-									<a href="ensenanzas" class="box-link"></a>
+									<!-- <a href="ensenanzas" class="box-link"></a> -->
 								</article>
 
 								<article class="box box-story bg-box-1">
 									<div class="title-container">
-										<h2 class="title">Hombre remando</h2>
+										<h2 class="title">El r&iacute;o no necesita que lo empujes.</h2>
 									</div>
 									<div class="box-image">
 										{{ HTML::image('images/stories/03.jpg' , 'Hombre remando' , array('class'=>'story-image')) }}
 									</div>
 									<div class="description-container">
 										<p class="description">
-											El r&iacute;o no necesita que lo empujes.
+											El hombre sigue la ley de la tierra, la tierra sigue la ley del cosmos, el cosmos sigue la ley del Zen, el Zen sigue su propia ley.
 										</p>
 									</div>
-									<a href="ensenanzas" class="box-link"></a>
+									<!-- <a href="ensenanzas" class="box-link"></a> -->
 								</article>
 
 								<article class="box box-story bg-box-1">
 									<div class="title-container">
-										<h2 class="title">&Aacute;rboles</h2>
+										<h2 class="title">El sol del mediod&iacute;a no da sombra.</h2>
 									</div>
 									<div class="box-image">
 										{{ HTML::image('images/stories/04.jpg' , '&Aacute;rboles' , array('class'=>'story-image')) }}
 									</div>
 									<div class="description-container">
 										<p class="description">
-											El sol del mediod&iacute; no da sombra.
+											Los pinos no tienen color viejo ni color nuevo, la naturaleza no sigue ninguna moda.
 										</p>
 									</div>
-									<a href="ensenanzas" class="box-link"></a>
+									<!-- <a href="ensenanzas" class="box-link"></a> -->
 								</article>
 
 								<article class="box box-story bg-box-1">
 									<div class="title-container">
-										<h2 class="title">Monje caminando</h2>
+										<h2 class="title">No busquen el camino en lugares lejanos ni en los dem&aacute;s.</h2>
 									</div>
 									<div class="box-image">
 										{{ HTML::image('images/stories/05.jpg' , 'Monje caminando' , array('class'=>'story-image')) }}
 									</div>
 									<div class="description-container">
 										<p class="description">
-											No busquen el camino en lugares lejanos ni en los dem&aacute;s.
+											Mas bien puede encontrarlo todo el tiempo y en todas partes, el camino siempre está bajo nuestros pies.
 										</p>
 									</div>
-									<a href="ensenanzas" class="box-link"></a>
+									<!-- <a href="ensenanzas" class="box-link"></a> -->
 								</article>
 
 							</div>
@@ -204,6 +204,17 @@
 								</p>
 							</div>
 						</div>
+						<div class="col-xs-5 col-md-5 col-sm-push-1">
+							<div class="video-preview-container"><img src="http://i.ytimg.com/vi/BLkrHH6Ov1Q/0.jpg" width="100%">
+								<button type="button" class="video-button" data-toggle="modal" data-target=".bs-example-modal-lg" data-src="http://www.youtube.com/embed/BLkrHH6Ov1Q"></button>
+							</div>
+							<div class="title-video">
+								<p>
+									<a class="link" target="_blank" href="https://www.youtube.com/watch?v=BLkrHH6Ov1Q">Camino al despertar</a>
+								</p>
+							</div>
+						</div>
+
 						<!-- <div class="col-xs-5 col-md-5 col-sm-push-1">
 							<div class="video-preview-container"><img src="http://i.ytimg.com/vi/QlD-HWpvW40/0.jpg" width="100%"></div>	#
 			<d class="link"iv class="title-video">
@@ -224,28 +235,25 @@
 					<div class="row">
 						<div class="col-xs-10 col-md-10 col-sm-push-1">
 							<ul class="texts-list">
-								<li><a class="link" href="">Las ense&ntilde;anzas de Buda</a>
+								<li>{{HTML::link("pdf/basesdelameditacion.pdf", 'Bases de la Meditación Budista', array("class" => "link" , "target" => "_blank" ));}}
 									<p class="abstract">Abstract del texto para que se sepa de que trata.</p>
 								</li>
-								<li><a class="link" href="">Las ense&ntilde;anzas de Buda</a>
+								<li>{{HTML::link("pdf/buda.pdf", 'Siddharta Gautama Buda', array("class" => "link" , "target" => "_blank" ));}}
 									<p class="abstract">Abstract del texto para que se sepa de que trata.</p>
 								</li>
-								<li><a class="link" href="">Las ense&ntilde;anzas de Buda</a>
+								<li>{{HTML::link("pdf/buenapreguntabuenarespuesta.pdf", 'Buena pregunta, buena respuesta', array("class" => "link" , "target" => "_blank" ));}}
 									<p class="abstract">Abstract del texto para que se sepa de que trata.</p>
 								</li>
-								<li><a class="link" href="">Las ense&ntilde;anzas de Buda</a>
+								<li>{{HTML::link("pdf/elcorazondelasensenanzasdebuda.pdf", 'El corazón de las enseñanzas de Buda', array("class" => "link" , "target" => "_blank" ));}}
 									<p class="abstract">Abstract del texto para que se sepa de que trata.</p>
 								</li>
-								<li><a class="link" href="">Las ense&ntilde;anzas de Buda</a>
+								<li>{{HTML::link("pdf/problemasmentales.pdf", 'Cómo actuar con los problemas mentales', array("class" => "link" , "target" => "_blank" ));}}
 									<p class="abstract">Abstract del texto para que se sepa de que trata.</p>
 								</li>
-								<li><a class="link" href="">Las ense&ntilde;anzas de Buda</a>
+								<li>{{HTML::link("pdf/queesmeditar.pdf", '¿Qué es meditar?', array("class" => "link" , "target" => "_blank" ));}}
 									<p class="abstract">Abstract del texto para que se sepa de que trata.</p>
 								</li>
-								<li><a class="link" href="">Las ense&ntilde;anzas de Buda</a>
-									<p class="abstract">Abstract del texto para que se sepa de que trata.</p>
-								</li>
-								<li><a class="link" href="">Las ense&ntilde;anzas de Buda</a>
+								<li>{{HTML::link("pdf/trabajandoemocionesperturbadoras.pdf", 'Trabajando con las emociones perturabadoras', array("class" => "link" , "target" => "_blank" ));}}
 									<p class="abstract">Abstract del texto para que se sepa de que trata.</p>
 								</li>
 							</ul>
