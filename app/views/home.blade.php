@@ -60,7 +60,7 @@
 								Vení a participar del Taller Grupal  de 4 encuentros
 							</p>
 						</div>
-						<a href="taller" class="btn btn-primary">Ver m&aacute;s</a>
+						<a href="talleres" class="btn btn-primary">Ver m&aacute;s</a>
 					</article>
 				</div>
 			</div>

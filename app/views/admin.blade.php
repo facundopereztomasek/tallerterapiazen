@@ -87,7 +87,7 @@
 											<input type="hidden" name="mensaje_id" value="{{{ $pregunta['id'] }}}" />
 											<div><textarea name="texto" class="input-message" id="" cols="30" rows="10" placeholder="Escrib&iacute; la respuesta ac&aacute;"></textarea></div>
 											<div class="btn-group">
-												<button type="submit" id="send_post" class="btn btn-primary btn-right send-post" data-toggle="modal" data-target=".bs-example-modal-lg">Responder</button>
+												<button type="submit" id="send_post" class="btn btn-primary btn-right send-post" data-toggle="modal-contacto" data-target=".bs-example-modal-lg">Responder</button>
 												<a href="{{ route('pregunta_borrar', $pregunta['id']) }}" class="btn btn-danger btn-left send-post">Eliminar Pregunta</a>
 											</div>
 										{{ Form::close() }}
@@ -146,7 +146,7 @@
 	@if( ISSET($feedback) )
 
 		<!-- MODALES -->
-		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal modal-contacto fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -158,7 +158,7 @@
 			</div>
 		</div>
 		<script>
-			$('.modal').modal('toggle');
+			$('.modal-contacto').modal('toggle');
 		</script>
 	@endif
 
