@@ -69,7 +69,7 @@
 								</p>
 							</div>
 						</div>
-						<a href="taller" class="btn btn-primary">Ver m&aacute;s</a>
+						<a href="{{ route('taller1') }}" class="btn btn-primary">Ver m&aacute;s</a>
 					</article>
 				</div>
 			</div>
@@ -99,7 +99,7 @@
 								</p>
 							</div>
 						</div>
-						<a href="taller" class="btn btn-primary">Ver m&aacute;s</a>
+						<a href="{{ route('taller2') }}" class="btn btn-primary">Ver m&aacute;s</a>
 					</article>
 				</div>
 			</div>
@@ -129,7 +129,7 @@
 								</p>
 							</div>
 						</div>
-						<a href="taller" class="btn btn-primary">Ver m&aacute;s</a>
+						<a href="{{ route('taller3') }}" class="btn btn-primary">Ver m&aacute;s</a>
 					</article>
 				</div>
 			</div>
@@ -159,7 +159,7 @@
 								</p>
 							</div>
 						</div>
-						<a href="taller" class="btn btn-primary">Ver m&aacute;s</a>
+						<a href="{{ route('taller4') }}" class="btn btn-primary">Ver m&aacute;s</a>
 					</article>
 				</div>
 			</div>

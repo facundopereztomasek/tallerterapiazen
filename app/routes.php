@@ -7,15 +7,14 @@ Route::get('ensenanzas',array('as' => 'ensenanzas', 'uses' => 'EstaticoControlle
 Route::get('talleres',array('as' => 'talleres', 'uses' => 'EstaticoController@getListadoTalleres'));
 
 // Inscripciones
-Route::get('taller',array('as' => 'taller', 'uses' => 'InscripcionController@getTaller'));
-//Route::group(array('before'=>'csrf'), function(){
-	Route::post('inscribirse/taller',array('as' => 'inscribirse_taller', 'uses' => 'InscripcionController@postTaller'));
-//});
+Route::get('taller1',array('as' => 'taller1', 'uses' => 'InscripcionController@getTaller1'));
+Route::get('taller2',array('as' => 'taller2', 'uses' => 'InscripcionController@getTaller2'));
+Route::get('taller3',array('as' => 'taller3', 'uses' => 'InscripcionController@getTaller3'));
+Route::get('taller4',array('as' => 'taller4', 'uses' => 'InscripcionController@getTaller4'));
+Route::post('inscribirse/taller',array('as' => 'inscribirse_taller', 'uses' => 'InscripcionController@postTaller'));
 
 Route::get('psicoterapia',array('as' => 'psicoterapia', 'uses' => 'InscripcionController@getPsicoterapia'));
-//Route::group(array('before'=>'csrf'), function(){
-	Route::post('inscribirse/psicoterapia',array('as' => 'inscribirse_psicoterapia', 'uses' => 'InscripcionController@postPsicoterapia'));
-//});
+Route::post('inscribirse/psicoterapia',array('as' => 'inscribirse_psicoterapia', 'uses' => 'InscripcionController@postPsicoterapia'));
 
 // Contacto
 Route::get('contacto',array('as' => 'contacto', 'uses' => 'MensajeController@getMensajes'));
