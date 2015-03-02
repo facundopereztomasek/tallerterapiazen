@@ -63,7 +63,7 @@
 								</p>
 							</div>
 						</div>
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Contactar</button>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".contactar1">Contactar</button>
 					</article>
 				</div>
 			</div>
@@ -86,7 +86,7 @@
 								</p>
 							</div>
 						</div>
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Contactar</button>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".contactar2">Contactar</button>
 					</article>
 				</div>
 			</div>
@@ -146,7 +146,7 @@
 	@endif
 
 	<!-- MODALES -->
-	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal fade contactar1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -155,13 +155,34 @@
 				</div>
 			{{ Form::open( array('route'=>'inscribirse_psicoterapia','class'=>'modal-form clearfix')) }}
 				<p class="subtitle">Formulario de contacto</p>
-				<div class="input-container"><input type="hidden" value="taller1"></div>
+				<div class="input-container"><input type="hidden" name="psicoterapia" value="1"></div>
 				<div class="input-container required"><input name="nombre" type="text" placeholder="nombre"></div>
 				<div class="input-container required"><input name="apellido" type="text" placeholder="apellido"></div>
 				<div class="input-container required"><input name="email" type="text" placeholder="e-mail"></div>
 				<div class="input-container half-input clearfix"><input name="telefono" type="text" placeholder="tel&eacute;fono"><input name="skype" type="text" placeholder="skype"></div>
 				<div class="input-container"><textarea name="mensaje" id="" cols="30" rows="10" placeholder="mensaje"></textarea></div>
-				<div><button type="submit" class="btn btn-primary">Enviar</button></div>
+				<div><button type="submit" class="btn btn-primary form-psico">Enviar</button></div>
+				<a href="#" class="cancel" data-dismiss="modal" aria-label="Close">Cancelar</a>
+			{{ Form::close() }}
+			</div>
+		</div>
+	</div>
+	<div class="modal fade contactar2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<div class="title-container">
+					<p class="title">Psicoterapia v&iacute;a Skype</p>
+				</div>
+			{{ Form::open( array('route'=>'inscribirse_psicoterapia','class'=>'modal-form clearfix')) }}
+				<p class="subtitle">Formulario de contacto</p>
+				<div class="input-container"><input type="hidden" name="psicoterapia" value="2"></div>
+				<div class="input-container required"><input name="nombre" type="text" placeholder="nombre"></div>
+				<div class="input-container required"><input name="apellido" type="text" placeholder="apellido"></div>
+				<div class="input-container required"><input name="email" type="text" placeholder="e-mail"></div>
+				<div class="input-container half-input clearfix"><input name="telefono" type="text" placeholder="tel&eacute;fono"><input name="skype" type="text" placeholder="skype"></div>
+				<div class="input-container"><textarea name="mensaje" id="" cols="30" rows="10" placeholder="mensaje"></textarea></div>
+				<div><button type="submit" class="btn btn-primary form-skype">Enviar</button></div>
 				<a href="#" class="cancel" data-dismiss="modal" aria-label="Close">Cancelar</a>
 			{{ Form::close() }}
 			</div>

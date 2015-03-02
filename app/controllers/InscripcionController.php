@@ -37,6 +37,13 @@ class InscripcionController extends BaseController {
 		// Relleno lo que falte
 		$contacto->fill( $data );
 
+		$psicoterapia = Input::get('psicoterapia');
+		if( $psicoterapia == 1 ){
+			$contacto->psicoterapia1 = 1;
+		}else if( $psicoterapia == 2){
+			$contacto->psicoterapia2 = 1;
+		}
+
 		$save = $contacto->save();
 		
 		$datos = $contacto->toArray();
@@ -128,6 +135,23 @@ class InscripcionController extends BaseController {
 		
 		// Relleno lo que falte
 		$contacto->fill( $data );
+
+		// Guarda el taller al que se inscribio
+		switch( $taller ){
+			case 1:
+				$contacto->taller1 = 1;
+				break;
+			case 2:
+				$contacto->taller2 = 1;
+				break;
+			case 3:
+				$contacto->taller3 = 1;
+				break;
+			case 4:
+				$contacto->taller4 = 1;
+				break;
+
+		}
 
 		$save = $contacto->save();
 

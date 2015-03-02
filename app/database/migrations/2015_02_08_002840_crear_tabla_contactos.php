@@ -21,6 +21,12 @@ class CrearTablaContactos extends Migration {
 			    $table->string('telefono');
 			    $table->string('skype');
 			    $table->text('mensaje');
+			    $table->string('taller1');
+			    $table->string('taller2');
+			    $table->string('taller3');
+			    $table->string('taller4');
+			    $table->string('psicoterapia1');
+			    $table->string('psicoterapia2');
 			    $table->timestamps();
 			});
 		}

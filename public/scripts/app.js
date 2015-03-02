@@ -156,7 +156,10 @@ function fixed_menu(){
 */
 function form_validation(){
 
-    $('form').bind('submit',function(ev){
+    $('.form-skype , .form-psico').click(function(){
+        $(this).parent().parent().addClass('sended');
+    })
+    $('form.sended').bind('submit',function(ev){
         var valid = true;
         var rule_email = /^[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+\.[a-zA-Z]{2,4}$/
 
