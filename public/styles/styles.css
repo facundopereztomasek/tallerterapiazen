@@ -75,12 +75,13 @@ h2{
 }
 /* Estilos de fondo*/
 body{
-    background: url('../images/background.jpg') no-repeat;
-    background-size: cover;
+    background: url('../images/background.png') no-repeat, url('../images/background-tile.jpg') repeat-y;
+    background-size: cover,contain;
 }
 
 .main{
     min-height:600px;
+
 }
 
 /* Estilos de boton*/
