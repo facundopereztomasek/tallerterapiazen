@@ -87,7 +87,7 @@
 						<div class="row">
 							<div class="col-xs-8 col-md-8">
 								<p class="tip">
-									Lic. Gustavo Dominguez
+									Lic. Gustavo Dominguez (M.N.26379/M.P.60828) <br> Lic. Natalia Sá (M.N.27688/M.P.72089)
 								</p>
 							</div>
 						</div>
@@ -110,7 +110,7 @@
 						<div class="row">
 							<div class="col-xs-8 col-md-8">
 								<p class="tip">
-									Lic. Gustavo Dominguez
+									Lic. Gustavo Dominguez (M.N.26379/M.P.60828) <br> Lic. Natalia Sá (M.N.27688/M.P.72089)
 								</p>
 							</div>
 						</div>
@@ -157,7 +157,7 @@
 	@if( Session::get('feedback') )
 
 		<!-- MODALES -->
-		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal success-modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -169,7 +169,7 @@
 			</div>
 		</div>
 		<script>
-			$('.modal').modal('toggle');
+			$('.success-modal').modal('toggle');
 		</script>
 	@endif
 
@@ -179,7 +179,7 @@
 			<div class="modal-content">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				<div class="title-container">
-					<p class="title">Psicoterapia presencial</p>
+					<p class="title">Atención psicoterapéutica en consultorio.</p>
 				</div>
 			{{ Form::open( array('route'=>'inscribirse_psicoterapia','class'=>'modal-form clearfix')) }}
 				<p class="subtitle">Formulario de contacto</p>
@@ -200,7 +200,7 @@
 			<div class="modal-content">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				<div class="title-container">
-					<p class="title">Psicoterapia v&iacute;a Skype</p>
+					<p class="title">">Atención psicoterapéutica v&iacute;a Skype</p>
 				</div>
 			{{ Form::open( array('route'=>'inscribirse_psicoterapia','class'=>'modal-form clearfix')) }}
 				<p class="subtitle">Formulario de contacto</p>

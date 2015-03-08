@@ -15,15 +15,15 @@
 		</div>
 		<!-- <div><img class="screen-only" src="images/banner-eblast.png" alt=""></div> -->
 		<div><img src="<?php echo $message->embed('images/banner-eblast.png'); ?>" style="border: 0;"></div>
-		<h1 class="title" style="font-size: 30px;margin: 0;padding: 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;">{{{ $nombre }}}, gracias por inscribirte a <span class="workshop-name" style="display: block;">Taller: 
+		<h1 class="title" style="font-size: 30px;margin: 0;padding: 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;">{{{ $nombre }}}, gracias por inscribirte a <span class="workshop-name" style="display: block;">
 			@if( $taller == 1)
-				¿Qué es la mente? Condicionamientos y sufrimiento.
+				Taller: Psicología Zen y Práctica de Meditación 1er encuentro: ¿Qué es la mente? Condicionamientos y sufrimiento.
 			@elseif( $taller == 2)
-				¿Qué es la psicología basada en el Zen? Prácticas de meditación.
+				Taller: Psicología Zen y Práctica de Meditación 2do encuentro: ¿Qué es la psicología basada en el Zen? Prácticas de meditación.
 			@elseif( $taller == 3)
-				Diferentes prácticas de meditación.
+				Taller: Psicología Zen y Práctica de Meditación 3er encuentro: Diferentes prácticas de meditación.
 			@elseif( $taller == 4)
-				Miedo, ira, ansiedad, insactisfacción, estrés ¿Me sirve la meditación?
+				Taller: Psicología Zen y Práctica de Meditación 4to encuentro: Miedo, ira, ansiedad, insatisfacción, estrés ¿Me sirve la meditación?
 			@endif
 		</span></h1>
 		<p class="paragraph" style="padding: 0 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-size: 16px;">
@@ -39,7 +39,7 @@
 
 		<p class="paragraph" style="padding: 0 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-size: 16px;">Te esperamos!</p>
 		<div class="footer" style="background-color: #151515;overflow: auto;">
-			<span class="mail" style="color: #bbbbbb;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;font-size: 14px;display: block;float: right;margin-left: 5px;padding: 10px;margin: 0;">Por cualquier consulta podes contactarte a <a href="mailto:contacto@tallerterapiazen.com.ar" style="background-color: transparent;color: #bbbbbb;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;font-size: 14px;display: block;float: right;margin-left: 5px;">contacto@tallerterapiazen.com.ar</a></span>
+			<span class="mail" style="color: #bbbbbb;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;font-size: 14px;display: block;float: right;margin-left: 5px;padding: 10px;margin: 0;">Por cualquier consulta podes contactarte a <a href="mailto:contacto@tallerpsicologiazen.com.ar" style="background-color: transparent;color: #bbbbbb;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;font-size: 14px;display: block;float: right;margin-left: 5px;">contacto@tallerpsicologiazen.com.ar</a></span>
 		</div>
 	</div>
 </body>

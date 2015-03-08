@@ -165,7 +165,7 @@
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
 					<article class="banner bg-taller-1 clearfix">
-						<h2 class="title">Taller: Psicología Zen y Práctica de Meditación 4<sup>to</sup> encuentro: <br> Miedo, ira, ansiedad, insactisfacción, estrés ¿Me sirve la meditación?</h2>
+						<h2 class="title">Taller: Psicología Zen y Práctica de Meditación 4<sup>to</sup> encuentro: <br> Miedo, ira, ansiedad, insatisfacción, estrés ¿Me sirve la meditación?</h2>
 						<div class="row separator">
 							<div class="col-xs-4 col-md-4 no-gutter">
 								<ul class="data">

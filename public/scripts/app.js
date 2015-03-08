@@ -155,21 +155,22 @@ function fixed_menu(){
     VALIDACION FORMULARIOS
 */
 function form_validation(){
-    // $('.form-skype button , .form-psico button').click(function(){
-    //     $(this).parent().parent().addClass('sended');
-    //     console.log('clase')
-    //     console.log($(this).parent().parent().attr('class'))
-    // })
+    $('form button').click(function(){
+        $(this).parent().parent().addClass('sended');
+        console.log('clase')
+        console.log($(this).parent().parent().attr('class'))
+    })
 
     $('form').on('submit',function(ev){
         console.log('envia')
+        var $this = $(this);
         var valid = true;
         var rule_email = /^[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+\.[a-zA-Z]{2,4}$/
 
-        var email = $('[name=email]');
-        var first = $('[name=nombre]');
-        var last = $('[name=apellido]');
-        var message = $('[name=mensaje]');
+        var email = $this.find('[name=email]');
+        var first = $this.find('[name=nombre]');
+        var last = $this.find('[name=apellido]');
+        var message = $this.find('[name=mensaje]');
 
 
         valid = rule_email.test( email.val() ) && (first.val() != '') && (last.val() != '') && (message.val() != '')

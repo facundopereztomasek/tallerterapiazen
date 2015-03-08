@@ -98,7 +98,7 @@
 										</p>
 									</dt>
 									<dd class="answer">
-										<strong class="post-author">Gustavo</strong>
+										<strong class="post-author">Taller Psicología Zen</strong>
 										<time class="post-time">({{{ date("d-m-Y",strtotime($respuesta->created_at)) }}})</time>
 										<p class="post-content">
 											{{{ $respuesta->texto }}}
@@ -122,9 +122,11 @@
 							<dt class="info-type">E-mail</dt>
 							<dl class="info-data"> <a class="link" href="mailto:contacto@tallerpsicologiazen.com.ar">contacto@tallerpsicologiazen.com.ar</a></dl>
 							<dt class="info-type">Skype</dt>
-							<dl class="info-data">tallerterapiazen</dl>
+							<dl class="info-data">
+								<a class="link" href="skype:tallerpsicologiazen">tallerpsicologiazen</a>
+							</dl>
 							<dt class="info-type">Tel&eacute;fono</dt>
-							<dl class="info-data">1-234-5678</dl>
+							<dl class="info-data">4225-8081 <br> (mensajes de voz).</dl>
 						</dl>
 					</div>
 				</div>
@@ -169,7 +171,7 @@
 	@if( $feedback || Session::get('feedback') )
 
 		<!-- MODALES -->
-		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal success-modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -185,7 +187,7 @@
 			</div>
 		</div>
 		<script>
-			$('.modal').modal('toggle');
+			$('.success-modal').modal('toggle');
 		</script>
 	@endif
 </body>

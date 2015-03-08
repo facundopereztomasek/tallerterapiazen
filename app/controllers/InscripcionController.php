@@ -1,13 +1,13 @@
 <?php
 
 class InscripcionController extends BaseController {
-	
+
 	//-----------------------------------------
 	// Psicoterapia
 	//-----------------------------------------
 	public function getPsicoterapia(){
 
-		return $this->viewPsicoterapia();		
+		return $this->viewPsicoterapia();
 
 	}
 
@@ -30,10 +30,10 @@ class InscripcionController extends BaseController {
 
 		// Tomo existente, sino Creo nuevo.
 		$contacto = Contacto::firstOrCreate(array('email' => Input::get('email')));
-		
+
 		// Tomo datos del form
 		$data = Input::only('nombre','apellido','email','telefono','skype','mensaje');
-		
+
 		// Relleno lo que falte
 		$contacto->fill( $data );
 
@@ -45,14 +45,14 @@ class InscripcionController extends BaseController {
 		}
 
 		$save = $contacto->save();
-		
+
 		$datos = $contacto->toArray();
 
 		// dato para el email
 		$datos['psico'] = $psicoterapia;
 
 		if( $save ){
-			$feedback = ['mensaje' => 'Te has inscripto.' , 'tipo' => 'success'];
+			$feedback = ['mensaje' => 'Gracias por ponerte en contacto, en breve nos estaremos comunicando.' , 'tipo' => 'success'];
 			// Usuario
 			Mail::queue('emails.eblastPsicologia', $datos, function($message) use($contacto){
 			    $message->to($contacto['email'], $contacto['nombre'].' '.$contacto['apellido'])->subject('Gracias!');
@@ -70,7 +70,7 @@ class InscripcionController extends BaseController {
 	}
 
 	private function viewPsicoterapia( $FEEDBACK = null ){
-		
+
 		if( $FEEDBACK ){
 			return Redirect::route('psicoterapia')
 				->with('feedback',$FEEDBACK);
@@ -113,14 +113,14 @@ class InscripcionController extends BaseController {
 	public function postTaller(){
 
 		// Validacion
-		
+
 		$rules = array(
 				'nombre' => 'required',
 				'apellido' => 'required',
 				'email' => 'required',
 				'mensaje' => 'required'
 			);
-		
+
 	    $validator = Validator::make(Input::all(), $rules);
 
 	    if ($validator->fails()){
@@ -132,10 +132,10 @@ class InscripcionController extends BaseController {
 
 		// Tomo existente, sino Creo nuevo.
 		$contacto = Contacto::firstOrCreate(array('email' => Input::get('email')));
-		
+
 		// Tomo datos del form
 		$data = Input::only('nombre','apellido','email','mensaje');
-		
+
 		// Relleno lo que falte
 		$contacto->fill( $data );
 
@@ -179,7 +179,7 @@ class InscripcionController extends BaseController {
 
 		// Email
 		if( $save ){
-			$feedback = ['mensaje' => 'Te has inscripto.' , 'tipo' => 'success'];
+			$feedback = ['mensaje' => 'Te has inscripto, te esperamos!' , 'tipo' => 'success'];
 			// Usuario
 			Mail::queue('emails.eblast', $datos, function($message) use($contacto){
 			    $message->to($contacto['email'], $contacto['nombre'].' '.$contacto['apellido'])->subject('Gracias!');
@@ -209,7 +209,7 @@ class InscripcionController extends BaseController {
 				break;
 
 		}
-		
+
 
 	}
 

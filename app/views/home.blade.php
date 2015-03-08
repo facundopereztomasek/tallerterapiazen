@@ -110,7 +110,7 @@
 				</div>
 
 				<div class="col-xs-4 col-md-4">
-					<article class="box bg-box-1">
+					<article class="box bg-box-2">
 						<div class="title-container">
 							<h2 class="title">Aquietar la mente</h2>
 						</div>
@@ -124,7 +124,7 @@
 				</div>
 
 				<div class="col-xs-4 col-md-4">
-					<article class="box bg-box-1">
+					<article class="box bg-box-3">
 						<div class="title-container">
 							<h2 class="title">Cese del sufrimiento</h2>
 						</div>

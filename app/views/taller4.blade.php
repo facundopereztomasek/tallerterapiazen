@@ -86,12 +86,12 @@
 					<article class="workshop-view">
 						<header class="workshop-header">
 							<h1 class="title">Taller Psicología Zen y Práctica de Meditación 4<sup>to</sup> encuentro: <br> Miedo, ira, ansiedad, instatisfacción, estrés ¿Me sirve la meditación?</h1>
-							<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Inscribirse</button>
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".taller-modal">Inscribirse</button>
 						</header>
 						<div class="row">
 							<div class="col-xs-8 col-md-8">
 								<div class="contents">
-									<p class="paragraph">"La paz viene del interior. No la busques fuera. Somos formados por nuestros pensamientos; nos convertimos en lo que pensamos. Cuando la mente es pura, la alegría le sigue como una sombra que nunca se va."</p>
+									<p class="paragraph phrase">"La paz viene del interior. No la busques fuera. Somos formados por nuestros pensamientos; nos convertimos en lo que pensamos. Cuando la mente es pura, la alegría le sigue como una sombra que nunca se va."</p>
 									<p class="paragraph">Agradecemos tu interés por esta actividad y esperamos tu activa participación para que sea un encuentro grupal enriquecedor en el que te puedas conectar con una mirada novedosa acerca de enseñanzas muy antiguas, orientadas a la comprensión de la mente, el cese del sufrimiento y la práctica de la meditación como medio para manejar nuestros niveles de estrés, promover un nivel de bienestar y llegar a una conexión saludable con vos mismo en el aquí y ahora.</p>
 								</div>
 							</div>
@@ -154,7 +154,7 @@
 										No es una actividad orientada en sentido religioso.
 									</p>
 									<p class="paragraph">
-										(*) si te anotás para realizar todos los encuentros podés pagar hasta el 26 de Junio por adelantado el total del Taller con el 14% de descuento: $1200 por los 4 encuentros.
+										(*) si te anotás para realizar todos los encuentros podés pagar hasta el 27 de Marzo por adelantado el total del Taller con el 14% de descuento: $1200 por los 4 encuentros.</p>
 									</p>
 								</div>
 							</div>
@@ -204,7 +204,7 @@
 	@if( Session::get('feedback') )
 
 		<!-- MODALES -->
-		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal success-modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -216,17 +216,17 @@
 			</div>
 		</div>
 		<script>
-			$('.modal').modal('toggle');
+			$('.success-modal').modal('toggle');
 		</script>
 	@endif
 
 	<!-- MODALES -->
-	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal taller-modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				<div class="title-container">
-					<p class="title">Psicoterapia v&iacute;a Skype</p>
+					<p class="title">Taller: Psicología Zen y Práctica de Meditación 4to encuentro: Miedo, ira, ansiedad, insactisfacción, estrés ¿Me sirve la meditación?</p>
 				</div>
 			{{ Form::open( array('route'=>'inscribirse_taller','class'=>'modal-form clearfix')) }}
 				<p class="subtitle">Formulario de contacto</p>

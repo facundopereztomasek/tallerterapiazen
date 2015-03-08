@@ -15,48 +15,39 @@
 		</div>
 		<!-- <div><img class="screen-only" src="images/banner-eblast.png" alt=""></div> -->
 		<div><img src="<?php echo $message->embed('images/banner-eblast.png'); ?>" style="border: 0;"></div>
-		<p>Datos form</p>
-		Nombre: {{{ $nombre }}}
-		Apellido: {{{ $apellido }}}
-		Email: {{{ $email }}}
-		Mensaje: {{{ $mensaje }}}
-		@if( $telefono )
-			Telefono: {{{ $telefono }}}
-		@endif
-		@if( $skype )
-			Skype: {{{ $skype}}}
-		@endif
 
 
-		<h1 class="title" style="font-size: 30px;margin: 0;padding: 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;">{{{ $nombre }}}, gracias por inscribirte a <span class="workshop-name" style="display: block;">Taller: 
+
+		<h1 class="title" style="font-size: 30px;margin: 0;padding: 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;">Has hecho un nuevo contacto para <span class="workshop-name" style="display: block;">
 			@if( ISSET($taller) && $taller == 1)
-				¿Qué es la mente? Condicionamientos y sufrimiento.
+				Taller 1: ¿Qué es la mente? Condicionamientos y sufrimiento.
 			@elseif( ISSET($taller) && $taller == 2)
-				¿Qué es la psicología basada en el Zen? Prácticas de meditación.
+				Taller 2: ¿Qué es la psicología basada en el Zen? Prácticas de meditación.
 			@elseif( ISSET($taller) && $taller == 3)
-				Diferentes prácticas de meditación.
+				Taller 3: Diferentes prácticas de meditación.
 			@elseif( ISSET($taller) && $taller == 4)
-				Miedo, ira, ansiedad, insactisfacción, estrés ¿Me sirve la meditación?
+				Taller 4: Miedo, ira, ansiedad, insactisfacción, estrés ¿Me sirve la meditación?
 			@elseif( ISSET($psico) && $psico == 1)
-				Atención psicoterapeutica en consultorio.
+				Atención psicoterapéutica en consultorio.
 			@elseif( ISSET($psico) && $psico == 2)
-				Atención psicoterapeutica vía Skype.
+				Atención psicoterapéutica vía Skype.
 			@endif
 		</span></h1>
-		<p class="paragraph" style="padding: 0 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-size: 16px;">
-			@if( ISSET($taller) && $taller == 1)
-				El taller sera el d&iacute;a <strong style="font-weight: bold;">Sábado 28</strong> de Marzo de 2015, a las <strong style="font-weight: bold;">09:30 hs</strong>.</p>
-			@elseif( ISSET($taller) && $taller == 2)
-				El taller sera el d&iacute;a <strong style="font-weight: bold;">Sábado 25</strong> de Abril de 2015, a las <strong style="font-weight: bold;">09:30 hs</strong>.</p>
-			@elseif( ISSET($taller) && $taller == 3)
-				El taller sera el d&iacute;a <strong style="font-weight: bold;">Sábado 30</strong> de Mayo de 2015, a las <strong style="font-weight: bold;">09:30 hs</strong>.</p>
-			@elseif( ISSET($taller) && $taller == 4)
-				El taller sera el d&iacute;a <strong style="font-weight: bold;">Sábado 27</strong> de Junio de 2015, a las <strong style="font-weight: bold;">09:30 hs</strong>.</p>
-			@endif
 
-		<p class="paragraph" style="padding: 0 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-size: 16px;">Te esperamos!</p>
-		<div class="footer" style="background-color: #151515;overflow: auto;">
-			<span class="mail" style="color: #bbbbbb;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;font-size: 14px;display: block;float: right;margin-left: 5px;padding: 10px;margin: 0;">Por cualquier consulta podes contactarte a <a href="mailto:contacto@tallerterapiazen.com.ar" style="background-color: transparent;color: #bbbbbb;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;font-size: 14px;display: block;float: right;margin-left: 5px;">contacto@tallerterapiazen.com.ar</a></span>
+		<p style="font-size: 14px;margin: 0;padding: 2px 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;">Datos del paciente</p>
+		<p style="font-size: 14px;margin: 0;padding: 2px 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;">Nombre: {{{ $nombre }}}</p>
+		<p style="font-size: 14px;margin: 0;padding: 2px 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;">Apellido: {{{ $apellido }}}</p>
+		<p style="font-size: 14px;margin: 0;padding: 2px 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;">Email: {{{ $email }}}</p>
+		<p style="font-size: 14px;margin: 0;padding: 2px 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;">Mensaje: {{{ $mensaje }}}</p>
+		@if( $telefono )
+			<p style="font-size: 14px;margin: 0;padding: 2px 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;">Telefono: {{{ $telefono }}}</p>
+		@endif
+		@if( $skype )
+			<p style="font-size: 14px;margin: 0;padding: 2px 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;">Skype: {{{ $skype}}}</p>
+		@endif
+
+		<div class="footer" style="background-color: #151515;overflow: auto; margin-top:20px;">
+			<span class="mail" style="color: #bbbbbb;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;font-size: 14px;display: block;float: right;margin-left: 5px;padding: 10px;margin: 0;">Taller Psicología Zen</span>
 		</div>
 	</div>
 </body>

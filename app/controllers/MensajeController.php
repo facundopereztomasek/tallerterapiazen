@@ -36,7 +36,7 @@ class MensajeController extends BaseController {
 		$save = $mensaje->save();
 
 		if( $save ){
-			$feedback = ['mensaje' => 'Se ha enviado tu pregunta.' , 'tipo' => 'success'];
+			$feedback = ['mensaje' => 'Gracias por enviar tu pregunta. En breve estaré respondiendo.' , 'tipo' => 'success'];
 		}else{
 			$feedback = ['mensaje' => 'Error, no se pudo enviar tu pregunta, intentalo más tarde.' , 'tipo' => 'error'];
 		}
