@@ -48,15 +48,18 @@ class InscripcionController extends BaseController {
 		
 		$datos = $contacto->toArray();
 
+		// dato para el email
+		$datos['psico'] = $psicoterapia;
+
 		if( $save ){
 			$feedback = ['mensaje' => 'Te has inscripto.' , 'tipo' => 'success'];
 			// Usuario
-			Mail::queue('emails.eblast', $datos, function($message) use($contacto){
+			Mail::queue('emails.eblastPsicologia', $datos, function($message) use($contacto){
 			    $message->to($contacto['email'], $contacto['nombre'].' '.$contacto['apellido'])->subject('Gracias!');
 			});
 			// Admin
-			Mail::queue('emails.eblast', $datos, function($message) use($contacto){
-			    $message->to('contacto@tallerpsicologiazen.com.ar', $contacto['nombre'].' '.$contacto['apellido'])->subject('Usuario inscripto!');
+			Mail::queue('emails.inscripcion', $datos, function($message) use($contacto){
+			    $message->to('lucianoperezt@gmail.com', $contacto['nombre'].' '.$contacto['apellido'])->subject('Usuario inscripto!');
 			});
 		}else{
 			$feedback = ['mensaje' => 'Error, no se pudo enviar el formulario, intentalo más tarde.' , 'tipo' => 'error'];
@@ -182,8 +185,8 @@ class InscripcionController extends BaseController {
 			    $message->to($contacto['email'], $contacto['nombre'].' '.$contacto['apellido'])->subject('Gracias!');
 			});
 			// Admin
-			Mail::queue('emails.eblast', $datos, function($message) use($contacto){
-			    $message->to('contacto@tallerpsicologiazen.com.ar', $contacto['nombre'].' '.$contacto['apellido'])->subject('Usuario inscripto!');
+			Mail::queue('emails.inscripcion', $datos, function($message) use($contacto){
+			    $message->to('lucianoperezt@gmail.com', $contacto['nombre'].' '.$contacto['apellido'])->subject('Usuario inscripto!');
 			});
 		}else{
 			$feedback = ['mensaje' => 'Error, no se pudo enviar el formulario, intentalo más tarde.' , 'tipo' => 'error'];
