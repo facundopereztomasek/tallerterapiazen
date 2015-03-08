@@ -59,7 +59,7 @@ class InscripcionController extends BaseController {
 			});
 			// Admin
 			Mail::queue('emails.inscripcion', $datos, function($message) use($contacto){
-			    $message->to('lucianoperezt@gmail.com', $contacto['nombre'].' '.$contacto['apellido'])->subject('Usuario inscripto!');
+			    $message->to('contacto@tallerpsicologiazen.com.ar', $contacto['nombre'].' '.$contacto['apellido'])->subject('Usuario inscripto!');
 			});
 		}else{
 			$feedback = ['mensaje' => 'Error, no se pudo enviar el formulario, intentalo más tarde.' , 'tipo' => 'error'];
@@ -186,7 +186,7 @@ class InscripcionController extends BaseController {
 			});
 			// Admin
 			Mail::queue('emails.inscripcion', $datos, function($message) use($contacto){
-			    $message->to('lucianoperezt@gmail.com', $contacto['nombre'].' '.$contacto['apellido'])->subject('Usuario inscripto!');
+			    $message->to('contacto@tallerpsicologiazen.com.ar', $contacto['nombre'].' '.$contacto['apellido'])->subject('Usuario inscripto!');
 			});
 		}else{
 			$feedback = ['mensaje' => 'Error, no se pudo enviar el formulario, intentalo más tarde.' , 'tipo' => 'error'];
