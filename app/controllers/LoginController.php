@@ -45,7 +45,7 @@ class LoginController extends BaseController {
 			$data = $usuario->toArray();
 			$data['password_temp'] = $password_temp; // le pasamos la pass sin encriptar
 			Mail::queue('emails.olvidePassword', $data, function($message) use ($usuario){
-			  $message->to('lucianoperezt@gmail.com', 'gustavo')
+			  $message->to('contacto@tallerpsicologiazen.com.ar', 'gustavo')
 			          ->subject('Se generó una nueva contraseña para tu cuenta.');
 			});
 		}

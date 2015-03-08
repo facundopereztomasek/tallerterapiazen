@@ -15,8 +15,28 @@
 		</div>
 		<!-- <div><img class="screen-only" src="images/banner-eblast.png" alt=""></div> -->
 		<div><img src="<?php echo $message->embed('images/banner-eblast.png'); ?>" style="border: 0;"></div>
-		<h1 class="title" style="font-size: 30px;margin: 0;padding: 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;">{{{ $nombre }}}, gracias por inscribirte a <span class="workshop-name" style="display: block;">Taller: Entendiendo la meditaci&oacute;n!</span></h1>
-		<p class="paragraph" style="padding: 0 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-size: 16px;">El taller sera el d&iacute;a <strong style="font-weight: bold;">Jueves 26</strong> de Noviembre de 2015, a las <strong style="font-weight: bold;">08:00 hs</strong>.</p>
+		<h1 class="title" style="font-size: 30px;margin: 0;padding: 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;">{{{ $nombre }}}, gracias por inscribirte a <span class="workshop-name" style="display: block;">Taller: 
+			@if( $taller == 1)
+				¿Qué es la mente? Condicionamientos y sufrimiento.
+			@elseif( $taller == 2)
+				¿Qué es la psicología basada en el Zen? Prácticas de meditación.
+			@elseif( $taller == 3)
+				Diferentes prácticas de meditación.
+			@elseif( $taller == 4)
+				Miedo, ira, ansiedad, insactisfacción, estrés ¿Me sirve la meditación?
+			@endif
+		</span></h1>
+		<p class="paragraph" style="padding: 0 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-size: 16px;">
+			@if( $taller == 1)
+				El taller sera el d&iacute;a <strong style="font-weight: bold;">Sábado 28</strong> de Marzo de 2015, a las <strong style="font-weight: bold;">09:30 hs</strong>.</p>
+			@elseif( $taller == 2)
+				El taller sera el d&iacute;a <strong style="font-weight: bold;">Sábado 25</strong> de Abril de 2015, a las <strong style="font-weight: bold;">09:30 hs</strong>.</p>
+			@elseif( $taller == 3)
+				El taller sera el d&iacute;a <strong style="font-weight: bold;">Sábado 30</strong> de Mayo de 2015, a las <strong style="font-weight: bold;">09:30 hs</strong>.</p>
+			@elseif( $taller == 4)
+				El taller sera el d&iacute;a <strong style="font-weight: bold;">Sábado 27</strong> de Junio de 2015, a las <strong style="font-weight: bold;">09:30 hs</strong>.</p>
+			@endif
+
 		<p class="paragraph" style="padding: 0 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-size: 16px;">Te esperamos!</p>
 		<div class="footer" style="background-color: #151515;overflow: auto;">
 			<span class="mail" style="color: #bbbbbb;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;font-size: 14px;display: block;float: right;margin-left: 5px;padding: 10px;margin: 0;">Por cualquier consulta podes contactarte a <a href="mailto:contacto@tallerterapiazen.com.ar" style="background-color: transparent;color: #bbbbbb;font-family: &quot;Tahoma&quot; Sans-Serif;font-weight: 100;font-size: 14px;display: block;float: right;margin-left: 5px;">contacto@tallerterapiazen.com.ar</a></span>

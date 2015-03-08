@@ -56,7 +56,7 @@ class InscripcionController extends BaseController {
 			});
 			// Admin
 			Mail::queue('emails.eblast', $datos, function($message) use($contacto){
-			    $message->to('lucianoperezt@gmail.com', $contacto['nombre'].' '.$contacto['apellido'])->subject('Usuario inscripto!');
+			    $message->to('contacto@tallerpsicologiazen.com.ar', $contacto['nombre'].' '.$contacto['apellido'])->subject('Usuario inscripto!');
 			});
 		}else{
 			$feedback = ['mensaje' => 'Error, no se pudo enviar el formulario, intentalo más tarde.' , 'tipo' => 'error'];
@@ -139,24 +139,42 @@ class InscripcionController extends BaseController {
 		// Guarda el taller al que se inscribio
 		switch( $taller ){
 			case 1:
-				$contacto->taller1 = 1;
+				$contacto->taller1 = '28-03-2015 09:30:00';
 				break;
 			case 2:
-				$contacto->taller2 = 1;
+				$contacto->taller2 = '25-04-2015 09:30:00';
 				break;
 			case 3:
-				$contacto->taller3 = 1;
+				$contacto->taller3 = '30-05-2015 09:30:00';
 				break;
 			case 4:
-				$contacto->taller4 = 1;
+				$contacto->taller4 = '27-06-2015 09:30:00';
 				break;
 
 		}
 
 		$save = $contacto->save();
 
+		// Datos para el email
 		$datos = $contacto->toArray();
 
+		// Datos dependiendo del taller
+		switch( $taller ){
+			case 1:
+				$datos['taller'] = 1;
+				break;
+			case 2:
+				$datos['taller'] = 2;
+				break;
+			case 3:
+				$datos['taller'] = 3;
+				break;
+			case 4:
+				$datos['taller'] = 4;
+				break;
+		}
+
+		// Email
 		if( $save ){
 			$feedback = ['mensaje' => 'Te has inscripto.' , 'tipo' => 'success'];
 			// Usuario
@@ -165,7 +183,7 @@ class InscripcionController extends BaseController {
 			});
 			// Admin
 			Mail::queue('emails.eblast', $datos, function($message) use($contacto){
-			    $message->to('lucianoperezt@gmail.com', $contacto['nombre'].' '.$contacto['apellido'])->subject('Usuario inscripto!');
+			    $message->to('contacto@tallerpsicologiazen.com.ar', $contacto['nombre'].' '.$contacto['apellido'])->subject('Usuario inscripto!');
 			});
 		}else{
 			$feedback = ['mensaje' => 'Error, no se pudo enviar el formulario, intentalo más tarde.' , 'tipo' => 'error'];
