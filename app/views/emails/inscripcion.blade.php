@@ -38,9 +38,9 @@
 			@elseif( ISSET($taller) && $taller == 4)
 				Miedo, ira, ansiedad, insactisfacción, estrés ¿Me sirve la meditación?
 			@elseif( ISSET($psico) && $psico == 1)
-				psico presencial
+				Atención psicoterapeutica en consultorio.
 			@elseif( ISSET($psico) && $psico == 2)
-				psico skype
+				Atención psicoterapeutica vía Skype.
 			@endif
 		</span></h1>
 		<p class="paragraph" style="padding: 0 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-size: 16px;">
@@ -52,10 +52,6 @@
 				El taller sera el d&iacute;a <strong style="font-weight: bold;">Sábado 30</strong> de Mayo de 2015, a las <strong style="font-weight: bold;">09:30 hs</strong>.</p>
 			@elseif( ISSET($taller) && $taller == 4)
 				El taller sera el d&iacute;a <strong style="font-weight: bold;">Sábado 27</strong> de Junio de 2015, a las <strong style="font-weight: bold;">09:30 hs</strong>.</p>
-			@elseif( ISSET($psico) && $psico == 1)
-				Tal dia tal hora (psico presencial)
-			@elseif( ISSET($psico) && $psico == 2)
-				Tal dia tal hora (psico skype)
 			@endif
 
 		<p class="paragraph" style="padding: 0 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-size: 16px;">Te esperamos!</p>

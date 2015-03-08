@@ -23,11 +23,7 @@
 			@endif
 		</span></h1>
 		<p class="paragraph" style="padding: 0 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-size: 16px;">
-			@if( $psico == 1)
-				A tal hora tal dia (presencial)
-			@elseif( $psico == 2)
-				A tal hora tal dia (skype)
-			@endif
+
 
 		<p class="paragraph" style="padding: 0 20px;color: #222222;font-family: &quot;Tahoma&quot; Sans-Serif;font-size: 16px;">Te esperamos!</p>
 		<div class="footer" style="background-color: #151515;overflow: auto;">
