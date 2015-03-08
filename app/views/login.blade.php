@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Laravel PHP Framework</title>
+	<title>Taller Psicología Zen - Login</title>
 	{{ HTML::script('jquery/jquery-1.11.2.min.js'); }}
 	{{ HTML::script('bootstrap/js/bootstrap.min.js'); }}
 	{{ HTML::style('bootstrap/css/bootstrap.min.css'); }}
@@ -13,6 +13,34 @@
 	{{ HTML::style('styles/fonts.css'); }}
 	{{ HTML::style('styles/styles.css'); }}
 	{{ HTML::script('scripts/app.js'); }}
+	<!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png?v=2">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png?v=2">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png?v=2">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png?v=2">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png?v=2">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png?v=2">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png?v=2">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png?v=2">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png?v=2">
+    <link rel="icon" type="image/png" href="favicon-32x32.png?v=2" sizes="32x32">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png?v=2" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon-96x96.png?v=2" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-16x16.png?v=2" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png?v=2">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-title" content="Le Jardin">
+    <link rel="shortcut icon" href="favicon.ico?v=2"/>
+    <link rel="icon" type="image/png" href="favicon-192x192.png?v=2" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon-160x160.png?v=2" sizes="160x160">
+    <link rel="icon" type="image/png" href="favicon-96x96.png?v=2" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-16x16.png?v=2" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-32x32.png?v=2" sizes="32x32">
+    <link rel="icon" href="favicon.ico?v=2"/>
+    <link rel="icon" href="favicon.png?v=2" type="image/png" />
+    <link rel="icon" href="favicon.ico?v=2" type="image/vnd.microsoft.icon" />
 </head>
 <body class="admin" data-section="admin">
 	<header class="header">
