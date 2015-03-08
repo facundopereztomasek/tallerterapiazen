@@ -155,11 +155,14 @@ function fixed_menu(){
     VALIDACION FORMULARIOS
 */
 function form_validation(){
+    // $('.form-skype button , .form-psico button').click(function(){
+    //     $(this).parent().parent().addClass('sended');
+    //     console.log('clase')
+    //     console.log($(this).parent().parent().attr('class'))
+    // })
 
-    $('.form-skype , .form-psico').click(function(){
-        $(this).parent().parent().addClass('sended');
-    })
-    $('form.sended').bind('submit',function(ev){
+    $('form').on('submit',function(ev){
+        console.log('envia')
         var valid = true;
         var rule_email = /^[-0-9a-zA-Z.+_]+@[-0-9a-zA-Z.+_]+\.[a-zA-Z]{2,4}$/
 
@@ -181,7 +184,7 @@ function form_validation(){
             ev.preventDefault();
             return;
         }
-        $('.modal').modal('toggle');
+        $(this).parent().parent().parent().modal('toggle');
 
     })
 }

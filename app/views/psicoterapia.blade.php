@@ -179,7 +179,7 @@
 			<div class="modal-content">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				<div class="title-container">
-					<p class="title">Psicoterapia v&iacute;a Skype</p>
+					<p class="title">Psicoterapia presencial</p>
 				</div>
 			{{ Form::open( array('route'=>'inscribirse_psicoterapia','class'=>'modal-form clearfix')) }}
 				<p class="subtitle">Formulario de contacto</p>
