@@ -84,7 +84,7 @@
 				<div class="col-xs-12 col-md-12">
 
 					<article class="workshop-view">
-						<header class="workshop-header">
+						<header class="workshop-header bg-taller-1">
 							<h1 class="title">Taller Psicología Zen y Práctica de Meditación 3<sup>er</sup> encuentro: <br>
 							Diferentes prácticas de meditación.</h1>
 							<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".taller-modal">Inscribirse</button>
@@ -201,7 +201,7 @@
 							</span>
 						</div>
 						<div class="col-xs-6 col-md-6">
-							<a target="_blank" href="http://www.facebook.com" class="facebook"><span class="icon icon-facebook"></span></a>
+							<a target="_blank" href="https://www.facebook.com/tallerpsicologiazen" class="facebook"><span class="icon icon-facebook"></span></a>
 							<a target="_blank" href="http://www.twitter.com" class="twitter"><span class="icon icon-twitter"></span></a>
 							<a target="_blank" href="http://www.youtube.com" class="youtube"><span class="icon icon-youtube"></span></a>
 						</div>

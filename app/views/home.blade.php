@@ -2,8 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="Taller Psicología Zen:Tu mente: Conocela, Aquietala, Liberala.">
-	<meta name="title" content="Taller Psicología Zen">
+	<meta name="description" content="Taller Psicolog&iacute;a Zen:Tu mente: Conocela, Aquietala, Liberala.">
+	<meta name="title" content="Taller Psicolog&iacute;a Zen">
+	<meta property="og:site_name" content="Taller Psicolog&iacute;a Zen"/>
+	<meta property="og:description" content="Taller Psicolog&iacute;a Zen:Tu mente: Conocela, Aquietala, Liberala." />
+	<meta property="og:title" content="Taller Psicolog&iacute;a Zen" />
+	<meta property="og:image" content="http://tallerpsicologiazen.com.ar/images/og-image.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:url" content="http://www.tallerpsicologiazen.com.ar" />
 	<title>Taller Psicología Zen</title>
 	{{ HTML::script('jquery/jquery-1.11.2.min.js'); }}
 	{{ HTML::script('bootstrap/js/bootstrap.min.js'); }}
@@ -164,7 +170,7 @@
 							</span>
 						</div>
 						<div class="col-xs-6 col-md-6">
-							<a target="_blank" href="http://www.facebook.com" class="facebook"><span class="icon icon-facebook"></span></a>
+							<a target="_blank" href="https://www.facebook.com/tallerpsicologiazen" class="facebook"><span class="icon icon-facebook"></span></a>
 							<a target="_blank" href="http://www.twitter.com" class="twitter"><span class="icon icon-twitter"></span></a>
 							<a target="_blank" href="http://www.youtube.com" class="youtube"><span class="icon icon-youtube"></span></a>
 						</div>

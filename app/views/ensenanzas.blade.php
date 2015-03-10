@@ -160,6 +160,86 @@
 									<!-- <a href="ensenanzas" class="box-link"></a> -->
 								</article>
 
+								<!-- ******************************************************* -->
+								<!-- ******************************************************* -->
+								<!-- ******************************************************* -->
+
+								<article class="box box-story bg-box-1">
+									<div class="title-container">
+										<h2 class="title">La riqueza real est&aacute; a tu alcance.</h2>
+									</div>
+									<div class="box-image">
+										{{ HTML::image('images/stories/06.jpg' , 'Monje caminando' , array('class'=>'story-image')) }}
+									</div>
+									<div class="description-container">
+										<p class="description">
+											Una ventana brillando sobre los pinos verdes no puede compararse ni a los palacios de jade ni a las torres de plata dorada.
+										</p>
+									</div>
+									<!-- <a href="ensenanzas" class="box-link"></a> -->
+								</article>
+
+								<article class="box box-story bg-box-1">
+									<div class="title-container">
+										<h2 class="title">Nada es permamente, nada es imperecedero.</h2>
+									</div>
+									<div class="box-image">
+										{{ HTML::image('images/stories/07.jpg' , 'Monje caminando' , array('class'=>'story-image')) }}
+									</div>
+									<div class="description-container">
+										<p class="description">
+											La l&aacute;mpara no se apodera de la luz que fluye por ella. No luches por apoderarte de la vida que fluye a trav&eacute; de t&iacute;.
+										</p>
+									</div>
+									<!-- <a href="ensenanzas" class="box-link"></a> -->
+								</article>
+
+								<article class="box box-story bg-box-1">
+									<div class="title-container">
+										<h2 class="title">Todo est&aacute; sujeto al cambio.</h2>
+									</div>
+									<div class="box-image">
+										{{ HTML::image('images/stories/08.jpg' , 'Monje caminando' , array('class'=>'story-image')) }}
+									</div>
+									<div class="description-container">
+										<p class="description">
+											El pasado queda atr&aacute;, el futuro a&uacute;n no llega, el presente se nos escapa. Las cosas cambian continuamente sin ning&uacute; fundamento firme.
+										</p>
+									</div>
+									<!-- <a href="ensenanzas" class="box-link"></a> -->
+								</article>
+
+								<article class="box box-story bg-box-1">
+									<div class="title-container">
+										<h2 class="title">El viaje de mil millas comienza con el primer paso.</h2>
+									</div>
+									<div class="box-image">
+										{{ HTML::image('images/stories/09.jpg' , 'Monje caminando' , array('class'=>'story-image')) }}
+									</div>
+									<div class="description-container">
+										<p class="description">
+											El camino del bienestar que ilumina, no est&aacute; trazado ni deja huella, es como la ruta que toman las aves en el cielo.
+										</p>
+									</div>
+									<!-- <a href="ensenanzas" class="box-link"></a> -->
+								</article>
+
+								<article class="box box-story bg-box-1">
+									<div class="title-container">
+										<h2 class="title">La mente zen no es la mente zen.</h2>
+									</div>
+									<div class="box-image">
+										{{ HTML::image('images/stories/10.jpg' , 'Monje caminando' , array('class'=>'story-image')) }}
+									</div>
+									<div class="description-container">
+										<p class="description">
+											Descartar la mente zen es el modo zen correcto. Porque finalmente ¿De qu&eacute; color es el viento?
+										</p>
+									</div>
+									<!-- <a href="ensenanzas" class="box-link"></a> -->
+								</article>
+
+
 							</div>
 						</div>
 					</div>
@@ -318,7 +398,7 @@
 							</span>
 						</div>
 						<div class="col-xs-6 col-md-6">
-							<a target="_blank" href="http://www.facebook.com" class="facebook"><span class="icon icon-facebook"></span></a>
+							<a target="_blank" href="https://www.facebook.com/tallerpsicologiazen" class="facebook"><span class="icon icon-facebook"></span></a>
 							<a target="_blank" href="http://www.twitter.com" class="twitter"><span class="icon icon-twitter"></span></a>
 							<a target="_blank" href="http://www.youtube.com" class="youtube"><span class="icon icon-youtube"></span></a>
 						</div>

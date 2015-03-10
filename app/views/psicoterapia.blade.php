@@ -75,7 +75,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
-					<article class="banner bg-taller-1 clearfix">
+					<article class="banner bg-terapia-1 clearfix">
 						<h2 class="title">Atención psicoterapeutica en consultorio.</h2>
 						<div class="row separator">
 							<div class="col-xs-8 col-md-8 no-gutter">
@@ -98,7 +98,7 @@
 
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
-					<article class="banner bg-taller-1 clearfix">
+					<article class="banner bg-terapia-2 clearfix">
 						<h2 class="title">Atención psicoterapeutica vía Skype.</h2>
 						<div class="row separator">
 							<div class="col-xs-8 col-md-8 no-gutter">
@@ -144,7 +144,7 @@
 							</span>
 						</div>
 						<div class="col-xs-6 col-md-6">
-							<a target="_blank" href="http://www.facebook.com" class="facebook"><span class="icon icon-facebook"></span></a>
+							<a target="_blank" href="https://www.facebook.com/tallerpsicologiazen" class="facebook"><span class="icon icon-facebook"></span></a>
 							<a target="_blank" href="http://www.twitter.com" class="twitter"><span class="icon icon-twitter"></span></a>
 							<a target="_blank" href="http://www.youtube.com" class="youtube"><span class="icon icon-youtube"></span></a>
 						</div>

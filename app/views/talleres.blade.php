@@ -104,7 +104,7 @@
 
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
-					<article class="banner bg-taller-1 clearfix">
+					<article class="banner bg-taller-2 clearfix">
 						<h2 class="title">Taller: Psicología Zen y Práctica de Meditación 2<sup>do</sup> encuentro: <br> ¿Qué es la psicología basada en el Zen? Prácticas de meditación.</h2>
 						<div class="row separator">
 							<div class="col-xs-4 col-md-4 no-gutter">
@@ -164,7 +164,7 @@
 
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
-					<article class="banner bg-taller-1 clearfix">
+					<article class="banner bg-taller-2 clearfix">
 						<h2 class="title">Taller: Psicología Zen y Práctica de Meditación 4<sup>to</sup> encuentro: <br> Miedo, ira, ansiedad, insatisfacción, estrés ¿Me sirve la meditación?</h2>
 						<div class="row separator">
 							<div class="col-xs-4 col-md-4 no-gutter">
@@ -218,7 +218,7 @@
 							</span>
 						</div>
 						<div class="col-xs-6 col-md-6">
-							<a target="_blank" href="http://www.facebook.com" class="facebook"><span class="icon icon-facebook"></span></a>
+							<a target="_blank" href="https://www.facebook.com/tallerpsicologiazen" class="facebook"><span class="icon icon-facebook"></span></a>
 							<a target="_blank" href="http://www.twitter.com" class="twitter"><span class="icon icon-twitter"></span></a>
 							<a target="_blank" href="http://www.youtube.com" class="youtube"><span class="icon icon-youtube"></span></a>
 						</div>
