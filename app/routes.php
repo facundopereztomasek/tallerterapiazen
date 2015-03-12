@@ -42,3 +42,9 @@ Route::group(["before" => "auth"], function(){
 	// Acciones Admin
 	Route::get('admin/cms_admin_zen/pregunta/borrar/{id}',array('as' => 'pregunta_borrar', 'uses' => 'AdminController@doBorrarPregunta'));
 });
+
+// ERROR 404
+App::missing(function($exception)
+{
+    return Response::view('errors.missing', array(), 404);
+});
