@@ -6,6 +6,10 @@ class EstaticoController extends BaseController {
 		return View::make('home');
 	}
 
+	public function getMain(){
+		return View::make('main');
+	}
+
 	public function getEnsenanzas(){
 		return View::make('ensenanzas');
 	}

@@ -63,7 +63,7 @@
 			<div class="row">
 				<nav class="nav-bar clearfix">
 					<!-- <a class="link selected" href="#">home</a> -->
-					<div class="col-xs-2 col-md-2 divisor"><a class="link logo-circle" href="{{route('home')}}"><img src="images/logo-mini.png" alt="logo taller psicolog&iacute;a zen" width="70"></a></div>
+					<div class="col-xs-2 col-md-2 divisor"><a class="link logo-circle" href="{{route('main')}}"><img src="images/logo-mini.png" alt="logo taller psicolog&iacute;a zen" width="70"></a></div>
 					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('home', 'home',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
 					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('ensenanzas', 'ense&ntilde;anzas',null,array('class' => 'link selected'))}}<div class="hover-link"></div></div>
 					<div class="col-xs-2 col-md-2 divisor">{{link_to_route('talleres', 'talleres',null,array('class' => 'link'))}}<div class="hover-link"></div></div>
@@ -188,7 +188,7 @@
 									</div>
 									<div class="description-container">
 										<p class="description">
-											La l&aacute;mpara no se apodera de la luz que fluye por ella. No luches por apoderarte de la vida que fluye a trav&eacute; de t&iacute;.
+											La l&aacute;mpara no se apodera de la luz que fluye por ella. No luches por apoderarte de la vida que fluye a trav&eacute;s de t&iacute;.
 										</p>
 									</div>
 									<!-- <a href="ensenanzas" class="box-link"></a> -->
@@ -203,7 +203,7 @@
 									</div>
 									<div class="description-container">
 										<p class="description">
-											El pasado queda atr&aacute;, el futuro a&uacute;n no llega, el presente se nos escapa. Las cosas cambian continuamente sin ning&uacute; fundamento firme.
+											El pasado queda atr&aacute;s, el futuro a&uacute;n no llega, el presente se nos escapa. Las cosas cambian continuamente sin ning&uacute;n fundamento firme.
 										</p>
 									</div>
 									<!-- <a href="ensenanzas" class="box-link"></a> -->
@@ -361,7 +361,7 @@
 								<li>{{HTML::link("pdf/queesmeditar.pdf", '¿Qué es meditar?', array("class" => "link" , "target" => "_blank" ));}}
 									<p class="abstract">Abstract del texto para que se sepa de que trata.</p>
 								</li>
-								<li>{{HTML::link("pdf/trabajandoemocionesperturbadoras.pdf", 'Trabajando con las emociones perturabadoras', array("class" => "link" , "target" => "_blank" ));}}
+								<li>{{HTML::link("pdf/trabajandoemocionesperturbadoras.pdf", 'Trabajando con las emociones perturbadoras', array("class" => "link" , "target" => "_blank" ));}}
 									<p class="abstract">Abstract del texto para que se sepa de que trata.</p>
 								</li>
 							</ul>
