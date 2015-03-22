@@ -2,8 +2,8 @@
 
 
 // Paginas estaticas sin funcionalidad (EstaticoController)
-Route::get('/',array('as' => 'main', 'uses' => 'EstaticoController@getMain'));
-Route::get('home',array('as' => 'home', 'uses' => 'EstaticoController@getHome'));
+Route::get('/',array('as' => 'home', 'uses' => 'EstaticoController@getHome'));
+// Route::get('home',array('as' => 'home', 'uses' => 'EstaticoController@getHome'));
 Route::get('ensenanzas',array('as' => 'ensenanzas', 'uses' => 'EstaticoController@getEnsenanzas'));
 Route::get('talleres',array('as' => 'talleres', 'uses' => 'EstaticoController@getListadoTalleres'));
 
