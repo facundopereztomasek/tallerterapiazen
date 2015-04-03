@@ -90,7 +90,7 @@
 
 								¿Querés experimentar diferentes prácticas de meditación que te ayuden a comenzar tu búsqueda de bienestar interior?
 
-								¿Querés aprender de qué modo contibuye la meditación para ayudarte con el miedo, la ansiedad, la insatisfacción, la ira y el estrés?
+								¿Querés aprender de qué modo contribuye la meditación para ayudarte con el miedo, la ansiedad, la insatisfacción, la ira y el estrés?
 							</p>
 							<p class="paragraph">
 								Vení a participar del Taller Grupal  de 4 encuentros
