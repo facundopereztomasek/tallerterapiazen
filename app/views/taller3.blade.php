@@ -98,10 +98,10 @@
 							</div>
 							<div class="col-xs-4 col-md-4">
 								<ul class="data">
-									<li><strong class="data-type">Fecha</strong><span class="data-info">Sábado 30 de Mayo de 2015</span></li>
+									<li><strong class="data-type">Fecha</strong><span class="data-info">Sábado 24 de Octubre de 2015</span></li>
 									<li><strong class="data-type">Hora</strong><span class="data-info">09.30 hs.</span></li>
 									<li><strong class="data-type">Lugar</strong><span class="data-info">Hipolito Irigoyen 4579 dpto. G, Lanus Oeste</span></li>
-									<li><strong class="data-type">Costo</strong><span class="data-info">$350 por encuentro (*)</span></li>
+									<li><strong class="data-type">Costo</strong><span class="data-info">$380 por encuentro (*)</span></li>
 								</ul>
 							</div>
 						</div>
@@ -158,13 +158,13 @@
 							<div class="col-xs-8 col-md-8">
 								<div class="contents">
 									<p class="paragraph">Recordá: <br>
-										El dia 30 te esperamos en lo posible a partir de 09.15, 
+										El dia 24 te esperamos en lo posible a partir de 09.15, 
 										para poder comenzar a las 09.30 puntualmente.
 										No es necesario experiencia previa ni ropa especial.
 										No es una actividad orientada en sentido religioso.
 									</p>
-									<p class="paragraph">
-										(*) si te anotás para realizar todos los encuentros podés pagar hasta el 27 de Marzo por adelantado el total del Taller con el 14% de descuento: $1200 por los 4 encuentros.</p>
+									<!-- <p class="paragraph">
+										(*) si te anotás para realizar todos los encuentros podés pagar hasta el 27 de Marzo por adelantado el total del Taller con el 14% de descuento: $1200 por los 4 encuentros.</p> -->
 
 								</div>
 							</div>

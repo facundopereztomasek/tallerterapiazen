@@ -72,6 +72,41 @@
 	</header>
 	<main class="main">
 		<div class="container">
+
+			<div class="row">
+				<div class="col-xs-12 col-md-12">
+					<article class="banner bg-taller-1 clearfix">
+						<h2 class="title">Taller: Psicología Zen y Práctica de Meditación Intensivo: <br> ¿Qué es la mente? Condicionamientos y sufrimiento.</h2>
+						<div class="row separator">
+							<div class="col-xs-4 col-md-4 no-gutter">
+								<ul class="data">
+									<li>15 y 16 de Agosto 2015</li>
+									<li>09.30 hs.</li>
+									<li>Capital Federal</li>
+								</ul>
+							</div>
+							<div class="col-xs-6 col-md-6 col-sm-pull-1">
+								<p class="paragraph">
+									 ¿Te interesa conocer como funciona tu mente desde la Psicoterapia basada en la enseñanza zen? ¿Querés experimentar diferentes prácticas de meditación que te ayuden a comenzar tu búsqueda de bienestar interior? ¿Querés aprender de qué modo contribuye la meditación para ayudarte con el miedo, la ansiedad, la insatisfacción, la ira y el estrés? Vení a participar del Taller INTENSIVO los días Sábado 15 y Domingo 16 de Agosto de 9.30 a 16.30
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-8 col-md-8">
+								<p class="tip">
+									Traer ropa c&oacute;moda
+								</p>
+							</div>
+						</div>
+						<a href="{{ route('taller5') }}" class="btn btn-primary">Ver m&aacute;s</a>
+					</article>
+				</div>
+			</div>
+
+
+
+			<hr id="t2">
+
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
 					<article class="banner bg-taller-1 clearfix">
@@ -79,14 +114,14 @@
 						<div class="row separator">
 							<div class="col-xs-4 col-md-4 no-gutter">
 								<ul class="data">
-									<li>Sábado 28 de Marzo 2015</li>
+									<li>Sábado 22 de Agosto 2015</li>
 									<li>09.30 hs.</li>
 									<li>Hipolito Irigoyen 4579 dpto. G,  Lanus Oeste</li>
 								</ul>
 							</div>
 							<div class="col-xs-6 col-md-6 col-sm-pull-1">
 								<p class="paragraph">
-									 ¿Por qué sufrimos, por qué nuestra mente no nos deja disfrutar de los momentos  que vivimos y de las cosas que tenemos? ¿Tenemos una mente “programada” para sufrir? ¿Qué son los condicionamientos?
+									¿Por qué sufrimos, por qué nuestra mente no nos deja disfrutar de los momentos  que vivimos y de las cosas que tenemos? ¿Tenemos una mente “programada” para sufrir? ¿Qué son los condicionamientos?
 								</p>
 							</div>
 						</div>
@@ -102,6 +137,8 @@
 				</div>
 			</div>
 
+
+
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
 					<article class="banner bg-taller-2 clearfix">
@@ -109,14 +146,14 @@
 						<div class="row separator">
 							<div class="col-xs-4 col-md-4 no-gutter">
 								<ul class="data">
-									<li>Sábado 25 de Abril 2015</li>
+									<li>Sábado 19 de Septiembre 2015</li>
 									<li>09.30 hs.</li>
 									<li>Hipolito Irigoyen 4579 dpto. G,  Lanus Oeste</li>
 								</ul>
 							</div>
 							<div class="col-xs-6 col-md-6 col-sm-pull-1">
 								<p class="paragraph">
-									 Qué es el zen? ¿Qué es la psicología basada en la enseñanza zen? ¿Qué es el budismo? ¿Qué no es el budismo? ¿ Qué es la meditación? ¿Cómo se medita?
+									¿Qué es el zen? ¿Qué es la psicología basada en la enseñanza zen? ¿Qué es el budismo? ¿Qué no es el budismo? ¿ Qué es la meditación? ¿Cómo se medita?
 								</p>
 							</div>
 						</div>
@@ -132,6 +169,7 @@
 				</div>
 			</div>
 
+
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
 					<article class="banner bg-taller-1 clearfix">
@@ -139,7 +177,7 @@
 						<div class="row separator">
 							<div class="col-xs-4 col-md-4 no-gutter">
 								<ul class="data">
-									<li>Sábado 30 de Mayo 2015</li>
+									<li>Sábado 24 de Octubre 2015</li>
 									<li>09.30 hs.</li>
 									<li>Hipolito Irigoyen 4579 dpto. G,  Lanus Oeste</li>
 								</ul>
@@ -169,7 +207,7 @@
 						<div class="row separator">
 							<div class="col-xs-4 col-md-4 no-gutter">
 								<ul class="data">
-									<li>Sábado 27 de Junio 2015</li>
+									<li>Sábado 21 de Noviembre 2015</li>
 									<li>09.30 hs.</li>
 									<li>Hipolito Irigoyen 4579 dpto. G,  Lanus Oeste</li>
 								</ul>
@@ -188,6 +226,131 @@
 							</div>
 						</div>
 						<a href="{{ route('taller4') }}" class="btn btn-primary">Ver m&aacute;s</a>
+					</article>
+				</div>
+			</div>
+
+			<hr id="t3">
+
+			<div class="row">
+				<div class="col-xs-12 col-md-12">
+					<article class="banner bg-taller-1 clearfix">
+						<h2 class="title">Taller: Psicología de la Compasión y Prácticas de Meditación 1<sup>er</sup> encuentro: <br> ¿Qué es la mente? Condicionamientos y sufrimiento.</h2>
+						<div class="row separator">
+							<div class="col-xs-4 col-md-4 no-gutter">
+								<ul class="data">
+									<li>Sábado 29 de Agosto 2015</li>
+									<li>09.30 hs.</li>
+									<li>Hipolito Irigoyen 4579 dpto. G,  Lanus Oeste</li>
+								</ul>
+							</div>
+							<div class="col-xs-6 col-md-6 col-sm-pull-1">
+								<!-- <p class="paragraph">
+									¿Por qué sufrimos, por qué nuestra mente no nos deja disfrutar de los momentos  que vivimos y de las cosas que tenemos? ¿Tenemos una mente “programada” para sufrir? ¿Qué son los condicionamientos?
+								</p> -->
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-8 col-md-8">
+								<p class="tip">
+									Traer ropa c&oacute;moda
+								</p>
+							</div>
+						</div>
+						<a href="{{ route('taller6') }}" class="btn btn-primary">Ver m&aacute;s</a>
+					</article>
+				</div>
+			</div>
+
+
+
+			<div class="row">
+				<div class="col-xs-12 col-md-12">
+					<article class="banner bg-taller-2 clearfix">
+						<h2 class="title">Taller: Psicología de la Compasión y Prácticas de Meditación 2<sup>do</sup> encuentro: <br> ¿Qué es la psicología basada en el Zen? Prácticas de meditación.</h2>
+						<div class="row separator">
+							<div class="col-xs-4 col-md-4 no-gutter">
+								<ul class="data">
+									<li>Sábado 26 de Septiembre 2015</li>
+									<li>09.30 hs.</li>
+									<li>Hipolito Irigoyen 4579 dpto. G,  Lanus Oeste</li>
+								</ul>
+							</div>
+							<div class="col-xs-6 col-md-6 col-sm-pull-1">
+								<!-- <p class="paragraph">
+									¿Qué es el zen? ¿Qué es la psicología basada en la enseñanza zen? ¿Qué es el budismo? ¿Qué no es el budismo? ¿ Qué es la meditación? ¿Cómo se medita?
+								</p> -->
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-8 col-md-8">
+								<p class="tip">
+									Traer ropa c&oacute;moda
+								</p>
+							</div>
+						</div>
+						<a href="{{ route('taller7') }}" class="btn btn-primary">Ver m&aacute;s</a>
+					</article>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-xs-12 col-md-12">
+					<article class="banner bg-taller-1 clearfix">
+						<h2 class="title">Taller: Psicología de la Compasión y Prácticas de Meditación 3<sup>er</sup> encuentro: <br> Diferentes prácticas de meditación.</h2>
+						<div class="row separator">
+							<div class="col-xs-4 col-md-4 no-gutter">
+								<ul class="data">
+									<li>Sábado 31 de Octubre 2015</li>
+									<li>09.30 hs.</li>
+									<li>Hipolito Irigoyen 4579 dpto. G,  Lanus Oeste</li>
+								</ul>
+							</div>
+							<div class="col-xs-6 col-md-6 col-sm-pull-1">
+								<!-- <p class="paragraph">
+									¿Qué beneficios trae la meditación? ¿Meditar es relajarse y respirar? Tipos de meditación: Mindfullness, Vipassana, Samattha, guiada, meditación con mantras, meditación con intención virtuosa, Zazen (sin intención).
+								</p> -->
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-8 col-md-8">
+								<p class="tip">
+									Traer ropa c&oacute;moda
+								</p>
+							</div>
+						</div>
+						<a href="{{ route('taller8') }}" class="btn btn-primary">Ver m&aacute;s</a>
+					</article>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-md-12">
+					<article class="banner bg-taller-2 clearfix">
+						<h2 class="title">Taller: Psicología de la Compasión y Prácticas de Meditación 4<sup>to</sup> encuentro: <br> Miedo, ira, ansiedad, insatisfacción, estrés ¿Me sirve la meditación?</h2>
+						<div class="row separator">
+							<div class="col-xs-4 col-md-4 no-gutter">
+								<ul class="data">
+									<li>Sábado 29 de Noviembre 2015</li>
+									<li>09.30 hs.</li>
+									<li>Hipolito Irigoyen 4579 dpto. G,  Lanus Oeste</li>
+								</ul>
+							</div>
+							<div class="col-xs-6 col-md-6 col-sm-pull-1">
+								<!-- <p class="paragraph">
+									¿Qué son las emociones? ¿Por qué nos cuesta controlarlas? ¿Cómo hacer para reducir su impacto negativo en nuestra mente? La práctica de la meditación y el desarrollo de la atención plena para alcanzar el bienestar y el cese del sufrimiento.
+								</p> -->
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-8 col-md-8">
+								<p class="tip">
+									Traer ropa c&oacute;moda
+								</p>
+							</div>
+						</div>
+						<a href="{{ route('taller9') }}" class="btn btn-primary">Ver m&aacute;s</a>
 					</article>
 				</div>
 			</div>

@@ -83,20 +83,61 @@
 			<div class="row">
 				<div class="col-xs-12 col-md-12">
 					<article class="banner bg-taller-1 clearfix">
-						<h2 class="title">Taller: Psicolog&iacute;a Zen y pr&aacute;cticas de meditaci&oacute;n</h2>
-						<div class="col-xs-8 col-md-8">
-							<p class="paragraph">
-								¿Te interesa conocer como funciona tu mente desde la Psicoterapia basada en la enseñanza zen?
+						<!-- <h2 class="title">Talleres: Psicolog&iacute;a y pr&aacute;cticas de meditaci&oacute;n</h2> -->
+						<div class="col-xs-8 col-md-8 box-taller workshop-home">
+							<!-- <div class="col-xs-4 col-md-4">
+								<p class="paragraph">
+									¿Te interesa conocer como funciona tu mente desde la Psicoterapia basada en la enseñanza zen?
 
-								¿Querés experimentar diferentes prácticas de meditación que te ayuden a comenzar tu búsqueda de bienestar interior?
+									¿Querés experimentar diferentes prácticas de meditación que te ayuden a comenzar tu búsqueda de bienestar interior?
 
-								¿Querés aprender de qué modo contribuye la meditación para ayudarte con el miedo, la ansiedad, la insatisfacción, la ira y el estrés?
-							</p>
-							<p class="paragraph">
-								Vení a participar del Taller Grupal  de 4 encuentros
-							</p>
+									¿Querés aprender de qué modo contribuye la meditación para ayudarte con el miedo, la ansiedad, la insatisfacción, la ira y el estrés?
+								</p>
+								<p class="paragraph">
+									Vení a participar del Taller Grupal  de 4 encuentros
+								</p>
+							</div> -->
+							<div class="col-xs-4 col-md-4 box-taller">
+								<h2 class="title title-small">Taller psicolog&iacute;a zen y pr&aacute;cticas de meditaci&oacute;n</h2>
+								<p class="paragraph">
+									Taller intensivo en Capital Federal.
+								</p>
+								<p class="paragraph">
+									15 y 16 Agosto.
+								</p>
+								<a href="talleres#t1" class="btn btn-primary">Ver m&aacute;s</a>
+							</div>
+
+
+							<div class="col-xs-4 col-md-4 box-taller">
+								<h2 class="title title-small">Taller psicolog&iacute;a zen y pr&aacute;cticas de meditaci&oacute;n</h2>
+								<p class="paragraph">
+									Se repite en zona sur!!! Taller grupal 4 encuentros en Lanus Oeste.
+
+								</p>
+								<p class="paragraph">
+									A partir de sabado 22 Agosto.
+									<!-- 15 y 16 Agosto -->
+								</p>
+								<a href="talleres#t2" class="btn btn-primary">Ver m&aacute;s</a>
+							</div>
+
+
+							<div class="col-xs-4 col-md-4 box-taller">
+								<h2 class="title title-small">Taller psicolog&iacute;a de la compasi&oacute;n y pr&aacute;cticas de meditaci&oacute;n</h2>
+								<p class="paragraph">
+									Nuevo taller!!! Taller grupal 4 encuentros en Lanus Oeste.
+
+								</p>
+								<p class="paragraph">
+									A partir de sabado 29 Agosto.
+								</p>
+								<a href="talleres#t3" class="btn btn-primary">Ver m&aacute;s</a>
+							</div>
+
+
+
 						</div>
-						<a href="talleres" class="btn btn-primary">Ver m&aacute;s</a>
 					</article>
 				</div>
 			</div>

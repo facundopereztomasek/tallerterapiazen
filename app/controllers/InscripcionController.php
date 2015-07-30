@@ -59,7 +59,7 @@ class InscripcionController extends BaseController {
 			});
 			// Admin
 			Mail::queue('emails.inscripcion', $datos, function($message) use($contacto){
-			    $message->to('contacto@tallerpsicologiazen.com.ar', $contacto['nombre'].' '.$contacto['apellido'])->subject('Usuario inscripto!');
+			    $message->to('contacto@tallerpsicologiazen.com.ar', $contacto['nombre'].' '.$contacto['apellido'])->subject('TERAPIA: Inscripto!');
 			});
 		}else{
 			$feedback = ['mensaje' => 'Error, no se pudo enviar el formulario, intentalo más tarde.' , 'tipo' => 'error'];
@@ -83,26 +83,27 @@ class InscripcionController extends BaseController {
 	//-----------------------------------------
 	// Talleres
 	//-----------------------------------------
-	public function getTaller1(){
 
-		return $this->viewTaller1();
+	// TALLERES NORMALES
+	public function getTaller1(){ return $this->viewTaller1(); }
 
-	}
-	public function getTaller2(){
+	public function getTaller2(){ return $this->viewTaller2(); }
 
-		return $this->viewTaller2();
+	public function getTaller3(){ return $this->viewTaller3(); }
 
-	}
-	public function getTaller3(){
+	public function getTaller4(){ return $this->viewTaller4(); }
 
-		return $this->viewTaller3();
+	// TALLER INTENSIVO
+	public function getTaller5(){ return $this->viewTaller5(); }
 
-	}
-	public function getTaller4(){
+	// TALLER COMPASION
+	public function getTaller6(){ return $this->viewTaller6(); }
 
-		return $this->viewTaller4();
+	public function getTaller7(){ return $this->viewTaller7(); }
 
-	}
+	public function getTaller8(){ return $this->viewTaller8(); }
+
+	public function getTaller9(){ return $this->viewTaller9(); }
 
 
 
@@ -142,16 +143,31 @@ class InscripcionController extends BaseController {
 		// Guarda el taller al que se inscribio
 		switch( $taller ){
 			case 1:
-				$contacto->taller1 = '28-03-2015 09:30:00';
+				$contacto->taller1 = '22-08-2015 09:30:00';
 				break;
 			case 2:
-				$contacto->taller2 = '25-04-2015 09:30:00';
+				$contacto->taller2 = '19-09-2015 09:30:00';
 				break;
 			case 3:
-				$contacto->taller3 = '30-05-2015 09:30:00';
+				$contacto->taller3 = '24-10-2015 09:30:00';
 				break;
 			case 4:
-				$contacto->taller4 = '27-06-2015 09:30:00';
+				$contacto->taller4 = '21-11-2015 09:30:00';
+				break;
+			case 5:
+				$contacto->taller1 = '15-08-2015 09:30:00';
+				break;
+			case 6:
+				$contacto->taller2 = '29-08-2015 09:30:00';
+				break;
+			case 7:
+				$contacto->taller3 = '26-09-2015 09:30:00';
+				break;
+			case 8:
+				$contacto->taller4 = '31-10-2015 09:30:00';
+				break;
+			case 9:
+				$contacto->taller4 = '29-11-2015 09:30:00';
 				break;
 
 		}
@@ -175,6 +191,21 @@ class InscripcionController extends BaseController {
 			case 4:
 				$datos['taller'] = 4;
 				break;
+			case 5:
+				$datos['taller'] = 5;
+				break;
+			case 6:
+				$datos['taller'] = 6;
+				break;
+			case 7:
+				$datos['taller'] = 7;
+				break;
+			case 8:
+				$datos['taller'] = 8;
+				break;
+			case 9:
+				$datos['taller'] = 9;
+				break;
 		}
 
 		// Email
@@ -186,7 +217,7 @@ class InscripcionController extends BaseController {
 			});
 			// Admin
 			Mail::queue('emails.inscripcion', $datos, function($message) use($contacto){
-			    $message->to('contacto@tallerpsicologiazen.com.ar', $contacto['nombre'].' '.$contacto['apellido'])->subject('Usuario inscripto!');
+			    $message->to('contacto@tallerpsicologiazen.com.ar', $contacto['nombre'].' '.$contacto['apellido'])->subject('TALLER: Inscripto!');
 			});
 		}else{
 			$feedback = ['mensaje' => 'Error, no se pudo enviar el formulario, intentalo más tarde.' , 'tipo' => 'error'];
@@ -206,6 +237,21 @@ class InscripcionController extends BaseController {
 				break;
 			case 4:
 				return $this->viewTaller4( $feedback );
+				break;
+			case 5:
+				return $this->viewTaller5( $feedback );
+				break;
+			case 6:
+				return $this->viewTaller6( $feedback );
+				break;
+			case 7:
+				return $this->viewTaller7( $feedback );
+				break;
+			case 8:
+				return $this->viewTaller8( $feedback );
+				break;
+			case 9:
+				return $this->viewTaller9( $feedback );
 				break;
 
 		}
@@ -261,6 +307,61 @@ class InscripcionController extends BaseController {
 				->with('feedback',$FEEDBACK);
 		}else{
 			return View::make('taller4');
+		}
+
+	}
+
+	private function viewTaller5( $FEEDBACK = null ){
+
+		if( $FEEDBACK ){
+			return Redirect::route('taller5')
+				->with('feedback',$FEEDBACK);
+		}else{
+			return View::make('taller5');
+		}
+
+	}
+
+	private function viewTaller6( $FEEDBACK = null ){
+
+		if( $FEEDBACK ){
+			return Redirect::route('taller6')
+				->with('feedback',$FEEDBACK);
+		}else{
+			return View::make('taller6');
+		}
+
+	}
+
+	private function viewTaller7( $FEEDBACK = null ){
+
+		if( $FEEDBACK ){
+			return Redirect::route('taller7')
+				->with('feedback',$FEEDBACK);
+		}else{
+			return View::make('taller7');
+		}
+
+	}
+
+	private function viewTaller8( $FEEDBACK = null ){
+
+		if( $FEEDBACK ){
+			return Redirect::route('taller8')
+				->with('feedback',$FEEDBACK);
+		}else{
+			return View::make('taller8');
+		}
+
+	}
+
+	private function viewTaller9( $FEEDBACK = null ){
+
+		if( $FEEDBACK ){
+			return Redirect::route('taller9')
+				->with('feedback',$FEEDBACK);
+		}else{
+			return View::make('taller9');
 		}
 
 	}

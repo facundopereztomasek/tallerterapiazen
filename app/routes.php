@@ -12,6 +12,14 @@ Route::get('taller1',array('as' => 'taller1', 'uses' => 'InscripcionController@g
 Route::get('taller2',array('as' => 'taller2', 'uses' => 'InscripcionController@getTaller2'));
 Route::get('taller3',array('as' => 'taller3', 'uses' => 'InscripcionController@getTaller3'));
 Route::get('taller4',array('as' => 'taller4', 'uses' => 'InscripcionController@getTaller4'));
+
+Route::get('taller5',array('as' => 'taller5', 'uses' => 'InscripcionController@getTaller5'));
+
+Route::get('taller6',array('as' => 'taller6', 'uses' => 'InscripcionController@getTaller6'));
+Route::get('taller7',array('as' => 'taller7', 'uses' => 'InscripcionController@getTaller7'));
+Route::get('taller8',array('as' => 'taller8', 'uses' => 'InscripcionController@getTaller8'));
+Route::get('taller9',array('as' => 'taller9', 'uses' => 'InscripcionController@getTaller9'));
+
 Route::post('inscribirse/taller',array('as' => 'inscribirse_taller', 'uses' => 'InscripcionController@postTaller'));
 
 Route::get('psicoterapia',array('as' => 'psicoterapia', 'uses' => 'InscripcionController@getPsicoterapia'));
